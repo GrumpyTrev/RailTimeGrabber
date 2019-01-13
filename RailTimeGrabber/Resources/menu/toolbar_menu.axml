@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- When the Support Library is being used the showAsActon attribute is not in the main 
+	 android namespace and must be obtained from the res-auto namespace (defined locally under the name app:-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item
+       android:id="@+id/menu_new"
+       android:icon="@mipmap/ic_add_circle_outline_white"
+       app:showAsAction="ifRoom"
+       android:title="New" />
+</menu>

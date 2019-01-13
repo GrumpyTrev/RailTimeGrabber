@@ -1,0 +1,10283 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Stations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Station>
+		<Name>Abbey Wood</Name>
+		<Code>ABW</Code>
+	</Station>
+	<Station>
+		<Name>Aber</Name>
+		<Code>ABE</Code>
+	</Station>
+	<Station>
+		<Name>Abercynon</Name>
+		<Code>ACY</Code>
+	</Station>
+	<Station>
+		<Name>Aberdare</Name>
+		<Code>ABA</Code>
+	</Station>
+	<Station>
+		<Name>Aberdeen</Name>
+		<Code>ABD</Code>
+	</Station>
+	<Station>
+		<Name>Aberdour</Name>
+		<Code>AUR</Code>
+	</Station>
+	<Station>
+		<Name>Aberdovey</Name>
+		<Code>AVY</Code>
+	</Station>
+	<Station>
+		<Name>Abererch</Name>
+		<Code>ABH</Code>
+	</Station>
+	<Station>
+		<Name>Abergavenny</Name>
+		<Code>AGV</Code>
+	</Station>
+	<Station>
+		<Name>Abergele &amp; Pensarn</Name>
+		<Code>AGL</Code>
+	</Station>
+	<Station>
+		<Name>Aberystwyth</Name>
+		<Code>AYW</Code>
+	</Station>
+	<Station>
+		<Name>Accrington</Name>
+		<Code>ACR</Code>
+	</Station>
+	<Station>
+		<Name>Achanalt</Name>
+		<Code>AAT</Code>
+	</Station>
+	<Station>
+		<Name>Achnasheen</Name>
+		<Code>ACN</Code>
+	</Station>
+	<Station>
+		<Name>Achnashellach</Name>
+		<Code>ACH</Code>
+	</Station>
+	<Station>
+		<Name>Acklington</Name>
+		<Code>ACK</Code>
+	</Station>
+	<Station>
+		<Name>Acle</Name>
+		<Code>ACL</Code>
+	</Station>
+	<Station>
+		<Name>Acocks Green</Name>
+		<Code>ACG</Code>
+	</Station>
+	<Station>
+		<Name>Acton Bridge (Cheshire)</Name>
+		<Code>ACB</Code>
+	</Station>
+	<Station>
+		<Name>Acton Central</Name>
+		<Code>ACC</Code>
+	</Station>
+	<Station>
+		<Name>Acton Main Line</Name>
+		<Code>AML</Code>
+	</Station>
+	<Station>
+		<Name>Adderley Park</Name>
+		<Code>ADD</Code>
+	</Station>
+	<Station>
+		<Name>Addiewell</Name>
+		<Code>ADW</Code>
+	</Station>
+	<Station>
+		<Name>Addlestone</Name>
+		<Code>ASN</Code>
+	</Station>
+	<Station>
+		<Name>Adisham</Name>
+		<Code>ADM</Code>
+	</Station>
+	<Station>
+		<Name>Adlington (Cheshire)</Name>
+		<Code>ADC</Code>
+	</Station>
+	<Station>
+		<Name>Adlington (Lancs)</Name>
+		<Code>ADL</Code>
+	</Station>
+	<Station>
+		<Name>Adwick</Name>
+		<Code>AWK</Code>
+	</Station>
+	<Station>
+		<Name>Aigburth</Name>
+		<Code>AIG</Code>
+	</Station>
+	<Station>
+		<Name>Ainsdale</Name>
+		<Code>ANS</Code>
+	</Station>
+	<Station>
+		<Name>Aintree</Name>
+		<Code>AIN</Code>
+	</Station>
+	<Station>
+		<Name>Airbles</Name>
+		<Code>AIR</Code>
+	</Station>
+	<Station>
+		<Name>Airdrie</Name>
+		<Code>ADR</Code>
+	</Station>
+	<Station>
+		<Name>Albany Park</Name>
+		<Code>AYP</Code>
+	</Station>
+	<Station>
+		<Name>Albrighton</Name>
+		<Code>ALB</Code>
+	</Station>
+	<Station>
+		<Name>Alderley Edge</Name>
+		<Code>ALD</Code>
+	</Station>
+	<Station>
+		<Name>Aldermaston</Name>
+		<Code>AMT</Code>
+	</Station>
+	<Station>
+		<Name>Aldershot</Name>
+		<Code>AHT</Code>
+	</Station>
+	<Station>
+		<Name>Aldrington</Name>
+		<Code>AGT</Code>
+	</Station>
+	<Station>
+		<Name>Alexandra Palace</Name>
+		<Code>AAP</Code>
+	</Station>
+	<Station>
+		<Name>Alexandra Parade</Name>
+		<Code>AXP</Code>
+	</Station>
+	<Station>
+		<Name>Alexandria</Name>
+		<Code>ALX</Code>
+	</Station>
+	<Station>
+		<Name>Alfreton</Name>
+		<Code>ALF</Code>
+	</Station>
+	<Station>
+		<Name>Allens West</Name>
+		<Code>ALW</Code>
+	</Station>
+	<Station>
+		<Name>Alloa</Name>
+		<Code>ALO</Code>
+	</Station>
+	<Station>
+		<Name>Alness</Name>
+		<Code>ASS</Code>
+	</Station>
+	<Station>
+		<Name>Alnmouth</Name>
+		<Code>ALM</Code>
+	</Station>
+	<Station>
+		<Name>Alresford (Essex)</Name>
+		<Code>ALR</Code>
+	</Station>
+	<Station>
+		<Name>Alsager</Name>
+		<Code>ASG</Code>
+	</Station>
+	<Station>
+		<Name>Althorne (Essex)</Name>
+		<Code>ALN</Code>
+	</Station>
+	<Station>
+		<Name>Althorpe</Name>
+		<Code>ALP</Code>
+	</Station>
+	<Station>
+		<Name>Altnabreac</Name>
+		<Code>ABC</Code>
+	</Station>
+	<Station>
+		<Name>Alton</Name>
+		<Code>AON</Code>
+	</Station>
+	<Station>
+		<Name>Altrincham</Name>
+		<Code>ALT</Code>
+	</Station>
+	<Station>
+		<Name>Alvechurch</Name>
+		<Code>ALV</Code>
+	</Station>
+	<Station>
+		<Name>Ambergate</Name>
+		<Code>AMB</Code>
+	</Station>
+	<Station>
+		<Name>Amberley</Name>
+		<Code>AMY</Code>
+	</Station>
+	<Station>
+		<Name>Amersham</Name>
+		<Code>AMR</Code>
+	</Station>
+	<Station>
+		<Name>Ammanford</Name>
+		<Code>AMF</Code>
+	</Station>
+	<Station>
+		<Name>Ancaster</Name>
+		<Code>ANC</Code>
+	</Station>
+	<Station>
+		<Name>Anderston</Name>
+		<Code>AND</Code>
+	</Station>
+	<Station>
+		<Name>Andover</Name>
+		<Code>ADV</Code>
+	</Station>
+	<Station>
+		<Name>Anerley</Name>
+		<Code>ANZ</Code>
+	</Station>
+	<Station>
+		<Name>Angel Road</Name>
+		<Code>AGR</Code>
+	</Station>
+	<Station>
+		<Name>Angmering</Name>
+		<Code>ANG</Code>
+	</Station>
+	<Station>
+		<Name>Annan</Name>
+		<Code>ANN</Code>
+	</Station>
+	<Station>
+		<Name>Anniesland</Name>
+		<Code>ANL</Code>
+	</Station>
+	<Station>
+		<Name>Ansdell &amp; Fairhaven</Name>
+		<Code>AFV</Code>
+	</Station>
+	<Station>
+		<Name>Apperley Bridge</Name>
+		<Code>APY</Code>
+	</Station>
+	<Station>
+		<Name>Appleby</Name>
+		<Code>APP</Code>
+	</Station>
+	<Station>
+		<Name>Appledore (Kent)</Name>
+		<Code>APD</Code>
+	</Station>
+	<Station>
+		<Name>Appleford</Name>
+		<Code>APF</Code>
+	</Station>
+	<Station>
+		<Name>Appley Bridge</Name>
+		<Code>APB</Code>
+	</Station>
+	<Station>
+		<Name>Apsley</Name>
+		<Code>APS</Code>
+	</Station>
+	<Station>
+		<Name>Arbroath</Name>
+		<Code>ARB</Code>
+	</Station>
+	<Station>
+		<Name>Ardgay</Name>
+		<Code>ARD</Code>
+	</Station>
+	<Station>
+		<Name>Ardlui</Name>
+		<Code>AUI</Code>
+	</Station>
+	<Station>
+		<Name>Ardrossan Harbour</Name>
+		<Code>ADS</Code>
+	</Station>
+	<Station>
+		<Name>Ardrossan South Beach</Name>
+		<Code>ASB</Code>
+	</Station>
+	<Station>
+		<Name>Ardrossan Town</Name>
+		<Code>ADN</Code>
+	</Station>
+	<Station>
+		<Name>Ardwick</Name>
+		<Code>ADK</Code>
+	</Station>
+	<Station>
+		<Name>Argyle Street</Name>
+		<Code>AGS</Code>
+	</Station>
+	<Station>
+		<Name>Arisaig</Name>
+		<Code>ARG</Code>
+	</Station>
+	<Station>
+		<Name>Arlesey</Name>
+		<Code>ARL</Code>
+	</Station>
+	<Station>
+		<Name>Armadale (West Lothian)</Name>
+		<Code>ARM</Code>
+	</Station>
+	<Station>
+		<Name>Armathwaite</Name>
+		<Code>AWT</Code>
+	</Station>
+	<Station>
+		<Name>Arnside</Name>
+		<Code>ARN</Code>
+	</Station>
+	<Station>
+		<Name>Arram</Name>
+		<Code>ARR</Code>
+	</Station>
+	<Station>
+		<Name>Arrochar &amp; Tarbet</Name>
+		<Code>ART</Code>
+	</Station>
+	<Station>
+		<Name>Arundel</Name>
+		<Code>ARU</Code>
+	</Station>
+	<Station>
+		<Name>Ascot (Berks)</Name>
+		<Code>ACT</Code>
+	</Station>
+	<Station>
+		<Name>Ascott-under-Wychwood</Name>
+		<Code>AUW</Code>
+	</Station>
+	<Station>
+		<Name>Ash</Name>
+		<Code>ASH</Code>
+	</Station>
+	<Station>
+		<Name>Ash Vale</Name>
+		<Code>AHV</Code>
+	</Station>
+	<Station>
+		<Name>Ashburys</Name>
+		<Code>ABY</Code>
+	</Station>
+	<Station>
+		<Name>Ashchurch for Tewkesbury</Name>
+		<Code>ASC</Code>
+	</Station>
+	<Station>
+		<Name>Ashfield</Name>
+		<Code>ASF</Code>
+	</Station>
+	<Station>
+		<Name>Ashford (Surrey)</Name>
+		<Code>AFS</Code>
+	</Station>
+	<Station>
+		<Name>Ashford International</Name>
+		<Code>AFK</Code>
+	</Station>
+	<Station>
+		<Name>Ashford International (Eurostar)</Name>
+		<Code>ASI</Code>
+	</Station>
+	<Station>
+		<Name>Ashley</Name>
+		<Code>ASY</Code>
+	</Station>
+	<Station>
+		<Name>Ashtead</Name>
+		<Code>AHD</Code>
+	</Station>
+	<Station>
+		<Name>Ashton-under-Lyne</Name>
+		<Code>AHN</Code>
+	</Station>
+	<Station>
+		<Name>Ashurst (Kent)</Name>
+		<Code>AHS</Code>
+	</Station>
+	<Station>
+		<Name>Ashurst New Forest</Name>
+		<Code>ANF</Code>
+	</Station>
+	<Station>
+		<Name>Ashwell &amp; Morden</Name>
+		<Code>AWM</Code>
+	</Station>
+	<Station>
+		<Name>Askam</Name>
+		<Code>ASK</Code>
+	</Station>
+	<Station>
+		<Name>Aslockton</Name>
+		<Code>ALK</Code>
+	</Station>
+	<Station>
+		<Name>Aspatria</Name>
+		<Code>ASP</Code>
+	</Station>
+	<Station>
+		<Name>Aspley Guise</Name>
+		<Code>APG</Code>
+	</Station>
+	<Station>
+		<Name>Aston</Name>
+		<Code>AST</Code>
+	</Station>
+	<Station>
+		<Name>Atherstone</Name>
+		<Code>ATH</Code>
+	</Station>
+	<Station>
+		<Name>Atherton</Name>
+		<Code>ATN</Code>
+	</Station>
+	<Station>
+		<Name>Attadale</Name>
+		<Code>ATT</Code>
+	</Station>
+	<Station>
+		<Name>Attenborough</Name>
+		<Code>ATB</Code>
+	</Station>
+	<Station>
+		<Name>Attleborough</Name>
+		<Code>ATL</Code>
+	</Station>
+	<Station>
+		<Name>Auchinleck</Name>
+		<Code>AUK</Code>
+	</Station>
+	<Station>
+		<Name>Audley End</Name>
+		<Code>AUD</Code>
+	</Station>
+	<Station>
+		<Name>Aughton Park</Name>
+		<Code>AUG</Code>
+	</Station>
+	<Station>
+		<Name>Aviemore</Name>
+		<Code>AVM</Code>
+	</Station>
+	<Station>
+		<Name>Avoncliff</Name>
+		<Code>AVF</Code>
+	</Station>
+	<Station>
+		<Name>Avonmouth</Name>
+		<Code>AVN</Code>
+	</Station>
+	<Station>
+		<Name>Axminster</Name>
+		<Code>AXM</Code>
+	</Station>
+	<Station>
+		<Name>Aylesbury</Name>
+		<Code>AYS</Code>
+	</Station>
+	<Station>
+		<Name>Aylesbury Vale Parkway</Name>
+		<Code>AVP</Code>
+	</Station>
+	<Station>
+		<Name>Aylesford</Name>
+		<Code>AYL</Code>
+	</Station>
+	<Station>
+		<Name>Aylesham</Name>
+		<Code>AYH</Code>
+	</Station>
+	<Station>
+		<Name>Ayr</Name>
+		<Code>AYR</Code>
+	</Station>
+	<Station>
+		<Name>Bache</Name>
+		<Code>BAC</Code>
+	</Station>
+	<Station>
+		<Name>Baglan</Name>
+		<Code>BAJ</Code>
+	</Station>
+	<Station>
+		<Name>Bagshot</Name>
+		<Code>BAG</Code>
+	</Station>
+	<Station>
+		<Name>Baildon</Name>
+		<Code>BLD</Code>
+	</Station>
+	<Station>
+		<Name>Baillieston</Name>
+		<Code>BIO</Code>
+	</Station>
+	<Station>
+		<Name>Balcombe</Name>
+		<Code>BAB</Code>
+	</Station>
+	<Station>
+		<Name>Baldock</Name>
+		<Code>BDK</Code>
+	</Station>
+	<Station>
+		<Name>Balham</Name>
+		<Code>BAL</Code>
+	</Station>
+	<Station>
+		<Name>Balloch</Name>
+		<Code>BHC</Code>
+	</Station>
+	<Station>
+		<Name>Balmossie</Name>
+		<Code>BSI</Code>
+	</Station>
+	<Station>
+		<Name>Bamber Bridge</Name>
+		<Code>BMB</Code>
+	</Station>
+	<Station>
+		<Name>Bamford</Name>
+		<Code>BAM</Code>
+	</Station>
+	<Station>
+		<Name>Banavie</Name>
+		<Code>BNV</Code>
+	</Station>
+	<Station>
+		<Name>Banbury</Name>
+		<Code>BAN</Code>
+	</Station>
+	<Station>
+		<Name>Bangor (Gwynedd)</Name>
+		<Code>BNG</Code>
+	</Station>
+	<Station>
+		<Name>Bank Hall</Name>
+		<Code>BAH</Code>
+	</Station>
+	<Station>
+		<Name>Banstead</Name>
+		<Code>BAD</Code>
+	</Station>
+	<Station>
+		<Name>Barassie</Name>
+		<Code>BSS</Code>
+	</Station>
+	<Station>
+		<Name>Barbican</Name>
+		<Code>ZBB</Code>
+	</Station>
+	<Station>
+		<Name>Bardon Mill</Name>
+		<Code>BLL</Code>
+	</Station>
+	<Station>
+		<Name>Bare Lane</Name>
+		<Code>BAR</Code>
+	</Station>
+	<Station>
+		<Name>Bargeddie</Name>
+		<Code>BGI</Code>
+	</Station>
+	<Station>
+		<Name>Bargoed</Name>
+		<Code>BGD</Code>
+	</Station>
+	<Station>
+		<Name>Barking</Name>
+		<Code>BKG</Code>
+	</Station>
+	<Station>
+		<Name>Barlaston</Name>
+		<Code>BRT</Code>
+	</Station>
+	<Station>
+		<Name>Barming</Name>
+		<Code>BMG</Code>
+	</Station>
+	<Station>
+		<Name>Barmouth</Name>
+		<Code>BRM</Code>
+	</Station>
+	<Station>
+		<Name>Barnehurst</Name>
+		<Code>BNH</Code>
+	</Station>
+	<Station>
+		<Name>Barnes</Name>
+		<Code>BNS</Code>
+	</Station>
+	<Station>
+		<Name>Barnes Bridge</Name>
+		<Code>BNI</Code>
+	</Station>
+	<Station>
+		<Name>Barnetby</Name>
+		<Code>BTB</Code>
+	</Station>
+	<Station>
+		<Name>Barnham</Name>
+		<Code>BAA</Code>
+	</Station>
+	<Station>
+		<Name>Barnhill</Name>
+		<Code>BNL</Code>
+	</Station>
+	<Station>
+		<Name>Barnsley</Name>
+		<Code>BNY</Code>
+	</Station>
+	<Station>
+		<Name>Barnstaple</Name>
+		<Code>BNP</Code>
+	</Station>
+	<Station>
+		<Name>Barnt Green</Name>
+		<Code>BTG</Code>
+	</Station>
+	<Station>
+		<Name>Barrhead</Name>
+		<Code>BRR</Code>
+	</Station>
+	<Station>
+		<Name>Barrhill</Name>
+		<Code>BRL</Code>
+	</Station>
+	<Station>
+		<Name>Barrow Haven</Name>
+		<Code>BAV</Code>
+	</Station>
+	<Station>
+		<Name>Barrow-in-Furness</Name>
+		<Code>BIF</Code>
+	</Station>
+	<Station>
+		<Name>Barrow-Upon-Soar</Name>
+		<Code>BWS</Code>
+	</Station>
+	<Station>
+		<Name>Barry</Name>
+		<Code>BRY</Code>
+	</Station>
+	<Station>
+		<Name>Barry Docks</Name>
+		<Code>BYD</Code>
+	</Station>
+	<Station>
+		<Name>Barry Island</Name>
+		<Code>BYI</Code>
+	</Station>
+	<Station>
+		<Name>Barry Links</Name>
+		<Code>BYL</Code>
+	</Station>
+	<Station>
+		<Name>Barton-on-Humber</Name>
+		<Code>BAU</Code>
+	</Station>
+	<Station>
+		<Name>Basildon</Name>
+		<Code>BSO</Code>
+	</Station>
+	<Station>
+		<Name>Basingstoke</Name>
+		<Code>BSK</Code>
+	</Station>
+	<Station>
+		<Name>Bat &amp; Ball</Name>
+		<Code>BBL</Code>
+	</Station>
+	<Station>
+		<Name>Bath Spa</Name>
+		<Code>BTH</Code>
+	</Station>
+	<Station>
+		<Name>Bathgate</Name>
+		<Code>BHG</Code>
+	</Station>
+	<Station>
+		<Name>Batley</Name>
+		<Code>BTL</Code>
+	</Station>
+	<Station>
+		<Name>Battersby</Name>
+		<Code>BTT</Code>
+	</Station>
+	<Station>
+		<Name>Battersea Park</Name>
+		<Code>BAK</Code>
+	</Station>
+	<Station>
+		<Name>Battle</Name>
+		<Code>BAT</Code>
+	</Station>
+	<Station>
+		<Name>Battlesbridge</Name>
+		<Code>BLB</Code>
+	</Station>
+	<Station>
+		<Name>Bayford</Name>
+		<Code>BAY</Code>
+	</Station>
+	<Station>
+		<Name>Beaconsfield</Name>
+		<Code>BCF</Code>
+	</Station>
+	<Station>
+		<Name>Bearley</Name>
+		<Code>BER</Code>
+	</Station>
+	<Station>
+		<Name>Bearsden</Name>
+		<Code>BRN</Code>
+	</Station>
+	<Station>
+		<Name>Bearsted</Name>
+		<Code>BSD</Code>
+	</Station>
+	<Station>
+		<Name>Beasdale</Name>
+		<Code>BSL</Code>
+	</Station>
+	<Station>
+		<Name>Beaulieu Road</Name>
+		<Code>BEU</Code>
+	</Station>
+	<Station>
+		<Name>Beauly</Name>
+		<Code>BEL</Code>
+	</Station>
+	<Station>
+		<Name>Bebington</Name>
+		<Code>BEB</Code>
+	</Station>
+	<Station>
+		<Name>Beccles</Name>
+		<Code>BCC</Code>
+	</Station>
+	<Station>
+		<Name>Beckenham Hill</Name>
+		<Code>BEC</Code>
+	</Station>
+	<Station>
+		<Name>Beckenham Junction</Name>
+		<Code>BKJ</Code>
+	</Station>
+	<Station>
+		<Name>Bedford</Name>
+		<Code>BDM</Code>
+	</Station>
+	<Station>
+		<Name>Bedford St Johns</Name>
+		<Code>BSJ</Code>
+	</Station>
+	<Station>
+		<Name>Bedhampton</Name>
+		<Code>BDH</Code>
+	</Station>
+	<Station>
+		<Name>Bedminster</Name>
+		<Code>BMT</Code>
+	</Station>
+	<Station>
+		<Name>Bedworth</Name>
+		<Code>BEH</Code>
+	</Station>
+	<Station>
+		<Name>Bedwyn</Name>
+		<Code>BDW</Code>
+	</Station>
+	<Station>
+		<Name>Beeston</Name>
+		<Code>BEE</Code>
+	</Station>
+	<Station>
+		<Name>Bekesbourne</Name>
+		<Code>BKS</Code>
+	</Station>
+	<Station>
+		<Name>Belle Vue</Name>
+		<Code>BLV</Code>
+	</Station>
+	<Station>
+		<Name>Bellgrove</Name>
+		<Code>BLG</Code>
+	</Station>
+	<Station>
+		<Name>Bellingham</Name>
+		<Code>BGM</Code>
+	</Station>
+	<Station>
+		<Name>Bellshill</Name>
+		<Code>BLH</Code>
+	</Station>
+	<Station>
+		<Name>Belmont</Name>
+		<Code>BLM</Code>
+	</Station>
+	<Station>
+		<Name>Belper</Name>
+		<Code>BLP</Code>
+	</Station>
+	<Station>
+		<Name>Beltring</Name>
+		<Code>BEG</Code>
+	</Station>
+	<Station>
+		<Name>Belvedere</Name>
+		<Code>BVD</Code>
+	</Station>
+	<Station>
+		<Name>Bempton</Name>
+		<Code>BEM</Code>
+	</Station>
+	<Station>
+		<Name>Ben Rhydding</Name>
+		<Code>BEY</Code>
+	</Station>
+	<Station>
+		<Name>Benfleet</Name>
+		<Code>BEF</Code>
+	</Station>
+	<Station>
+		<Name>Bentham</Name>
+		<Code>BEN</Code>
+	</Station>
+	<Station>
+		<Name>Bentley (Hants)</Name>
+		<Code>BTY</Code>
+	</Station>
+	<Station>
+		<Name>Bentley (South Yorks)</Name>
+		<Code>BYK</Code>
+	</Station>
+	<Station>
+		<Name>Bere Alston</Name>
+		<Code>BAS</Code>
+	</Station>
+	<Station>
+		<Name>Bere Ferrers</Name>
+		<Code>BFE</Code>
+	</Station>
+	<Station>
+		<Name>Berkhamsted</Name>
+		<Code>BKM</Code>
+	</Station>
+	<Station>
+		<Name>Berkswell</Name>
+		<Code>BKW</Code>
+	</Station>
+	<Station>
+		<Name>Bermuda Park</Name>
+		<Code>BEP</Code>
+	</Station>
+	<Station>
+		<Name>Berney Arms</Name>
+		<Code>BYA</Code>
+	</Station>
+	<Station>
+		<Name>Berry Brow</Name>
+		<Code>BBW</Code>
+	</Station>
+	<Station>
+		<Name>Berrylands</Name>
+		<Code>BRS</Code>
+	</Station>
+	<Station>
+		<Name>Berwick (Sussex)</Name>
+		<Code>BRK</Code>
+	</Station>
+	<Station>
+		<Name>Berwick-upon-Tweed</Name>
+		<Code>BWK</Code>
+	</Station>
+	<Station>
+		<Name>Bescar Lane</Name>
+		<Code>BES</Code>
+	</Station>
+	<Station>
+		<Name>Bescot Stadium</Name>
+		<Code>BSC</Code>
+	</Station>
+	<Station>
+		<Name>Betchworth</Name>
+		<Code>BTO</Code>
+	</Station>
+	<Station>
+		<Name>Bethnal Green</Name>
+		<Code>BET</Code>
+	</Station>
+	<Station>
+		<Name>Betws-y-Coed</Name>
+		<Code>BYC</Code>
+	</Station>
+	<Station>
+		<Name>Beverley</Name>
+		<Code>BEV</Code>
+	</Station>
+	<Station>
+		<Name>Bexhill</Name>
+		<Code>BEX</Code>
+	</Station>
+	<Station>
+		<Name>Bexley</Name>
+		<Code>BXY</Code>
+	</Station>
+	<Station>
+		<Name>Bexleyheath</Name>
+		<Code>BXH</Code>
+	</Station>
+	<Station>
+		<Name>Bicester North</Name>
+		<Code>BCS</Code>
+	</Station>
+	<Station>
+		<Name>Bicester Village</Name>
+		<Code>BIT</Code>
+	</Station>
+	<Station>
+		<Name>Bickley</Name>
+		<Code>BKL</Code>
+	</Station>
+	<Station>
+		<Name>Bidston</Name>
+		<Code>BID</Code>
+	</Station>
+	<Station>
+		<Name>Biggleswade</Name>
+		<Code>BIW</Code>
+	</Station>
+	<Station>
+		<Name>Bilbrook</Name>
+		<Code>BBK</Code>
+	</Station>
+	<Station>
+		<Name>Billericay</Name>
+		<Code>BIC</Code>
+	</Station>
+	<Station>
+		<Name>Billingham (Cleveland)</Name>
+		<Code>BIL</Code>
+	</Station>
+	<Station>
+		<Name>Billingshurst</Name>
+		<Code>BIG</Code>
+	</Station>
+	<Station>
+		<Name>Bingham</Name>
+		<Code>BIN</Code>
+	</Station>
+	<Station>
+		<Name>Bingley</Name>
+		<Code>BIY</Code>
+	</Station>
+	<Station>
+		<Name>Birchgrove</Name>
+		<Code>BCG</Code>
+	</Station>
+	<Station>
+		<Name>Birchington-on-sea</Name>
+		<Code>BCH</Code>
+	</Station>
+	<Station>
+		<Name>Birchwood</Name>
+		<Code>BWD</Code>
+	</Station>
+	<Station>
+		<Name>Birkbeck</Name>
+		<Code>BIK</Code>
+	</Station>
+	<Station>
+		<Name>Birkdale</Name>
+		<Code>BDL</Code>
+	</Station>
+	<Station>
+		<Name>Birkenhead Central</Name>
+		<Code>BKC</Code>
+	</Station>
+	<Station>
+		<Name>Birkenhead Hamilton Square</Name>
+		<Code>BKQ</Code>
+	</Station>
+	<Station>
+		<Name>Birkenhead North</Name>
+		<Code>BKN</Code>
+	</Station>
+	<Station>
+		<Name>Birkenhead Park</Name>
+		<Code>BKP</Code>
+	</Station>
+	<Station>
+		<Name>Birmingham International</Name>
+		<Code>BHI</Code>
+	</Station>
+	<Station>
+		<Name>Birmingham Moor Street</Name>
+		<Code>BMO</Code>
+	</Station>
+	<Station>
+		<Name>Birmingham New Street</Name>
+		<Code>BHM</Code>
+	</Station>
+	<Station>
+		<Name>Birmingham Snow Hill</Name>
+		<Code>BSW</Code>
+	</Station>
+	<Station>
+		<Name>Bishop Auckland</Name>
+		<Code>BIA</Code>
+	</Station>
+	<Station>
+		<Name>Bishopbriggs</Name>
+		<Code>BBG</Code>
+	</Station>
+	<Station>
+		<Name>Bishops Stortford</Name>
+		<Code>BIS</Code>
+	</Station>
+	<Station>
+		<Name>Bishopstone (Sussex)</Name>
+		<Code>BIP</Code>
+	</Station>
+	<Station>
+		<Name>Bishopton (Strathclyde)</Name>
+		<Code>BPT</Code>
+	</Station>
+	<Station>
+		<Name>Bitterne</Name>
+		<Code>BTE</Code>
+	</Station>
+	<Station>
+		<Name>Blackburn</Name>
+		<Code>BBN</Code>
+	</Station>
+	<Station>
+		<Name>Blackheath</Name>
+		<Code>BKH</Code>
+	</Station>
+	<Station>
+		<Name>Blackhorse Road</Name>
+		<Code>BHO</Code>
+	</Station>
+	<Station>
+		<Name>Blackpool North</Name>
+		<Code>BPN</Code>
+	</Station>
+	<Station>
+		<Name>Blackpool Pleasure Beach</Name>
+		<Code>BPB</Code>
+	</Station>
+	<Station>
+		<Name>Blackpool South</Name>
+		<Code>BPS</Code>
+	</Station>
+	<Station>
+		<Name>Blackridge</Name>
+		<Code>BKR</Code>
+	</Station>
+	<Station>
+		<Name>Blackrod</Name>
+		<Code>BLK</Code>
+	</Station>
+	<Station>
+		<Name>Blackwater</Name>
+		<Code>BAW</Code>
+	</Station>
+	<Station>
+		<Name>Blaenau Ffestiniog</Name>
+		<Code>BFF</Code>
+	</Station>
+	<Station>
+		<Name>Blair Atholl</Name>
+		<Code>BLA</Code>
+	</Station>
+	<Station>
+		<Name>Blairhill</Name>
+		<Code>BAI</Code>
+	</Station>
+	<Station>
+		<Name>Blake Street</Name>
+		<Code>BKT</Code>
+	</Station>
+	<Station>
+		<Name>Blakedown</Name>
+		<Code>BKD</Code>
+	</Station>
+	<Station>
+		<Name>Blantyre</Name>
+		<Code>BLT</Code>
+	</Station>
+	<Station>
+		<Name>Blaydon</Name>
+		<Code>BLO</Code>
+	</Station>
+	<Station>
+		<Name>Bleasby</Name>
+		<Code>BSB</Code>
+	</Station>
+	<Station>
+		<Name>Bletchley</Name>
+		<Code>BLY</Code>
+	</Station>
+	<Station>
+		<Name>Bloxwich</Name>
+		<Code>BLX</Code>
+	</Station>
+	<Station>
+		<Name>Bloxwich North</Name>
+		<Code>BWN</Code>
+	</Station>
+	<Station>
+		<Name>Blundellsands &amp; Crosby</Name>
+		<Code>BLN</Code>
+	</Station>
+	<Station>
+		<Name>Blythe Bridge</Name>
+		<Code>BYB</Code>
+	</Station>
+	<Station>
+		<Name>Bodmin Parkway</Name>
+		<Code>BOD</Code>
+	</Station>
+	<Station>
+		<Name>Bodorgan</Name>
+		<Code>BOR</Code>
+	</Station>
+	<Station>
+		<Name>Bognor Regis</Name>
+		<Code>BOG</Code>
+	</Station>
+	<Station>
+		<Name>Bogston</Name>
+		<Code>BGS</Code>
+	</Station>
+	<Station>
+		<Name>Bolton</Name>
+		<Code>BON</Code>
+	</Station>
+	<Station>
+		<Name>Bolton-Upon-Dearne</Name>
+		<Code>BTD</Code>
+	</Station>
+	<Station>
+		<Name>Bookham</Name>
+		<Code>BKA</Code>
+	</Station>
+	<Station>
+		<Name>Bootle (Cumbria)</Name>
+		<Code>BOC</Code>
+	</Station>
+	<Station>
+		<Name>Bootle New Strand</Name>
+		<Code>BNW</Code>
+	</Station>
+	<Station>
+		<Name>Bootle Oriel Road</Name>
+		<Code>BOT</Code>
+	</Station>
+	<Station>
+		<Name>Bordesley</Name>
+		<Code>BBS</Code>
+	</Station>
+	<Station>
+		<Name>Borough Green &amp; Wrotham</Name>
+		<Code>BRG</Code>
+	</Station>
+	<Station>
+		<Name>Borth</Name>
+		<Code>BRH</Code>
+	</Station>
+	<Station>
+		<Name>Bosham</Name>
+		<Code>BOH</Code>
+	</Station>
+	<Station>
+		<Name>Boston</Name>
+		<Code>BSN</Code>
+	</Station>
+	<Station>
+		<Name>Botley</Name>
+		<Code>BOE</Code>
+	</Station>
+	<Station>
+		<Name>Bottesford</Name>
+		<Code>BTF</Code>
+	</Station>
+	<Station>
+		<Name>Bourne End</Name>
+		<Code>BNE</Code>
+	</Station>
+	<Station>
+		<Name>Bournemouth</Name>
+		<Code>BMH</Code>
+	</Station>
+	<Station>
+		<Name>Bournville</Name>
+		<Code>BRV</Code>
+	</Station>
+	<Station>
+		<Name>Bow Brickhill</Name>
+		<Code>BWB</Code>
+	</Station>
+	<Station>
+		<Name>Bowes Park</Name>
+		<Code>BOP</Code>
+	</Station>
+	<Station>
+		<Name>Bowling</Name>
+		<Code>BWG</Code>
+	</Station>
+	<Station>
+		<Name>Box Hill &amp; Westhumble</Name>
+		<Code>BXW</Code>
+	</Station>
+	<Station>
+		<Name>Bracknell</Name>
+		<Code>BCE</Code>
+	</Station>
+	<Station>
+		<Name>Bradford Forster Square</Name>
+		<Code>BDQ</Code>
+	</Station>
+	<Station>
+		<Name>Bradford Interchange</Name>
+		<Code>BDI</Code>
+	</Station>
+	<Station>
+		<Name>Bradford-on-Avon</Name>
+		<Code>BOA</Code>
+	</Station>
+	<Station>
+		<Name>Brading</Name>
+		<Code>BDN</Code>
+	</Station>
+	<Station>
+		<Name>Braintree</Name>
+		<Code>BTR</Code>
+	</Station>
+	<Station>
+		<Name>Braintree Freeport</Name>
+		<Code>BTP</Code>
+	</Station>
+	<Station>
+		<Name>Bramhall</Name>
+		<Code>BML</Code>
+	</Station>
+	<Station>
+		<Name>Bramley (Hants)</Name>
+		<Code>BMY</Code>
+	</Station>
+	<Station>
+		<Name>Bramley (W Yorks)</Name>
+		<Code>BLE</Code>
+	</Station>
+	<Station>
+		<Name>Brampton (Cumbria)</Name>
+		<Code>BMP</Code>
+	</Station>
+	<Station>
+		<Name>Brampton (Suffolk)</Name>
+		<Code>BRP</Code>
+	</Station>
+	<Station>
+		<Name>Branchton</Name>
+		<Code>BCN</Code>
+	</Station>
+	<Station>
+		<Name>Brandon</Name>
+		<Code>BND</Code>
+	</Station>
+	<Station>
+		<Name>Branksome</Name>
+		<Code>BSM</Code>
+	</Station>
+	<Station>
+		<Name>Braystones (Cumbria)</Name>
+		<Code>BYS</Code>
+	</Station>
+	<Station>
+		<Name>Bredbury</Name>
+		<Code>BDY</Code>
+	</Station>
+	<Station>
+		<Name>Breich</Name>
+		<Code>BRC</Code>
+	</Station>
+	<Station>
+		<Name>Brentford</Name>
+		<Code>BFD</Code>
+	</Station>
+	<Station>
+		<Name>Brentwood</Name>
+		<Code>BRE</Code>
+	</Station>
+	<Station>
+		<Name>Bricket Wood</Name>
+		<Code>BWO</Code>
+	</Station>
+	<Station>
+		<Name>Bridge of Allan</Name>
+		<Code>BEA</Code>
+	</Station>
+	<Station>
+		<Name>Bridge of Orchy</Name>
+		<Code>BRO</Code>
+	</Station>
+	<Station>
+		<Name>Bridgend</Name>
+		<Code>BGN</Code>
+	</Station>
+	<Station>
+		<Name>Bridgeton</Name>
+		<Code>BDG</Code>
+	</Station>
+	<Station>
+		<Name>Bridgwater</Name>
+		<Code>BWT</Code>
+	</Station>
+	<Station>
+		<Name>Bridlington</Name>
+		<Code>BDT</Code>
+	</Station>
+	<Station>
+		<Name>Brierfield</Name>
+		<Code>BRF</Code>
+	</Station>
+	<Station>
+		<Name>Brigg</Name>
+		<Code>BGG</Code>
+	</Station>
+	<Station>
+		<Name>Brighouse</Name>
+		<Code>BGH</Code>
+	</Station>
+	<Station>
+		<Name>Brighton (East Sussex)</Name>
+		<Code>BTN</Code>
+	</Station>
+	<Station>
+		<Name>Brimsdown</Name>
+		<Code>BMD</Code>
+	</Station>
+	<Station>
+		<Name>Brinnington</Name>
+		<Code>BNT</Code>
+	</Station>
+	<Station>
+		<Name>Bristol Parkway</Name>
+		<Code>BPW</Code>
+	</Station>
+	<Station>
+		<Name>Bristol Temple Meads</Name>
+		<Code>BRI</Code>
+	</Station>
+	<Station>
+		<Name>Brithdir</Name>
+		<Code>BHD</Code>
+	</Station>
+	<Station>
+		<Name>Briton Ferry</Name>
+		<Code>BNF</Code>
+	</Station>
+	<Station>
+		<Name>Brixton</Name>
+		<Code>BRX</Code>
+	</Station>
+	<Station>
+		<Name>Broad Green</Name>
+		<Code>BGE</Code>
+	</Station>
+	<Station>
+		<Name>Broadbottom</Name>
+		<Code>BDB</Code>
+	</Station>
+	<Station>
+		<Name>Broadstairs</Name>
+		<Code>BSR</Code>
+	</Station>
+	<Station>
+		<Name>Brockenhurst</Name>
+		<Code>BCU</Code>
+	</Station>
+	<Station>
+		<Name>Brockholes</Name>
+		<Code>BHS</Code>
+	</Station>
+	<Station>
+		<Name>Brockley</Name>
+		<Code>BCY</Code>
+	</Station>
+	<Station>
+		<Name>Bromborough</Name>
+		<Code>BOM</Code>
+	</Station>
+	<Station>
+		<Name>Bromborough Rake</Name>
+		<Code>BMR</Code>
+	</Station>
+	<Station>
+		<Name>Bromley Cross (Lancs)</Name>
+		<Code>BMC</Code>
+	</Station>
+	<Station>
+		<Name>Bromley North</Name>
+		<Code>BMN</Code>
+	</Station>
+	<Station>
+		<Name>Bromley South</Name>
+		<Code>BMS</Code>
+	</Station>
+	<Station>
+		<Name>Bromsgrove</Name>
+		<Code>BMV</Code>
+	</Station>
+	<Station>
+		<Name>Brondesbury</Name>
+		<Code>BSY</Code>
+	</Station>
+	<Station>
+		<Name>Brondesbury Park</Name>
+		<Code>BSP</Code>
+	</Station>
+	<Station>
+		<Name>Brookmans Park</Name>
+		<Code>BPK</Code>
+	</Station>
+	<Station>
+		<Name>Brookwood</Name>
+		<Code>BKO</Code>
+	</Station>
+	<Station>
+		<Name>Broome</Name>
+		<Code>BME</Code>
+	</Station>
+	<Station>
+		<Name>Broomfleet</Name>
+		<Code>BMF</Code>
+	</Station>
+	<Station>
+		<Name>Brora</Name>
+		<Code>BRA</Code>
+	</Station>
+	<Station>
+		<Name>Brough</Name>
+		<Code>BUH</Code>
+	</Station>
+	<Station>
+		<Name>Broughty Ferry</Name>
+		<Code>BYF</Code>
+	</Station>
+	<Station>
+		<Name>Broxbourne</Name>
+		<Code>BXB</Code>
+	</Station>
+	<Station>
+		<Name>Bruce Grove</Name>
+		<Code>BCV</Code>
+	</Station>
+	<Station>
+		<Name>Brundall</Name>
+		<Code>BDA</Code>
+	</Station>
+	<Station>
+		<Name>Brundall Gardens</Name>
+		<Code>BGA</Code>
+	</Station>
+	<Station>
+		<Name>Brunstane</Name>
+		<Code>BSU</Code>
+	</Station>
+	<Station>
+		<Name>Brunswick</Name>
+		<Code>BRW</Code>
+	</Station>
+	<Station>
+		<Name>Bruton</Name>
+		<Code>BRU</Code>
+	</Station>
+	<Station>
+		<Name>Bryn</Name>
+		<Code>BYN</Code>
+	</Station>
+	<Station>
+		<Name>Buckenham (Norfolk)</Name>
+		<Code>BUC</Code>
+	</Station>
+	<Station>
+		<Name>Buckley</Name>
+		<Code>BCK</Code>
+	</Station>
+	<Station>
+		<Name>Bucknell</Name>
+		<Code>BUK</Code>
+	</Station>
+	<Station>
+		<Name>Buckshaw Parkway</Name>
+		<Code>BSV</Code>
+	</Station>
+	<Station>
+		<Name>Bugle</Name>
+		<Code>BGL</Code>
+	</Station>
+	<Station>
+		<Name>Builth Road</Name>
+		<Code>BHR</Code>
+	</Station>
+	<Station>
+		<Name>Bulwell</Name>
+		<Code>BLW</Code>
+	</Station>
+	<Station>
+		<Name>Bures</Name>
+		<Code>BUE</Code>
+	</Station>
+	<Station>
+		<Name>Burgess Hill</Name>
+		<Code>BUG</Code>
+	</Station>
+	<Station>
+		<Name>Burley Park</Name>
+		<Code>BUY</Code>
+	</Station>
+	<Station>
+		<Name>Burley-in-Wharfedale</Name>
+		<Code>BUW</Code>
+	</Station>
+	<Station>
+		<Name>Burnage</Name>
+		<Code>BNA</Code>
+	</Station>
+	<Station>
+		<Name>Burneside (Cumbria)</Name>
+		<Code>BUD</Code>
+	</Station>
+	<Station>
+		<Name>Burnham (Bucks)</Name>
+		<Code>BNM</Code>
+	</Station>
+	<Station>
+		<Name>Burnham-on-Crouch</Name>
+		<Code>BUU</Code>
+	</Station>
+	<Station>
+		<Name>Burnley Barracks</Name>
+		<Code>BUB</Code>
+	</Station>
+	<Station>
+		<Name>Burnley Central</Name>
+		<Code>BNC</Code>
+	</Station>
+	<Station>
+		<Name>Burnley Manchester Road</Name>
+		<Code>BYM</Code>
+	</Station>
+	<Station>
+		<Name>Burnside (Strathclyde)</Name>
+		<Code>BUI</Code>
+	</Station>
+	<Station>
+		<Name>Burntisland</Name>
+		<Code>BTS</Code>
+	</Station>
+	<Station>
+		<Name>Burscough Bridge</Name>
+		<Code>BCB</Code>
+	</Station>
+	<Station>
+		<Name>Burscough Junction</Name>
+		<Code>BCJ</Code>
+	</Station>
+	<Station>
+		<Name>Bursledon</Name>
+		<Code>BUO</Code>
+	</Station>
+	<Station>
+		<Name>Burton Joyce</Name>
+		<Code>BUJ</Code>
+	</Station>
+	<Station>
+		<Name>Burton-on-Trent</Name>
+		<Code>BUT</Code>
+	</Station>
+	<Station>
+		<Name>Bury St Edmunds</Name>
+		<Code>BSE</Code>
+	</Station>
+	<Station>
+		<Name>Busby</Name>
+		<Code>BUS</Code>
+	</Station>
+	<Station>
+		<Name>Bush Hill Park</Name>
+		<Code>BHK</Code>
+	</Station>
+	<Station>
+		<Name>Bushey</Name>
+		<Code>BSH</Code>
+	</Station>
+	<Station>
+		<Name>Butlers Lane</Name>
+		<Code>BUL</Code>
+	</Station>
+	<Station>
+		<Name>Buxted</Name>
+		<Code>BXD</Code>
+	</Station>
+	<Station>
+		<Name>Buxton</Name>
+		<Code>BUX</Code>
+	</Station>
+	<Station>
+		<Name>Byfleet &amp; New Haw</Name>
+		<Code>BFN</Code>
+	</Station>
+	<Station>
+		<Name>Bynea</Name>
+		<Code>BYE</Code>
+	</Station>
+	<Station>
+		<Name>Cadoxton</Name>
+		<Code>CAD</Code>
+	</Station>
+	<Station>
+		<Name>Caergwrle</Name>
+		<Code>CGW</Code>
+	</Station>
+	<Station>
+		<Name>Caerphilly</Name>
+		<Code>CPH</Code>
+	</Station>
+	<Station>
+		<Name>Caersws</Name>
+		<Code>CWS</Code>
+	</Station>
+	<Station>
+		<Name>Caldercruix</Name>
+		<Code>CAC</Code>
+	</Station>
+	<Station>
+		<Name>Caldicot</Name>
+		<Code>CDT</Code>
+	</Station>
+	<Station>
+		<Name>Caledonian Rd &amp; Barnsbury</Name>
+		<Code>CIR</Code>
+	</Station>
+	<Station>
+		<Name>Calstock</Name>
+		<Code>CSK</Code>
+	</Station>
+	<Station>
+		<Name>Cam &amp; Dursley</Name>
+		<Code>CDU</Code>
+	</Station>
+	<Station>
+		<Name>Camberley</Name>
+		<Code>CAM</Code>
+	</Station>
+	<Station>
+		<Name>Camborne</Name>
+		<Code>CBN</Code>
+	</Station>
+	<Station>
+		<Name>Cambridge</Name>
+		<Code>CBG</Code>
+	</Station>
+	<Station>
+		<Name>Cambridge Heath</Name>
+		<Code>CBH</Code>
+	</Station>
+	<Station>
+		<Name>Cambuslang</Name>
+		<Code>CBL</Code>
+	</Station>
+	<Station>
+		<Name>Camden Road</Name>
+		<Code>CMD</Code>
+	</Station>
+	<Station>
+		<Name>Camelon</Name>
+		<Code>CMO</Code>
+	</Station>
+	<Station>
+		<Name>Canada Water</Name>
+		<Code>ZCW</Code>
+	</Station>
+	<Station>
+		<Name>Canley</Name>
+		<Code>CNL</Code>
+	</Station>
+	<Station>
+		<Name>Cannock</Name>
+		<Code>CAO</Code>
+	</Station>
+	<Station>
+		<Name>Canonbury</Name>
+		<Code>CNN</Code>
+	</Station>
+	<Station>
+		<Name>Canterbury East</Name>
+		<Code>CBE</Code>
+	</Station>
+	<Station>
+		<Name>Canterbury West</Name>
+		<Code>CBW</Code>
+	</Station>
+	<Station>
+		<Name>Cantley</Name>
+		<Code>CNY</Code>
+	</Station>
+	<Station>
+		<Name>Capenhurst</Name>
+		<Code>CPU</Code>
+	</Station>
+	<Station>
+		<Name>Carbis Bay</Name>
+		<Code>CBB</Code>
+	</Station>
+	<Station>
+		<Name>Cardenden</Name>
+		<Code>CDD</Code>
+	</Station>
+	<Station>
+		<Name>Cardiff Bay</Name>
+		<Code>CDB</Code>
+	</Station>
+	<Station>
+		<Name>Cardiff Central</Name>
+		<Code>CDF</Code>
+	</Station>
+	<Station>
+		<Name>Cardiff Queen Street</Name>
+		<Code>CDQ</Code>
+	</Station>
+	<Station>
+		<Name>Cardonald</Name>
+		<Code>CDO</Code>
+	</Station>
+	<Station>
+		<Name>Cardross</Name>
+		<Code>CDR</Code>
+	</Station>
+	<Station>
+		<Name>Carfin</Name>
+		<Code>CRF</Code>
+	</Station>
+	<Station>
+		<Name>Cark &amp; Cartmel</Name>
+		<Code>CAK</Code>
+	</Station>
+	<Station>
+		<Name>Carlisle</Name>
+		<Code>CAR</Code>
+	</Station>
+	<Station>
+		<Name>Carlton</Name>
+		<Code>CTO</Code>
+	</Station>
+	<Station>
+		<Name>Carluke</Name>
+		<Code>CLU</Code>
+	</Station>
+	<Station>
+		<Name>Carmarthen</Name>
+		<Code>CMN</Code>
+	</Station>
+	<Station>
+		<Name>Carmyle</Name>
+		<Code>CML</Code>
+	</Station>
+	<Station>
+		<Name>Carnforth</Name>
+		<Code>CNF</Code>
+	</Station>
+	<Station>
+		<Name>Carnoustie</Name>
+		<Code>CAN</Code>
+	</Station>
+	<Station>
+		<Name>Carntyne</Name>
+		<Code>CAY</Code>
+	</Station>
+	<Station>
+		<Name>Carpenders Park</Name>
+		<Code>CPK</Code>
+	</Station>
+	<Station>
+		<Name>Carrbridge</Name>
+		<Code>CAG</Code>
+	</Station>
+	<Station>
+		<Name>Carshalton</Name>
+		<Code>CSH</Code>
+	</Station>
+	<Station>
+		<Name>Carshalton Beeches</Name>
+		<Code>CSB</Code>
+	</Station>
+	<Station>
+		<Name>Carstairs</Name>
+		<Code>CRS</Code>
+	</Station>
+	<Station>
+		<Name>Cartsdyke</Name>
+		<Code>CDY</Code>
+	</Station>
+	<Station>
+		<Name>Castle Bar Park</Name>
+		<Code>CBP</Code>
+	</Station>
+	<Station>
+		<Name>Castle Cary</Name>
+		<Code>CLC</Code>
+	</Station>
+	<Station>
+		<Name>Castleford</Name>
+		<Code>CFD</Code>
+	</Station>
+	<Station>
+		<Name>Castleton (Manchester)</Name>
+		<Code>CAS</Code>
+	</Station>
+	<Station>
+		<Name>Castleton Moor</Name>
+		<Code>CSM</Code>
+	</Station>
+	<Station>
+		<Name>Caterham</Name>
+		<Code>CAT</Code>
+	</Station>
+	<Station>
+		<Name>Catford</Name>
+		<Code>CTF</Code>
+	</Station>
+	<Station>
+		<Name>Catford Bridge</Name>
+		<Code>CFB</Code>
+	</Station>
+	<Station>
+		<Name>Cathays</Name>
+		<Code>CYS</Code>
+	</Station>
+	<Station>
+		<Name>Cathcart</Name>
+		<Code>CCT</Code>
+	</Station>
+	<Station>
+		<Name>Cattal</Name>
+		<Code>CTL</Code>
+	</Station>
+	<Station>
+		<Name>Causeland</Name>
+		<Code>CAU</Code>
+	</Station>
+	<Station>
+		<Name>Cefn-y-Bedd</Name>
+		<Code>CYB</Code>
+	</Station>
+	<Station>
+		<Name>Chadwell Heath</Name>
+		<Code>CTH</Code>
+	</Station>
+	<Station>
+		<Name>Chafford Hundred Lakeside</Name>
+		<Code>CFH</Code>
+	</Station>
+	<Station>
+		<Name>Chalfont &amp; Latimer</Name>
+		<Code>CFO</Code>
+	</Station>
+	<Station>
+		<Name>Chalkwell</Name>
+		<Code>CHW</Code>
+	</Station>
+	<Station>
+		<Name>Chandlers Ford</Name>
+		<Code>CFR</Code>
+	</Station>
+	<Station>
+		<Name>Chapel-en-le-Frith</Name>
+		<Code>CEF</Code>
+	</Station>
+	<Station>
+		<Name>Chapelton (Devon)</Name>
+		<Code>CPN</Code>
+	</Station>
+	<Station>
+		<Name>Chapeltown (South Yorks)</Name>
+		<Code>CLN</Code>
+	</Station>
+	<Station>
+		<Name>Chappel &amp; Wakes Colne</Name>
+		<Code>CWC</Code>
+	</Station>
+	<Station>
+		<Name>Charing (Kent)</Name>
+		<Code>CHG</Code>
+	</Station>
+	<Station>
+		<Name>Charing Cross (Glasgow)</Name>
+		<Code>CHC</Code>
+	</Station>
+	<Station>
+		<Name>Charlbury</Name>
+		<Code>CBY</Code>
+	</Station>
+	<Station>
+		<Name>Charlton</Name>
+		<Code>CTN</Code>
+	</Station>
+	<Station>
+		<Name>Chartham</Name>
+		<Code>CRT</Code>
+	</Station>
+	<Station>
+		<Name>Chassen Road</Name>
+		<Code>CSR</Code>
+	</Station>
+	<Station>
+		<Name>Chatelherault</Name>
+		<Code>CTE</Code>
+	</Station>
+	<Station>
+		<Name>Chatham</Name>
+		<Code>CTM</Code>
+	</Station>
+	<Station>
+		<Name>Chathill</Name>
+		<Code>CHT</Code>
+	</Station>
+	<Station>
+		<Name>Cheadle Hulme</Name>
+		<Code>CHU</Code>
+	</Station>
+	<Station>
+		<Name>Cheam</Name>
+		<Code>CHE</Code>
+	</Station>
+	<Station>
+		<Name>Cheddington</Name>
+		<Code>CED</Code>
+	</Station>
+	<Station>
+		<Name>Chelford (Cheshire)</Name>
+		<Code>CEL</Code>
+	</Station>
+	<Station>
+		<Name>Chelmsford</Name>
+		<Code>CHM</Code>
+	</Station>
+	<Station>
+		<Name>Chelsfield</Name>
+		<Code>CLD</Code>
+	</Station>
+	<Station>
+		<Name>Cheltenham Spa</Name>
+		<Code>CNM</Code>
+	</Station>
+	<Station>
+		<Name>Chepstow</Name>
+		<Code>CPW</Code>
+	</Station>
+	<Station>
+		<Name>Cherry Tree</Name>
+		<Code>CYT</Code>
+	</Station>
+	<Station>
+		<Name>Chertsey</Name>
+		<Code>CHY</Code>
+	</Station>
+	<Station>
+		<Name>Cheshunt</Name>
+		<Code>CHN</Code>
+	</Station>
+	<Station>
+		<Name>Chessington North</Name>
+		<Code>CSN</Code>
+	</Station>
+	<Station>
+		<Name>Chessington South</Name>
+		<Code>CSS</Code>
+	</Station>
+	<Station>
+		<Name>Chester</Name>
+		<Code>CTR</Code>
+	</Station>
+	<Station>
+		<Name>Chester Road</Name>
+		<Code>CRD</Code>
+	</Station>
+	<Station>
+		<Name>Chesterfield</Name>
+		<Code>CHD</Code>
+	</Station>
+	<Station>
+		<Name>Chester-le-Street</Name>
+		<Code>CLS</Code>
+	</Station>
+	<Station>
+		<Name>Chestfield &amp; Swalecliffe</Name>
+		<Code>CSW</Code>
+	</Station>
+	<Station>
+		<Name>Chetnole</Name>
+		<Code>CNO</Code>
+	</Station>
+	<Station>
+		<Name>Chichester</Name>
+		<Code>CCH</Code>
+	</Station>
+	<Station>
+		<Name>Chilham</Name>
+		<Code>CIL</Code>
+	</Station>
+	<Station>
+		<Name>Chilworth</Name>
+		<Code>CHL</Code>
+	</Station>
+	<Station>
+		<Name>Chingford</Name>
+		<Code>CHI</Code>
+	</Station>
+	<Station>
+		<Name>Chinley</Name>
+		<Code>CLY</Code>
+	</Station>
+	<Station>
+		<Name>Chippenham</Name>
+		<Code>CPM</Code>
+	</Station>
+	<Station>
+		<Name>Chipstead</Name>
+		<Code>CHP</Code>
+	</Station>
+	<Station>
+		<Name>Chirk</Name>
+		<Code>CRK</Code>
+	</Station>
+	<Station>
+		<Name>Chislehurst</Name>
+		<Code>CIT</Code>
+	</Station>
+	<Station>
+		<Name>Chiswick</Name>
+		<Code>CHK</Code>
+	</Station>
+	<Station>
+		<Name>Cholsey</Name>
+		<Code>CHO</Code>
+	</Station>
+	<Station>
+		<Name>Chorley</Name>
+		<Code>CRL</Code>
+	</Station>
+	<Station>
+		<Name>Chorleywood</Name>
+		<Code>CLW</Code>
+	</Station>
+	<Station>
+		<Name>Christchurch</Name>
+		<Code>CHR</Code>
+	</Station>
+	<Station>
+		<Name>Christs Hospital</Name>
+		<Code>CHH</Code>
+	</Station>
+	<Station>
+		<Name>Church &amp; Oswaldtwistle</Name>
+		<Code>CTW</Code>
+	</Station>
+	<Station>
+		<Name>Church Fenton</Name>
+		<Code>CHF</Code>
+	</Station>
+	<Station>
+		<Name>Church Stretton</Name>
+		<Code>CTT</Code>
+	</Station>
+	<Station>
+		<Name>Cilmeri</Name>
+		<Code>CIM</Code>
+	</Station>
+	<Station>
+		<Name>City Thameslink</Name>
+		<Code>CTK</Code>
+	</Station>
+	<Station>
+		<Name>Clacton-on-Sea</Name>
+		<Code>CLT</Code>
+	</Station>
+	<Station>
+		<Name>Clandon</Name>
+		<Code>CLA</Code>
+	</Station>
+	<Station>
+		<Name>Clapham (North Yorkshire)</Name>
+		<Code>CPY</Code>
+	</Station>
+	<Station>
+		<Name>Clapham High Street</Name>
+		<Code>CLP</Code>
+	</Station>
+	<Station>
+		<Name>Clapham Junction</Name>
+		<Code>CLJ</Code>
+	</Station>
+	<Station>
+		<Name>Clapton</Name>
+		<Code>CPT</Code>
+	</Station>
+	<Station>
+		<Name>Clarbeston Road</Name>
+		<Code>CLR</Code>
+	</Station>
+	<Station>
+		<Name>Clarkston</Name>
+		<Code>CKS</Code>
+	</Station>
+	<Station>
+		<Name>Claverdon</Name>
+		<Code>CLV</Code>
+	</Station>
+	<Station>
+		<Name>Claygate</Name>
+		<Code>CLG</Code>
+	</Station>
+	<Station>
+		<Name>Cleethorpes</Name>
+		<Code>CLE</Code>
+	</Station>
+	<Station>
+		<Name>Cleland</Name>
+		<Code>CEA</Code>
+	</Station>
+	<Station>
+		<Name>Clifton (Manchester)</Name>
+		<Code>CLI</Code>
+	</Station>
+	<Station>
+		<Name>Clifton Down</Name>
+		<Code>CFN</Code>
+	</Station>
+	<Station>
+		<Name>Clitheroe</Name>
+		<Code>CLH</Code>
+	</Station>
+	<Station>
+		<Name>Clock House</Name>
+		<Code>CLK</Code>
+	</Station>
+	<Station>
+		<Name>Clunderwen</Name>
+		<Code>CUW</Code>
+	</Station>
+	<Station>
+		<Name>Clydebank</Name>
+		<Code>CYK</Code>
+	</Station>
+	<Station>
+		<Name>Coatbridge Central</Name>
+		<Code>CBC</Code>
+	</Station>
+	<Station>
+		<Name>Coatbridge Sunnyside</Name>
+		<Code>CBS</Code>
+	</Station>
+	<Station>
+		<Name>Coatdyke</Name>
+		<Code>COA</Code>
+	</Station>
+	<Station>
+		<Name>Cobham &amp; Stoke d'Abernon</Name>
+		<Code>CSD</Code>
+	</Station>
+	<Station>
+		<Name>Codsall</Name>
+		<Code>CSL</Code>
+	</Station>
+	<Station>
+		<Name>Cogan</Name>
+		<Code>CGN</Code>
+	</Station>
+	<Station>
+		<Name>Colchester</Name>
+		<Code>COL</Code>
+	</Station>
+	<Station>
+		<Name>Colchester Town</Name>
+		<Code>CET</Code>
+	</Station>
+	<Station>
+		<Name>Coleshill Parkway</Name>
+		<Code>CEH</Code>
+	</Station>
+	<Station>
+		<Name>Collingham</Name>
+		<Code>CLM</Code>
+	</Station>
+	<Station>
+		<Name>Collington</Name>
+		<Code>CLL</Code>
+	</Station>
+	<Station>
+		<Name>Colne</Name>
+		<Code>CNE</Code>
+	</Station>
+	<Station>
+		<Name>Colwall</Name>
+		<Code>CWL</Code>
+	</Station>
+	<Station>
+		<Name>Colwyn Bay</Name>
+		<Code>CWB</Code>
+	</Station>
+	<Station>
+		<Name>Combe (Oxon)</Name>
+		<Code>CME</Code>
+	</Station>
+	<Station>
+		<Name>Commondale</Name>
+		<Code>COM</Code>
+	</Station>
+	<Station>
+		<Name>Congleton</Name>
+		<Code>CNG</Code>
+	</Station>
+	<Station>
+		<Name>Conisbrough</Name>
+		<Code>CNS</Code>
+	</Station>
+	<Station>
+		<Name>Connel Ferry</Name>
+		<Code>CON</Code>
+	</Station>
+	<Station>
+		<Name>Conon Bridge</Name>
+		<Code>CBD</Code>
+	</Station>
+	<Station>
+		<Name>Cononley</Name>
+		<Code>CEY</Code>
+	</Station>
+	<Station>
+		<Name>Conway Park</Name>
+		<Code>CNP</Code>
+	</Station>
+	<Station>
+		<Name>Conwy</Name>
+		<Code>CNW</Code>
+	</Station>
+	<Station>
+		<Name>Cooden Beach</Name>
+		<Code>COB</Code>
+	</Station>
+	<Station>
+		<Name>Cookham</Name>
+		<Code>COO</Code>
+	</Station>
+	<Station>
+		<Name>Cooksbridge</Name>
+		<Code>CBR</Code>
+	</Station>
+	<Station>
+		<Name>Coombe Junction Halt</Name>
+		<Code>COE</Code>
+	</Station>
+	<Station>
+		<Name>Copplestone</Name>
+		<Code>COP</Code>
+	</Station>
+	<Station>
+		<Name>Corbridge</Name>
+		<Code>CRB</Code>
+	</Station>
+	<Station>
+		<Name>Corby</Name>
+		<Code>COR</Code>
+	</Station>
+	<Station>
+		<Name>Corkerhill</Name>
+		<Code>CKH</Code>
+	</Station>
+	<Station>
+		<Name>Corkickle</Name>
+		<Code>CKL</Code>
+	</Station>
+	<Station>
+		<Name>Corpach</Name>
+		<Code>CPA</Code>
+	</Station>
+	<Station>
+		<Name>Corrour</Name>
+		<Code>CRR</Code>
+	</Station>
+	<Station>
+		<Name>Coryton</Name>
+		<Code>COY</Code>
+	</Station>
+	<Station>
+		<Name>Coseley</Name>
+		<Code>CSY</Code>
+	</Station>
+	<Station>
+		<Name>Cosford</Name>
+		<Code>COS</Code>
+	</Station>
+	<Station>
+		<Name>Cosham</Name>
+		<Code>CSA</Code>
+	</Station>
+	<Station>
+		<Name>Cottingham</Name>
+		<Code>CGM</Code>
+	</Station>
+	<Station>
+		<Name>Cottingley</Name>
+		<Code>COT</Code>
+	</Station>
+	<Station>
+		<Name>Coulsdon South</Name>
+		<Code>CDS</Code>
+	</Station>
+	<Station>
+		<Name>Coulsdon Town</Name>
+		<Code>CDN</Code>
+	</Station>
+	<Station>
+		<Name>Coventry</Name>
+		<Code>COV</Code>
+	</Station>
+	<Station>
+		<Name>Coventry Arena</Name>
+		<Code>CAA</Code>
+	</Station>
+	<Station>
+		<Name>Cowden (Kent)</Name>
+		<Code>CWN</Code>
+	</Station>
+	<Station>
+		<Name>Cowdenbeath</Name>
+		<Code>COW</Code>
+	</Station>
+	<Station>
+		<Name>Cradley Heath</Name>
+		<Code>CRA</Code>
+	</Station>
+	<Station>
+		<Name>Craigendoran</Name>
+		<Code>CGD</Code>
+	</Station>
+	<Station>
+		<Name>Cramlington</Name>
+		<Code>CRM</Code>
+	</Station>
+	<Station>
+		<Name>Cranbrook (Devon)</Name>
+		<Code>CBK</Code>
+	</Station>
+	<Station>
+		<Name>Craven Arms</Name>
+		<Code>CRV</Code>
+	</Station>
+	<Station>
+		<Name>Crawley</Name>
+		<Code>CRW</Code>
+	</Station>
+	<Station>
+		<Name>Crayford</Name>
+		<Code>CRY</Code>
+	</Station>
+	<Station>
+		<Name>Crediton</Name>
+		<Code>CDI</Code>
+	</Station>
+	<Station>
+		<Name>Cressing (Essex)</Name>
+		<Code>CES</Code>
+	</Station>
+	<Station>
+		<Name>Cressington</Name>
+		<Code>CSG</Code>
+	</Station>
+	<Station>
+		<Name>Creswell</Name>
+		<Code>CWD</Code>
+	</Station>
+	<Station>
+		<Name>Crewe</Name>
+		<Code>CRE</Code>
+	</Station>
+	<Station>
+		<Name>Crewkerne</Name>
+		<Code>CKN</Code>
+	</Station>
+	<Station>
+		<Name>Crews Hill</Name>
+		<Code>CWH</Code>
+	</Station>
+	<Station>
+		<Name>Crianlarich</Name>
+		<Code>CNR</Code>
+	</Station>
+	<Station>
+		<Name>Criccieth</Name>
+		<Code>CCC</Code>
+	</Station>
+	<Station>
+		<Name>Cricklewood</Name>
+		<Code>CRI</Code>
+	</Station>
+	<Station>
+		<Name>Croftfoot</Name>
+		<Code>CFF</Code>
+	</Station>
+	<Station>
+		<Name>Crofton Park</Name>
+		<Code>CFT</Code>
+	</Station>
+	<Station>
+		<Name>Cromer</Name>
+		<Code>CMR</Code>
+	</Station>
+	<Station>
+		<Name>Cromford</Name>
+		<Code>CMF</Code>
+	</Station>
+	<Station>
+		<Name>Crookston</Name>
+		<Code>CKT</Code>
+	</Station>
+	<Station>
+		<Name>Cross Gates</Name>
+		<Code>CRG</Code>
+	</Station>
+	<Station>
+		<Name>Crossflatts</Name>
+		<Code>CFL</Code>
+	</Station>
+	<Station>
+		<Name>Crosshill</Name>
+		<Code>COI</Code>
+	</Station>
+	<Station>
+		<Name>Crosskeys</Name>
+		<Code>CKY</Code>
+	</Station>
+	<Station>
+		<Name>Crossmyloof</Name>
+		<Code>CMY</Code>
+	</Station>
+	<Station>
+		<Name>Croston</Name>
+		<Code>CSO</Code>
+	</Station>
+	<Station>
+		<Name>Crouch Hill</Name>
+		<Code>CRH</Code>
+	</Station>
+	<Station>
+		<Name>Crowborough</Name>
+		<Code>COH</Code>
+	</Station>
+	<Station>
+		<Name>Crowhurst</Name>
+		<Code>CWU</Code>
+	</Station>
+	<Station>
+		<Name>Crowle</Name>
+		<Code>CWE</Code>
+	</Station>
+	<Station>
+		<Name>Crowthorne</Name>
+		<Code>CRN</Code>
+	</Station>
+	<Station>
+		<Name>Croy</Name>
+		<Code>CRO</Code>
+	</Station>
+	<Station>
+		<Name>Crystal Palace</Name>
+		<Code>CYP</Code>
+	</Station>
+	<Station>
+		<Name>Cuddington</Name>
+		<Code>CUD</Code>
+	</Station>
+	<Station>
+		<Name>Cuffley</Name>
+		<Code>CUF</Code>
+	</Station>
+	<Station>
+		<Name>Culham</Name>
+		<Code>CUM</Code>
+	</Station>
+	<Station>
+		<Name>Culrain</Name>
+		<Code>CUA</Code>
+	</Station>
+	<Station>
+		<Name>Cumbernauld</Name>
+		<Code>CUB</Code>
+	</Station>
+	<Station>
+		<Name>Cupar</Name>
+		<Code>CUP</Code>
+	</Station>
+	<Station>
+		<Name>Curriehill</Name>
+		<Code>CUH</Code>
+	</Station>
+	<Station>
+		<Name>Cuxton</Name>
+		<Code>CUX</Code>
+	</Station>
+	<Station>
+		<Name>Cwmbach</Name>
+		<Code>CMH</Code>
+	</Station>
+	<Station>
+		<Name>Cwmbran</Name>
+		<Code>CWM</Code>
+	</Station>
+	<Station>
+		<Name>Cynghordy</Name>
+		<Code>CYN</Code>
+	</Station>
+	<Station>
+		<Name>Dagenham Dock</Name>
+		<Code>DDK</Code>
+	</Station>
+	<Station>
+		<Name>Daisy Hill</Name>
+		<Code>DSY</Code>
+	</Station>
+	<Station>
+		<Name>Dalgety Bay</Name>
+		<Code>DAG</Code>
+	</Station>
+	<Station>
+		<Name>Dalmally</Name>
+		<Code>DAL</Code>
+	</Station>
+	<Station>
+		<Name>Dalmarnock</Name>
+		<Code>DAK</Code>
+	</Station>
+	<Station>
+		<Name>Dalmeny</Name>
+		<Code>DAM</Code>
+	</Station>
+	<Station>
+		<Name>Dalmuir</Name>
+		<Code>DMR</Code>
+	</Station>
+	<Station>
+		<Name>Dalreoch</Name>
+		<Code>DLR</Code>
+	</Station>
+	<Station>
+		<Name>Dalry</Name>
+		<Code>DLY</Code>
+	</Station>
+	<Station>
+		<Name>Dalston (Cumbria)</Name>
+		<Code>DLS</Code>
+	</Station>
+	<Station>
+		<Name>Dalston Junction</Name>
+		<Code>DLJ</Code>
+	</Station>
+	<Station>
+		<Name>Dalston Kingsland</Name>
+		<Code>DLK</Code>
+	</Station>
+	<Station>
+		<Name>Dalton (Cumbria)</Name>
+		<Code>DLT</Code>
+	</Station>
+	<Station>
+		<Name>Dalwhinnie</Name>
+		<Code>DLW</Code>
+	</Station>
+	<Station>
+		<Name>Danby</Name>
+		<Code>DNY</Code>
+	</Station>
+	<Station>
+		<Name>Danescourt</Name>
+		<Code>DCT</Code>
+	</Station>
+	<Station>
+		<Name>Danzey</Name>
+		<Code>DZY</Code>
+	</Station>
+	<Station>
+		<Name>Darlington</Name>
+		<Code>DAR</Code>
+	</Station>
+	<Station>
+		<Name>Darnall</Name>
+		<Code>DAN</Code>
+	</Station>
+	<Station>
+		<Name>Darsham</Name>
+		<Code>DSM</Code>
+	</Station>
+	<Station>
+		<Name>Dartford</Name>
+		<Code>DFD</Code>
+	</Station>
+	<Station>
+		<Name>Darton</Name>
+		<Code>DRT</Code>
+	</Station>
+	<Station>
+		<Name>Darwen</Name>
+		<Code>DWN</Code>
+	</Station>
+	<Station>
+		<Name>Datchet</Name>
+		<Code>DAT</Code>
+	</Station>
+	<Station>
+		<Name>Davenport</Name>
+		<Code>DVN</Code>
+	</Station>
+	<Station>
+		<Name>Dawlish</Name>
+		<Code>DWL</Code>
+	</Station>
+	<Station>
+		<Name>Dawlish Warren</Name>
+		<Code>DWW</Code>
+	</Station>
+	<Station>
+		<Name>Deal</Name>
+		<Code>DEA</Code>
+	</Station>
+	<Station>
+		<Name>Dean (Wilts)</Name>
+		<Code>DEN</Code>
+	</Station>
+	<Station>
+		<Name>Deansgate</Name>
+		<Code>DGT</Code>
+	</Station>
+	<Station>
+		<Name>Deganwy</Name>
+		<Code>DGY</Code>
+	</Station>
+	<Station>
+		<Name>Deighton</Name>
+		<Code>DHN</Code>
+	</Station>
+	<Station>
+		<Name>Delamere</Name>
+		<Code>DLM</Code>
+	</Station>
+	<Station>
+		<Name>Denby Dale</Name>
+		<Code>DBD</Code>
+	</Station>
+	<Station>
+		<Name>Denham</Name>
+		<Code>DNM</Code>
+	</Station>
+	<Station>
+		<Name>Denham Golf Club</Name>
+		<Code>DGC</Code>
+	</Station>
+	<Station>
+		<Name>Denmark Hill</Name>
+		<Code>DMK</Code>
+	</Station>
+	<Station>
+		<Name>Dent</Name>
+		<Code>DNT</Code>
+	</Station>
+	<Station>
+		<Name>Denton</Name>
+		<Code>DTN</Code>
+	</Station>
+	<Station>
+		<Name>Deptford</Name>
+		<Code>DEP</Code>
+	</Station>
+	<Station>
+		<Name>Derby</Name>
+		<Code>DBY</Code>
+	</Station>
+	<Station>
+		<Name>Derby Road (Ipswich)</Name>
+		<Code>DBR</Code>
+	</Station>
+	<Station>
+		<Name>Devonport (Devon)</Name>
+		<Code>DPT</Code>
+	</Station>
+	<Station>
+		<Name>Devonport Dockyard</Name>
+		<Code>DOC</Code>
+	</Station>
+	<Station>
+		<Name>Dewsbury</Name>
+		<Code>DEW</Code>
+	</Station>
+	<Station>
+		<Name>Didcot Parkway</Name>
+		<Code>DID</Code>
+	</Station>
+	<Station>
+		<Name>Digby &amp; Sowton</Name>
+		<Code>DIG</Code>
+	</Station>
+	<Station>
+		<Name>Dilton Marsh</Name>
+		<Code>DMH</Code>
+	</Station>
+	<Station>
+		<Name>Dinas (Rhondda)</Name>
+		<Code>DMG</Code>
+	</Station>
+	<Station>
+		<Name>Dinas Powys</Name>
+		<Code>DNS</Code>
+	</Station>
+	<Station>
+		<Name>Dingle Road</Name>
+		<Code>DGL</Code>
+	</Station>
+	<Station>
+		<Name>Dingwall</Name>
+		<Code>DIN</Code>
+	</Station>
+	<Station>
+		<Name>Dinsdale</Name>
+		<Code>DND</Code>
+	</Station>
+	<Station>
+		<Name>Dinting</Name>
+		<Code>DTG</Code>
+	</Station>
+	<Station>
+		<Name>Disley</Name>
+		<Code>DSL</Code>
+	</Station>
+	<Station>
+		<Name>Diss</Name>
+		<Code>DIS</Code>
+	</Station>
+	<Station>
+		<Name>Dodworth</Name>
+		<Code>DOD</Code>
+	</Station>
+	<Station>
+		<Name>Dolau</Name>
+		<Code>DOL</Code>
+	</Station>
+	<Station>
+		<Name>Doleham</Name>
+		<Code>DLH</Code>
+	</Station>
+	<Station>
+		<Name>Dolgarrog</Name>
+		<Code>DLG</Code>
+	</Station>
+	<Station>
+		<Name>Dolwyddelan</Name>
+		<Code>DWD</Code>
+	</Station>
+	<Station>
+		<Name>Doncaster</Name>
+		<Code>DON</Code>
+	</Station>
+	<Station>
+		<Name>Dorchester South</Name>
+		<Code>DCH</Code>
+	</Station>
+	<Station>
+		<Name>Dorchester West</Name>
+		<Code>DCW</Code>
+	</Station>
+	<Station>
+		<Name>Dore &amp; Totley</Name>
+		<Code>DOR</Code>
+	</Station>
+	<Station>
+		<Name>Dorking (Main)</Name>
+		<Code>DKG</Code>
+	</Station>
+	<Station>
+		<Name>Dorking Deepdene</Name>
+		<Code>DPD</Code>
+	</Station>
+	<Station>
+		<Name>Dorking West</Name>
+		<Code>DKT</Code>
+	</Station>
+	<Station>
+		<Name>Dormans</Name>
+		<Code>DMS</Code>
+	</Station>
+	<Station>
+		<Name>Dorridge</Name>
+		<Code>DDG</Code>
+	</Station>
+	<Station>
+		<Name>Dove Holes</Name>
+		<Code>DVH</Code>
+	</Station>
+	<Station>
+		<Name>Dover Priory</Name>
+		<Code>DVP</Code>
+	</Station>
+	<Station>
+		<Name>Dovercourt</Name>
+		<Code>DVC</Code>
+	</Station>
+	<Station>
+		<Name>Dovey Junction</Name>
+		<Code>DVY</Code>
+	</Station>
+	<Station>
+		<Name>Downham Market</Name>
+		<Code>DOW</Code>
+	</Station>
+	<Station>
+		<Name>Drayton Green</Name>
+		<Code>DRG</Code>
+	</Station>
+	<Station>
+		<Name>Drayton Park</Name>
+		<Code>DYP</Code>
+	</Station>
+	<Station>
+		<Name>Drem</Name>
+		<Code>DRM</Code>
+	</Station>
+	<Station>
+		<Name>Driffield</Name>
+		<Code>DRF</Code>
+	</Station>
+	<Station>
+		<Name>Drigg</Name>
+		<Code>DRI</Code>
+	</Station>
+	<Station>
+		<Name>Droitwich Spa</Name>
+		<Code>DTW</Code>
+	</Station>
+	<Station>
+		<Name>Dronfield</Name>
+		<Code>DRO</Code>
+	</Station>
+	<Station>
+		<Name>Drumchapel</Name>
+		<Code>DMC</Code>
+	</Station>
+	<Station>
+		<Name>Drumfrochar</Name>
+		<Code>DFR</Code>
+	</Station>
+	<Station>
+		<Name>Drumgelloch</Name>
+		<Code>DRU</Code>
+	</Station>
+	<Station>
+		<Name>Drumry</Name>
+		<Code>DMY</Code>
+	</Station>
+	<Station>
+		<Name>Dublin Ferryport</Name>
+		<Code>DFP</Code>
+	</Station>
+	<Station>
+		<Name>Dublin Port - Stena</Name>
+		<Code>DPS</Code>
+	</Station>
+	<Station>
+		<Name>Duddeston</Name>
+		<Code>DUD</Code>
+	</Station>
+	<Station>
+		<Name>Dudley Port</Name>
+		<Code>DDP</Code>
+	</Station>
+	<Station>
+		<Name>Duffield</Name>
+		<Code>DFI</Code>
+	</Station>
+	<Station>
+		<Name>Duirinish</Name>
+		<Code>DRN</Code>
+	</Station>
+	<Station>
+		<Name>Duke Street</Name>
+		<Code>DST</Code>
+	</Station>
+	<Station>
+		<Name>Dullingham</Name>
+		<Code>DUL</Code>
+	</Station>
+	<Station>
+		<Name>Dumbarton Central</Name>
+		<Code>DBC</Code>
+	</Station>
+	<Station>
+		<Name>Dumbarton East</Name>
+		<Code>DBE</Code>
+	</Station>
+	<Station>
+		<Name>Dumbreck</Name>
+		<Code>DUM</Code>
+	</Station>
+	<Station>
+		<Name>Dumfries</Name>
+		<Code>DMF</Code>
+	</Station>
+	<Station>
+		<Name>Dumpton Park</Name>
+		<Code>DMP</Code>
+	</Station>
+	<Station>
+		<Name>Dunbar</Name>
+		<Code>DUN</Code>
+	</Station>
+	<Station>
+		<Name>Dunblane</Name>
+		<Code>DBL</Code>
+	</Station>
+	<Station>
+		<Name>Duncraig</Name>
+		<Code>DCG</Code>
+	</Station>
+	<Station>
+		<Name>Dundee</Name>
+		<Code>DEE</Code>
+	</Station>
+	<Station>
+		<Name>Dunfermline Queen Margaret</Name>
+		<Code>DFL</Code>
+	</Station>
+	<Station>
+		<Name>Dunfermline Town</Name>
+		<Code>DFE</Code>
+	</Station>
+	<Station>
+		<Name>Dunkeld &amp; Birnam</Name>
+		<Code>DKD</Code>
+	</Station>
+	<Station>
+		<Name>Dunlop</Name>
+		<Code>DNL</Code>
+	</Station>
+	<Station>
+		<Name>Dunrobin Castle</Name>
+		<Code>DNO</Code>
+	</Station>
+	<Station>
+		<Name>Dunston</Name>
+		<Code>DOT</Code>
+	</Station>
+	<Station>
+		<Name>Dunton Green</Name>
+		<Code>DNG</Code>
+	</Station>
+	<Station>
+		<Name>Durham</Name>
+		<Code>DHM</Code>
+	</Station>
+	<Station>
+		<Name>Durrington-on-Sea</Name>
+		<Code>DUR</Code>
+	</Station>
+	<Station>
+		<Name>Dyce</Name>
+		<Code>DYC</Code>
+	</Station>
+	<Station>
+		<Name>Dyffryn Ardudwy</Name>
+		<Code>DYF</Code>
+	</Station>
+	<Station>
+		<Name>Eaglescliffe</Name>
+		<Code>EAG</Code>
+	</Station>
+	<Station>
+		<Name>Ealing Broadway</Name>
+		<Code>EAL</Code>
+	</Station>
+	<Station>
+		<Name>Earlestown</Name>
+		<Code>ERL</Code>
+	</Station>
+	<Station>
+		<Name>Earley</Name>
+		<Code>EAR</Code>
+	</Station>
+	<Station>
+		<Name>Earlsfield</Name>
+		<Code>EAD</Code>
+	</Station>
+	<Station>
+		<Name>Earlswood (Surrey)</Name>
+		<Code>ELD</Code>
+	</Station>
+	<Station>
+		<Name>Earlswood (West Midlands)</Name>
+		<Code>EWD</Code>
+	</Station>
+	<Station>
+		<Name>East Croydon</Name>
+		<Code>ECR</Code>
+	</Station>
+	<Station>
+		<Name>East Didsbury</Name>
+		<Code>EDY</Code>
+	</Station>
+	<Station>
+		<Name>East Dulwich</Name>
+		<Code>EDW</Code>
+	</Station>
+	<Station>
+		<Name>East Farleigh</Name>
+		<Code>EFL</Code>
+	</Station>
+	<Station>
+		<Name>East Garforth</Name>
+		<Code>EGF</Code>
+	</Station>
+	<Station>
+		<Name>East Grinstead</Name>
+		<Code>EGR</Code>
+	</Station>
+	<Station>
+		<Name>East Kilbride</Name>
+		<Code>EKL</Code>
+	</Station>
+	<Station>
+		<Name>East Malling</Name>
+		<Code>EML</Code>
+	</Station>
+	<Station>
+		<Name>East Midlands Parkway</Name>
+		<Code>EMD</Code>
+	</Station>
+	<Station>
+		<Name>East Tilbury</Name>
+		<Code>ETL</Code>
+	</Station>
+	<Station>
+		<Name>East Worthing</Name>
+		<Code>EWR</Code>
+	</Station>
+	<Station>
+		<Name>Eastbourne</Name>
+		<Code>EBN</Code>
+	</Station>
+	<Station>
+		<Name>Eastbrook</Name>
+		<Code>EBK</Code>
+	</Station>
+	<Station>
+		<Name>Easterhouse</Name>
+		<Code>EST</Code>
+	</Station>
+	<Station>
+		<Name>Eastham Rake</Name>
+		<Code>ERA</Code>
+	</Station>
+	<Station>
+		<Name>Eastleigh</Name>
+		<Code>ESL</Code>
+	</Station>
+	<Station>
+		<Name>Eastrington</Name>
+		<Code>EGN</Code>
+	</Station>
+	<Station>
+		<Name>Ebbsfleet International</Name>
+		<Code>EBD</Code>
+	</Station>
+	<Station>
+		<Name>Ebbw Vale Parkway</Name>
+		<Code>EBV</Code>
+	</Station>
+	<Station>
+		<Name>Ebbw Vale Town</Name>
+		<Code>EBB</Code>
+	</Station>
+	<Station>
+		<Name>Eccles (Manchester)</Name>
+		<Code>ECC</Code>
+	</Station>
+	<Station>
+		<Name>Eccles Road</Name>
+		<Code>ECS</Code>
+	</Station>
+	<Station>
+		<Name>Eccleston Park</Name>
+		<Code>ECL</Code>
+	</Station>
+	<Station>
+		<Name>Edale</Name>
+		<Code>EDL</Code>
+	</Station>
+	<Station>
+		<Name>Eden Park</Name>
+		<Code>EDN</Code>
+	</Station>
+	<Station>
+		<Name>Edenbridge</Name>
+		<Code>EBR</Code>
+	</Station>
+	<Station>
+		<Name>Edenbridge Town</Name>
+		<Code>EBT</Code>
+	</Station>
+	<Station>
+		<Name>Edge Hill</Name>
+		<Code>EDG</Code>
+	</Station>
+	<Station>
+		<Name>Edinburgh</Name>
+		<Code>EDB</Code>
+	</Station>
+	<Station>
+		<Name>Edinburgh Gateway</Name>
+		<Code>EGY</Code>
+	</Station>
+	<Station>
+		<Name>Edinburgh Park</Name>
+		<Code>EDP</Code>
+	</Station>
+	<Station>
+		<Name>Edmonton Green</Name>
+		<Code>EDR</Code>
+	</Station>
+	<Station>
+		<Name>Effingham Junction</Name>
+		<Code>EFF</Code>
+	</Station>
+	<Station>
+		<Name>Eggesford</Name>
+		<Code>EGG</Code>
+	</Station>
+	<Station>
+		<Name>Egham</Name>
+		<Code>EGH</Code>
+	</Station>
+	<Station>
+		<Name>Egton</Name>
+		<Code>EGT</Code>
+	</Station>
+	<Station>
+		<Name>Elephant &amp; Castle</Name>
+		<Code>EPH</Code>
+	</Station>
+	<Station>
+		<Name>Elephant &amp; Castle (Underground)</Name>
+		<Code>ZEL</Code>
+	</Station>
+	<Station>
+		<Name>Elgin</Name>
+		<Code>ELG</Code>
+	</Station>
+	<Station>
+		<Name>Ellesmere Port</Name>
+		<Code>ELP</Code>
+	</Station>
+	<Station>
+		<Name>Elmers End</Name>
+		<Code>ELE</Code>
+	</Station>
+	<Station>
+		<Name>Elmstead Woods</Name>
+		<Code>ESD</Code>
+	</Station>
+	<Station>
+		<Name>Elmswell</Name>
+		<Code>ESW</Code>
+	</Station>
+	<Station>
+		<Name>Elsecar</Name>
+		<Code>ELR</Code>
+	</Station>
+	<Station>
+		<Name>Elsenham (Essex)</Name>
+		<Code>ESM</Code>
+	</Station>
+	<Station>
+		<Name>Elstree &amp; Borehamwood</Name>
+		<Code>ELS</Code>
+	</Station>
+	<Station>
+		<Name>Eltham</Name>
+		<Code>ELW</Code>
+	</Station>
+	<Station>
+		<Name>Elton &amp; Orston</Name>
+		<Code>ELO</Code>
+	</Station>
+	<Station>
+		<Name>Ely</Name>
+		<Code>ELY</Code>
+	</Station>
+	<Station>
+		<Name>Emerson Park</Name>
+		<Code>EMP</Code>
+	</Station>
+	<Station>
+		<Name>Emsworth</Name>
+		<Code>EMS</Code>
+	</Station>
+	<Station>
+		<Name>Energlyn &amp; Churchill Park</Name>
+		<Code>ECP</Code>
+	</Station>
+	<Station>
+		<Name>Enfield Chase</Name>
+		<Code>ENC</Code>
+	</Station>
+	<Station>
+		<Name>Enfield Lock</Name>
+		<Code>ENL</Code>
+	</Station>
+	<Station>
+		<Name>Enfield Town</Name>
+		<Code>ENF</Code>
+	</Station>
+	<Station>
+		<Name>Entwistle</Name>
+		<Code>ENT</Code>
+	</Station>
+	<Station>
+		<Name>Epsom (Surrey)</Name>
+		<Code>EPS</Code>
+	</Station>
+	<Station>
+		<Name>Epsom Downs</Name>
+		<Code>EPD</Code>
+	</Station>
+	<Station>
+		<Name>Erdington</Name>
+		<Code>ERD</Code>
+	</Station>
+	<Station>
+		<Name>Eridge</Name>
+		<Code>ERI</Code>
+	</Station>
+	<Station>
+		<Name>Erith</Name>
+		<Code>ERH</Code>
+	</Station>
+	<Station>
+		<Name>Esher</Name>
+		<Code>ESH</Code>
+	</Station>
+	<Station>
+		<Name>Eskbank</Name>
+		<Code>EKB</Code>
+	</Station>
+	<Station>
+		<Name>Essex Road</Name>
+		<Code>EXR</Code>
+	</Station>
+	<Station>
+		<Name>Etchingham</Name>
+		<Code>ETC</Code>
+	</Station>
+	<Station>
+		<Name>Euxton Balshaw Lane</Name>
+		<Code>EBA</Code>
+	</Station>
+	<Station>
+		<Name>Evesham</Name>
+		<Code>EVE</Code>
+	</Station>
+	<Station>
+		<Name>Ewell East</Name>
+		<Code>EWE</Code>
+	</Station>
+	<Station>
+		<Name>Ewell West</Name>
+		<Code>EWW</Code>
+	</Station>
+	<Station>
+		<Name>Exeter Central</Name>
+		<Code>EXC</Code>
+	</Station>
+	<Station>
+		<Name>Exeter St David's</Name>
+		<Code>EXD</Code>
+	</Station>
+	<Station>
+		<Name>Exeter St Thomas</Name>
+		<Code>EXT</Code>
+	</Station>
+	<Station>
+		<Name>Exhibition Centre (Glasgow)</Name>
+		<Code>EXG</Code>
+	</Station>
+	<Station>
+		<Name>Exmouth</Name>
+		<Code>EXM</Code>
+	</Station>
+	<Station>
+		<Name>Exton</Name>
+		<Code>EXN</Code>
+	</Station>
+	<Station>
+		<Name>Eynsford</Name>
+		<Code>EYN</Code>
+	</Station>
+	<Station>
+		<Name>Fairbourne</Name>
+		<Code>FRB</Code>
+	</Station>
+	<Station>
+		<Name>Fairfield</Name>
+		<Code>FRF</Code>
+	</Station>
+	<Station>
+		<Name>Fairlie</Name>
+		<Code>FRL</Code>
+	</Station>
+	<Station>
+		<Name>Fairwater</Name>
+		<Code>FRW</Code>
+	</Station>
+	<Station>
+		<Name>Falconwood</Name>
+		<Code>FCN</Code>
+	</Station>
+	<Station>
+		<Name>Falkirk Grahamston</Name>
+		<Code>FKG</Code>
+	</Station>
+	<Station>
+		<Name>Falkirk High</Name>
+		<Code>FKK</Code>
+	</Station>
+	<Station>
+		<Name>Falls of Cruachan</Name>
+		<Code>FOC</Code>
+	</Station>
+	<Station>
+		<Name>Falmer</Name>
+		<Code>FMR</Code>
+	</Station>
+	<Station>
+		<Name>Falmouth Docks</Name>
+		<Code>FAL</Code>
+	</Station>
+	<Station>
+		<Name>Falmouth Town</Name>
+		<Code>FMT</Code>
+	</Station>
+	<Station>
+		<Name>Fareham</Name>
+		<Code>FRM</Code>
+	</Station>
+	<Station>
+		<Name>Farnborough (Main)</Name>
+		<Code>FNB</Code>
+	</Station>
+	<Station>
+		<Name>Farnborough North</Name>
+		<Code>FNN</Code>
+	</Station>
+	<Station>
+		<Name>Farncombe</Name>
+		<Code>FNC</Code>
+	</Station>
+	<Station>
+		<Name>Farnham</Name>
+		<Code>FNH</Code>
+	</Station>
+	<Station>
+		<Name>Farningham Road</Name>
+		<Code>FNR</Code>
+	</Station>
+	<Station>
+		<Name>Farnworth</Name>
+		<Code>FNW</Code>
+	</Station>
+	<Station>
+		<Name>Farringdon</Name>
+		<Code>ZFD</Code>
+	</Station>
+	<Station>
+		<Name>Fauldhouse</Name>
+		<Code>FLD</Code>
+	</Station>
+	<Station>
+		<Name>Faversham</Name>
+		<Code>FAV</Code>
+	</Station>
+	<Station>
+		<Name>Faygate</Name>
+		<Code>FGT</Code>
+	</Station>
+	<Station>
+		<Name>Fazakerley</Name>
+		<Code>FAZ</Code>
+	</Station>
+	<Station>
+		<Name>Fearn</Name>
+		<Code>FRN</Code>
+	</Station>
+	<Station>
+		<Name>Featherstone</Name>
+		<Code>FEA</Code>
+	</Station>
+	<Station>
+		<Name>Felixstowe</Name>
+		<Code>FLX</Code>
+	</Station>
+	<Station>
+		<Name>Feltham</Name>
+		<Code>FEL</Code>
+	</Station>
+	<Station>
+		<Name>Feniton</Name>
+		<Code>FNT</Code>
+	</Station>
+	<Station>
+		<Name>Fenny Stratford</Name>
+		<Code>FEN</Code>
+	</Station>
+	<Station>
+		<Name>Fernhill</Name>
+		<Code>FER</Code>
+	</Station>
+	<Station>
+		<Name>Ferriby</Name>
+		<Code>FRY</Code>
+	</Station>
+	<Station>
+		<Name>Ferryside</Name>
+		<Code>FYS</Code>
+	</Station>
+	<Station>
+		<Name>Ffairfach</Name>
+		<Code>FFA</Code>
+	</Station>
+	<Station>
+		<Name>Filey</Name>
+		<Code>FIL</Code>
+	</Station>
+	<Station>
+		<Name>Filton Abbey Wood</Name>
+		<Code>FIT</Code>
+	</Station>
+	<Station>
+		<Name>Finchley Road &amp; Frognal</Name>
+		<Code>FNY</Code>
+	</Station>
+	<Station>
+		<Name>Finsbury Park</Name>
+		<Code>FPK</Code>
+	</Station>
+	<Station>
+		<Name>Finstock</Name>
+		<Code>FIN</Code>
+	</Station>
+	<Station>
+		<Name>Fishbourne (Sussex)</Name>
+		<Code>FSB</Code>
+	</Station>
+	<Station>
+		<Name>Fishersgate</Name>
+		<Code>FSG</Code>
+	</Station>
+	<Station>
+		<Name>Fishguard &amp; Goodwick</Name>
+		<Code>FGW</Code>
+	</Station>
+	<Station>
+		<Name>Fishguard Harbour</Name>
+		<Code>FGH</Code>
+	</Station>
+	<Station>
+		<Name>Fiskerton</Name>
+		<Code>FSK</Code>
+	</Station>
+	<Station>
+		<Name>Fitzwilliam</Name>
+		<Code>FZW</Code>
+	</Station>
+	<Station>
+		<Name>Five Ways</Name>
+		<Code>FWY</Code>
+	</Station>
+	<Station>
+		<Name>Fleet</Name>
+		<Code>FLE</Code>
+	</Station>
+	<Station>
+		<Name>Flimby</Name>
+		<Code>FLM</Code>
+	</Station>
+	<Station>
+		<Name>Flint</Name>
+		<Code>FLN</Code>
+	</Station>
+	<Station>
+		<Name>Flitwick</Name>
+		<Code>FLT</Code>
+	</Station>
+	<Station>
+		<Name>Flixton</Name>
+		<Code>FLI</Code>
+	</Station>
+	<Station>
+		<Name>Flowery Field</Name>
+		<Code>FLF</Code>
+	</Station>
+	<Station>
+		<Name>Folkestone Central</Name>
+		<Code>FKC</Code>
+	</Station>
+	<Station>
+		<Name>Folkestone West</Name>
+		<Code>FKW</Code>
+	</Station>
+	<Station>
+		<Name>Ford</Name>
+		<Code>FOD</Code>
+	</Station>
+	<Station>
+		<Name>Forest Gate</Name>
+		<Code>FOG</Code>
+	</Station>
+	<Station>
+		<Name>Forest Hill</Name>
+		<Code>FOH</Code>
+	</Station>
+	<Station>
+		<Name>Formby</Name>
+		<Code>FBY</Code>
+	</Station>
+	<Station>
+		<Name>Forres</Name>
+		<Code>FOR</Code>
+	</Station>
+	<Station>
+		<Name>Forsinard</Name>
+		<Code>FRS</Code>
+	</Station>
+	<Station>
+		<Name>Fort Matilda</Name>
+		<Code>FTM</Code>
+	</Station>
+	<Station>
+		<Name>Fort William</Name>
+		<Code>FTW</Code>
+	</Station>
+	<Station>
+		<Name>Four Oaks</Name>
+		<Code>FOK</Code>
+	</Station>
+	<Station>
+		<Name>Foxfield</Name>
+		<Code>FOX</Code>
+	</Station>
+	<Station>
+		<Name>Foxton</Name>
+		<Code>FXN</Code>
+	</Station>
+	<Station>
+		<Name>Frant</Name>
+		<Code>FRT</Code>
+	</Station>
+	<Station>
+		<Name>Fratton</Name>
+		<Code>FTN</Code>
+	</Station>
+	<Station>
+		<Name>Freshfield</Name>
+		<Code>FRE</Code>
+	</Station>
+	<Station>
+		<Name>Freshford</Name>
+		<Code>FFD</Code>
+	</Station>
+	<Station>
+		<Name>Frimley</Name>
+		<Code>FML</Code>
+	</Station>
+	<Station>
+		<Name>Frinton-on-Sea</Name>
+		<Code>FRI</Code>
+	</Station>
+	<Station>
+		<Name>Frizinghall</Name>
+		<Code>FZH</Code>
+	</Station>
+	<Station>
+		<Name>Frodsham</Name>
+		<Code>FRD</Code>
+	</Station>
+	<Station>
+		<Name>Frome</Name>
+		<Code>FRO</Code>
+	</Station>
+	<Station>
+		<Name>Fulwell</Name>
+		<Code>FLW</Code>
+	</Station>
+	<Station>
+		<Name>Furness Vale</Name>
+		<Code>FNV</Code>
+	</Station>
+	<Station>
+		<Name>Furze Platt</Name>
+		<Code>FZP</Code>
+	</Station>
+	<Station>
+		<Name>Gainsborough Central</Name>
+		<Code>GNB</Code>
+	</Station>
+	<Station>
+		<Name>Gainsborough Lea Road</Name>
+		<Code>GBL</Code>
+	</Station>
+	<Station>
+		<Name>Galashiels</Name>
+		<Code>GAL</Code>
+	</Station>
+	<Station>
+		<Name>Garelochhead</Name>
+		<Code>GCH</Code>
+	</Station>
+	<Station>
+		<Name>Garforth</Name>
+		<Code>GRF</Code>
+	</Station>
+	<Station>
+		<Name>Gargrave</Name>
+		<Code>GGV</Code>
+	</Station>
+	<Station>
+		<Name>Garrowhill</Name>
+		<Code>GAR</Code>
+	</Station>
+	<Station>
+		<Name>Garscadden</Name>
+		<Code>GRS</Code>
+	</Station>
+	<Station>
+		<Name>Garsdale</Name>
+		<Code>GSD</Code>
+	</Station>
+	<Station>
+		<Name>Garston (Hertfordshire)</Name>
+		<Code>GSN</Code>
+	</Station>
+	<Station>
+		<Name>Garswood</Name>
+		<Code>GSW</Code>
+	</Station>
+	<Station>
+		<Name>Gartcosh</Name>
+		<Code>GRH</Code>
+	</Station>
+	<Station>
+		<Name>Garth (Mid Glamorgan)</Name>
+		<Code>GMG</Code>
+	</Station>
+	<Station>
+		<Name>Garth (Powys)</Name>
+		<Code>GTH</Code>
+	</Station>
+	<Station>
+		<Name>Garve</Name>
+		<Code>GVE</Code>
+	</Station>
+	<Station>
+		<Name>Gathurst</Name>
+		<Code>GST</Code>
+	</Station>
+	<Station>
+		<Name>Gatley</Name>
+		<Code>GTY</Code>
+	</Station>
+	<Station>
+		<Name>Gatwick Airport</Name>
+		<Code>GTW</Code>
+	</Station>
+	<Station>
+		<Name>Georgemas Junction</Name>
+		<Code>GGJ</Code>
+	</Station>
+	<Station>
+		<Name>Gerrards Cross</Name>
+		<Code>GER</Code>
+	</Station>
+	<Station>
+		<Name>Gidea Park</Name>
+		<Code>GDP</Code>
+	</Station>
+	<Station>
+		<Name>Giffnock</Name>
+		<Code>GFN</Code>
+	</Station>
+	<Station>
+		<Name>Giggleswick</Name>
+		<Code>GIG</Code>
+	</Station>
+	<Station>
+		<Name>Gilberdyke</Name>
+		<Code>GBD</Code>
+	</Station>
+	<Station>
+		<Name>Gilfach Fargoed</Name>
+		<Code>GFF</Code>
+	</Station>
+	<Station>
+		<Name>Gillingham (Dorset)</Name>
+		<Code>GIL</Code>
+	</Station>
+	<Station>
+		<Name>Gillingham (Kent)</Name>
+		<Code>GLM</Code>
+	</Station>
+	<Station>
+		<Name>Gilshochill</Name>
+		<Code>GSC</Code>
+	</Station>
+	<Station>
+		<Name>Gipsy Hill</Name>
+		<Code>GIP</Code>
+	</Station>
+	<Station>
+		<Name>Girvan</Name>
+		<Code>GIR</Code>
+	</Station>
+	<Station>
+		<Name>Glaisdale</Name>
+		<Code>GLS</Code>
+	</Station>
+	<Station>
+		<Name>Glan Conwy</Name>
+		<Code>GCW</Code>
+	</Station>
+	<Station>
+		<Name>Glasgow Central</Name>
+		<Code>GLC</Code>
+	</Station>
+	<Station>
+		<Name>Glasgow Queen Street</Name>
+		<Code>GLQ</Code>
+	</Station>
+	<Station>
+		<Name>Glasshoughton</Name>
+		<Code>GLH</Code>
+	</Station>
+	<Station>
+		<Name>Glazebrook</Name>
+		<Code>GLZ</Code>
+	</Station>
+	<Station>
+		<Name>Gleneagles</Name>
+		<Code>GLE</Code>
+	</Station>
+	<Station>
+		<Name>Glenfinnan</Name>
+		<Code>GLF</Code>
+	</Station>
+	<Station>
+		<Name>Glengarnock</Name>
+		<Code>GLG</Code>
+	</Station>
+	<Station>
+		<Name>Glenrothes with Thornton</Name>
+		<Code>GLT</Code>
+	</Station>
+	<Station>
+		<Name>Glossop</Name>
+		<Code>GLO</Code>
+	</Station>
+	<Station>
+		<Name>Gloucester</Name>
+		<Code>GCR</Code>
+	</Station>
+	<Station>
+		<Name>Glynde</Name>
+		<Code>GLY</Code>
+	</Station>
+	<Station>
+		<Name>Gobowen</Name>
+		<Code>GOB</Code>
+	</Station>
+	<Station>
+		<Name>Godalming</Name>
+		<Code>GOD</Code>
+	</Station>
+	<Station>
+		<Name>Godley</Name>
+		<Code>GDL</Code>
+	</Station>
+	<Station>
+		<Name>Godstone</Name>
+		<Code>GDN</Code>
+	</Station>
+	<Station>
+		<Name>Goldthorpe</Name>
+		<Code>GOE</Code>
+	</Station>
+	<Station>
+		<Name>Golf Street</Name>
+		<Code>GOF</Code>
+	</Station>
+	<Station>
+		<Name>Golspie</Name>
+		<Code>GOL</Code>
+	</Station>
+	<Station>
+		<Name>Gomshall</Name>
+		<Code>GOM</Code>
+	</Station>
+	<Station>
+		<Name>Goodmayes</Name>
+		<Code>GMY</Code>
+	</Station>
+	<Station>
+		<Name>Goole</Name>
+		<Code>GOO</Code>
+	</Station>
+	<Station>
+		<Name>Goostrey</Name>
+		<Code>GTR</Code>
+	</Station>
+	<Station>
+		<Name>Gordon Hill</Name>
+		<Code>GDH</Code>
+	</Station>
+	<Station>
+		<Name>Gorebridge</Name>
+		<Code>GBG</Code>
+	</Station>
+	<Station>
+		<Name>Goring &amp; Streatley</Name>
+		<Code>GOR</Code>
+	</Station>
+	<Station>
+		<Name>Goring-by-Sea</Name>
+		<Code>GBS</Code>
+	</Station>
+	<Station>
+		<Name>Gorton</Name>
+		<Code>GTO</Code>
+	</Station>
+	<Station>
+		<Name>Gospel Oak</Name>
+		<Code>GPO</Code>
+	</Station>
+	<Station>
+		<Name>Gourock</Name>
+		<Code>GRK</Code>
+	</Station>
+	<Station>
+		<Name>Gowerton</Name>
+		<Code>GWN</Code>
+	</Station>
+	<Station>
+		<Name>Goxhill</Name>
+		<Code>GOX</Code>
+	</Station>
+	<Station>
+		<Name>Grange Park</Name>
+		<Code>GPK</Code>
+	</Station>
+	<Station>
+		<Name>Grange-Over-Sands</Name>
+		<Code>GOS</Code>
+	</Station>
+	<Station>
+		<Name>Grangetown (Cardiff)</Name>
+		<Code>GTN</Code>
+	</Station>
+	<Station>
+		<Name>Grantham</Name>
+		<Code>GRA</Code>
+	</Station>
+	<Station>
+		<Name>Grateley</Name>
+		<Code>GRT</Code>
+	</Station>
+	<Station>
+		<Name>Gravelly Hill</Name>
+		<Code>GVH</Code>
+	</Station>
+	<Station>
+		<Name>Gravesend</Name>
+		<Code>GRV</Code>
+	</Station>
+	<Station>
+		<Name>Grays</Name>
+		<Code>GRY</Code>
+	</Station>
+	<Station>
+		<Name>Great Ayton</Name>
+		<Code>GTA</Code>
+	</Station>
+	<Station>
+		<Name>Great Bentley</Name>
+		<Code>GRB</Code>
+	</Station>
+	<Station>
+		<Name>Great Chesterford</Name>
+		<Code>GRC</Code>
+	</Station>
+	<Station>
+		<Name>Great Coates</Name>
+		<Code>GCT</Code>
+	</Station>
+	<Station>
+		<Name>Great Malvern</Name>
+		<Code>GMV</Code>
+	</Station>
+	<Station>
+		<Name>Great Missenden</Name>
+		<Code>GMN</Code>
+	</Station>
+	<Station>
+		<Name>Great Yarmouth</Name>
+		<Code>GYM</Code>
+	</Station>
+	<Station>
+		<Name>Green Lane</Name>
+		<Code>GNL</Code>
+	</Station>
+	<Station>
+		<Name>Green Road</Name>
+		<Code>GNR</Code>
+	</Station>
+	<Station>
+		<Name>Greenbank</Name>
+		<Code>GBK</Code>
+	</Station>
+	<Station>
+		<Name>Greenfaulds</Name>
+		<Code>GRL</Code>
+	</Station>
+	<Station>
+		<Name>Greenfield</Name>
+		<Code>GNF</Code>
+	</Station>
+	<Station>
+		<Name>Greenford</Name>
+		<Code>GFD</Code>
+	</Station>
+	<Station>
+		<Name>Greenhithe</Name>
+		<Code>GNH</Code>
+	</Station>
+	<Station>
+		<Name>Greenock Central</Name>
+		<Code>GKC</Code>
+	</Station>
+	<Station>
+		<Name>Greenock West</Name>
+		<Code>GKW</Code>
+	</Station>
+	<Station>
+		<Name>Greenwich</Name>
+		<Code>GNW</Code>
+	</Station>
+	<Station>
+		<Name>Gretna Green</Name>
+		<Code>GEA</Code>
+	</Station>
+	<Station>
+		<Name>Grimsby Docks</Name>
+		<Code>GMD</Code>
+	</Station>
+	<Station>
+		<Name>Grimsby Town</Name>
+		<Code>GMB</Code>
+	</Station>
+	<Station>
+		<Name>Grindleford</Name>
+		<Code>GRN</Code>
+	</Station>
+	<Station>
+		<Name>Grosmont</Name>
+		<Code>GMT</Code>
+	</Station>
+	<Station>
+		<Name>Grove Park</Name>
+		<Code>GRP</Code>
+	</Station>
+	<Station>
+		<Name>Guide Bridge</Name>
+		<Code>GUI</Code>
+	</Station>
+	<Station>
+		<Name>Guildford</Name>
+		<Code>GLD</Code>
+	</Station>
+	<Station>
+		<Name>Guiseley</Name>
+		<Code>GSY</Code>
+	</Station>
+	<Station>
+		<Name>Gunnersbury</Name>
+		<Code>GUN</Code>
+	</Station>
+	<Station>
+		<Name>Gunnislake</Name>
+		<Code>GSL</Code>
+	</Station>
+	<Station>
+		<Name>Gunton</Name>
+		<Code>GNT</Code>
+	</Station>
+	<Station>
+		<Name>Gwersyllt</Name>
+		<Code>GWE</Code>
+	</Station>
+	<Station>
+		<Name>Gypsy Lane</Name>
+		<Code>GYP</Code>
+	</Station>
+	<Station>
+		<Name>Habrough</Name>
+		<Code>HAB</Code>
+	</Station>
+	<Station>
+		<Name>Hackbridge</Name>
+		<Code>HCB</Code>
+	</Station>
+	<Station>
+		<Name>Hackney Central</Name>
+		<Code>HKC</Code>
+	</Station>
+	<Station>
+		<Name>Hackney Downs</Name>
+		<Code>HAC</Code>
+	</Station>
+	<Station>
+		<Name>Hackney Wick</Name>
+		<Code>HKW</Code>
+	</Station>
+	<Station>
+		<Name>Haddenham &amp; Thame Parkway</Name>
+		<Code>HDM</Code>
+	</Station>
+	<Station>
+		<Name>Haddiscoe</Name>
+		<Code>HAD</Code>
+	</Station>
+	<Station>
+		<Name>Hadfield</Name>
+		<Code>HDF</Code>
+	</Station>
+	<Station>
+		<Name>Hadley Wood</Name>
+		<Code>HDW</Code>
+	</Station>
+	<Station>
+		<Name>Hag Fold</Name>
+		<Code>HGF</Code>
+	</Station>
+	<Station>
+		<Name>Haggerston</Name>
+		<Code>HGG</Code>
+	</Station>
+	<Station>
+		<Name>Hagley</Name>
+		<Code>HAG</Code>
+	</Station>
+	<Station>
+		<Name>Hairmyres</Name>
+		<Code>HMY</Code>
+	</Station>
+	<Station>
+		<Name>Hale (Manchester)</Name>
+		<Code>HAL</Code>
+	</Station>
+	<Station>
+		<Name>Halesworth</Name>
+		<Code>HAS</Code>
+	</Station>
+	<Station>
+		<Name>Halewood</Name>
+		<Code>HED</Code>
+	</Station>
+	<Station>
+		<Name>Halifax</Name>
+		<Code>HFX</Code>
+	</Station>
+	<Station>
+		<Name>Hall Green</Name>
+		<Code>HLG</Code>
+	</Station>
+	<Station>
+		<Name>Hall Road</Name>
+		<Code>HLR</Code>
+	</Station>
+	<Station>
+		<Name>Halling</Name>
+		<Code>HAI</Code>
+	</Station>
+	<Station>
+		<Name>Hall-i'-th'-Wood</Name>
+		<Code>HID</Code>
+	</Station>
+	<Station>
+		<Name>Haltwhistle</Name>
+		<Code>HWH</Code>
+	</Station>
+	<Station>
+		<Name>Ham Street</Name>
+		<Code>HMT</Code>
+	</Station>
+	<Station>
+		<Name>Hamble</Name>
+		<Code>HME</Code>
+	</Station>
+	<Station>
+		<Name>Hamilton Central</Name>
+		<Code>HNC</Code>
+	</Station>
+	<Station>
+		<Name>Hamilton West</Name>
+		<Code>HNW</Code>
+	</Station>
+	<Station>
+		<Name>Hammerton</Name>
+		<Code>HMM</Code>
+	</Station>
+	<Station>
+		<Name>Hampden Park (Sussex)</Name>
+		<Code>HMD</Code>
+	</Station>
+	<Station>
+		<Name>Hampstead Heath</Name>
+		<Code>HDH</Code>
+	</Station>
+	<Station>
+		<Name>Hampton (London)</Name>
+		<Code>HMP</Code>
+	</Station>
+	<Station>
+		<Name>Hampton Court</Name>
+		<Code>HMC</Code>
+	</Station>
+	<Station>
+		<Name>Hampton Wick</Name>
+		<Code>HMW</Code>
+	</Station>
+	<Station>
+		<Name>Hampton-in-Arden</Name>
+		<Code>HIA</Code>
+	</Station>
+	<Station>
+		<Name>Hamstead (Birmingham)</Name>
+		<Code>HSD</Code>
+	</Station>
+	<Station>
+		<Name>Hamworthy</Name>
+		<Code>HAM</Code>
+	</Station>
+	<Station>
+		<Name>Hanborough</Name>
+		<Code>HND</Code>
+	</Station>
+	<Station>
+		<Name>Handforth</Name>
+		<Code>HTH</Code>
+	</Station>
+	<Station>
+		<Name>Hanwell</Name>
+		<Code>HAN</Code>
+	</Station>
+	<Station>
+		<Name>Hapton</Name>
+		<Code>HPN</Code>
+	</Station>
+	<Station>
+		<Name>Harlech</Name>
+		<Code>HRL</Code>
+	</Station>
+	<Station>
+		<Name>Harlesden</Name>
+		<Code>HDN</Code>
+	</Station>
+	<Station>
+		<Name>Harling Road</Name>
+		<Code>HRD</Code>
+	</Station>
+	<Station>
+		<Name>Harlington (Beds)</Name>
+		<Code>HLN</Code>
+	</Station>
+	<Station>
+		<Name>Harlow Mill</Name>
+		<Code>HWM</Code>
+	</Station>
+	<Station>
+		<Name>Harlow Town</Name>
+		<Code>HWN</Code>
+	</Station>
+	<Station>
+		<Name>Harold Wood</Name>
+		<Code>HRO</Code>
+	</Station>
+	<Station>
+		<Name>Harpenden</Name>
+		<Code>HPD</Code>
+	</Station>
+	<Station>
+		<Name>Harrietsham</Name>
+		<Code>HRM</Code>
+	</Station>
+	<Station>
+		<Name>Harringay</Name>
+		<Code>HGY</Code>
+	</Station>
+	<Station>
+		<Name>Harringay Green Lanes</Name>
+		<Code>HRY</Code>
+	</Station>
+	<Station>
+		<Name>Harrington</Name>
+		<Code>HRR</Code>
+	</Station>
+	<Station>
+		<Name>Harrogate</Name>
+		<Code>HGT</Code>
+	</Station>
+	<Station>
+		<Name>Harrow &amp; Wealdstone</Name>
+		<Code>HRW</Code>
+	</Station>
+	<Station>
+		<Name>Harrow-on-the-Hill</Name>
+		<Code>HOH</Code>
+	</Station>
+	<Station>
+		<Name>Hartford (Cheshire)</Name>
+		<Code>HTF</Code>
+	</Station>
+	<Station>
+		<Name>Hartlebury</Name>
+		<Code>HBY</Code>
+	</Station>
+	<Station>
+		<Name>Hartlepool</Name>
+		<Code>HPL</Code>
+	</Station>
+	<Station>
+		<Name>Hartwood</Name>
+		<Code>HTW</Code>
+	</Station>
+	<Station>
+		<Name>Harwich International</Name>
+		<Code>HPQ</Code>
+	</Station>
+	<Station>
+		<Name>Harwich Town</Name>
+		<Code>HWC</Code>
+	</Station>
+	<Station>
+		<Name>Haslemere</Name>
+		<Code>HSL</Code>
+	</Station>
+	<Station>
+		<Name>Hassocks</Name>
+		<Code>HSK</Code>
+	</Station>
+	<Station>
+		<Name>Hastings</Name>
+		<Code>HGS</Code>
+	</Station>
+	<Station>
+		<Name>Hatch End</Name>
+		<Code>HTE</Code>
+	</Station>
+	<Station>
+		<Name>Hatfield &amp; Stainforth</Name>
+		<Code>HFS</Code>
+	</Station>
+	<Station>
+		<Name>Hatfield (Herts)</Name>
+		<Code>HAT</Code>
+	</Station>
+	<Station>
+		<Name>Hatfield Peverel</Name>
+		<Code>HAP</Code>
+	</Station>
+	<Station>
+		<Name>Hathersage</Name>
+		<Code>HSG</Code>
+	</Station>
+	<Station>
+		<Name>Hattersley</Name>
+		<Code>HTY</Code>
+	</Station>
+	<Station>
+		<Name>Hatton</Name>
+		<Code>HTN</Code>
+	</Station>
+	<Station>
+		<Name>Havant</Name>
+		<Code>HAV</Code>
+	</Station>
+	<Station>
+		<Name>Havenhouse</Name>
+		<Code>HVN</Code>
+	</Station>
+	<Station>
+		<Name>Haverfordwest</Name>
+		<Code>HVF</Code>
+	</Station>
+	<Station>
+		<Name>Hawarden</Name>
+		<Code>HWD</Code>
+	</Station>
+	<Station>
+		<Name>Hawarden Bridge</Name>
+		<Code>HWB</Code>
+	</Station>
+	<Station>
+		<Name>Hawkhead</Name>
+		<Code>HKH</Code>
+	</Station>
+	<Station>
+		<Name>Haydon Bridge</Name>
+		<Code>HDB</Code>
+	</Station>
+	<Station>
+		<Name>Haydons Road</Name>
+		<Code>HYR</Code>
+	</Station>
+	<Station>
+		<Name>Hayes &amp; Harlington</Name>
+		<Code>HAY</Code>
+	</Station>
+	<Station>
+		<Name>Hayes (Kent)</Name>
+		<Code>HYS</Code>
+	</Station>
+	<Station>
+		<Name>Hayle</Name>
+		<Code>HYL</Code>
+	</Station>
+	<Station>
+		<Name>Haymarket</Name>
+		<Code>HYM</Code>
+	</Station>
+	<Station>
+		<Name>Haywards Heath</Name>
+		<Code>HHE</Code>
+	</Station>
+	<Station>
+		<Name>Hazel Grove</Name>
+		<Code>HAZ</Code>
+	</Station>
+	<Station>
+		<Name>Headcorn</Name>
+		<Code>HCN</Code>
+	</Station>
+	<Station>
+		<Name>Headingley</Name>
+		<Code>HDY</Code>
+	</Station>
+	<Station>
+		<Name>Headstone Lane</Name>
+		<Code>HDL</Code>
+	</Station>
+	<Station>
+		<Name>Heald Green</Name>
+		<Code>HDG</Code>
+	</Station>
+	<Station>
+		<Name>Healing</Name>
+		<Code>HLI</Code>
+	</Station>
+	<Station>
+		<Name>Heath High Level</Name>
+		<Code>HHL</Code>
+	</Station>
+	<Station>
+		<Name>Heath Low Level</Name>
+		<Code>HLL</Code>
+	</Station>
+	<Station>
+		<Name>Heathrow Airport Terminal 4</Name>
+		<Code>HAF</Code>
+	</Station>
+	<Station>
+		<Name>Heathrow Airport Terminal 5</Name>
+		<Code>HWV</Code>
+	</Station>
+	<Station>
+		<Name>Heathrow Airport Terminals 1, 2 and 3</Name>
+		<Code>HXX</Code>
+	</Station>
+	<Station>
+		<Name>Heaton Chapel</Name>
+		<Code>HTC</Code>
+	</Station>
+	<Station>
+		<Name>Hebden Bridge</Name>
+		<Code>HBD</Code>
+	</Station>
+	<Station>
+		<Name>Heckington</Name>
+		<Code>HEC</Code>
+	</Station>
+	<Station>
+		<Name>Hedge End</Name>
+		<Code>HDE</Code>
+	</Station>
+	<Station>
+		<Name>Hednesford</Name>
+		<Code>HNF</Code>
+	</Station>
+	<Station>
+		<Name>Heighington</Name>
+		<Code>HEI</Code>
+	</Station>
+	<Station>
+		<Name>Helensburgh Central</Name>
+		<Code>HLC</Code>
+	</Station>
+	<Station>
+		<Name>Helensburgh Upper</Name>
+		<Code>HLU</Code>
+	</Station>
+	<Station>
+		<Name>Hellifield</Name>
+		<Code>HLD</Code>
+	</Station>
+	<Station>
+		<Name>Helmsdale</Name>
+		<Code>HMS</Code>
+	</Station>
+	<Station>
+		<Name>Helsby</Name>
+		<Code>HSB</Code>
+	</Station>
+	<Station>
+		<Name>Hemel Hempstead</Name>
+		<Code>HML</Code>
+	</Station>
+	<Station>
+		<Name>Hendon</Name>
+		<Code>HEN</Code>
+	</Station>
+	<Station>
+		<Name>Hengoed</Name>
+		<Code>HNG</Code>
+	</Station>
+	<Station>
+		<Name>Henley-in-Arden</Name>
+		<Code>HNL</Code>
+	</Station>
+	<Station>
+		<Name>Henley-on-Thames</Name>
+		<Code>HOT</Code>
+	</Station>
+	<Station>
+		<Name>Hensall</Name>
+		<Code>HEL</Code>
+	</Station>
+	<Station>
+		<Name>Hereford</Name>
+		<Code>HFD</Code>
+	</Station>
+	<Station>
+		<Name>Herne Bay</Name>
+		<Code>HNB</Code>
+	</Station>
+	<Station>
+		<Name>Herne Hill</Name>
+		<Code>HNH</Code>
+	</Station>
+	<Station>
+		<Name>Hersham</Name>
+		<Code>HER</Code>
+	</Station>
+	<Station>
+		<Name>Hertford East</Name>
+		<Code>HFE</Code>
+	</Station>
+	<Station>
+		<Name>Hertford North</Name>
+		<Code>HFN</Code>
+	</Station>
+	<Station>
+		<Name>Hessle</Name>
+		<Code>HES</Code>
+	</Station>
+	<Station>
+		<Name>Heswall</Name>
+		<Code>HSW</Code>
+	</Station>
+	<Station>
+		<Name>Hever</Name>
+		<Code>HEV</Code>
+	</Station>
+	<Station>
+		<Name>Heworth</Name>
+		<Code>HEW</Code>
+	</Station>
+	<Station>
+		<Name>Hexham</Name>
+		<Code>HEX</Code>
+	</Station>
+	<Station>
+		<Name>Heyford</Name>
+		<Code>HYD</Code>
+	</Station>
+	<Station>
+		<Name>Heysham Port</Name>
+		<Code>HHB</Code>
+	</Station>
+	<Station>
+		<Name>High Brooms</Name>
+		<Code>HIB</Code>
+	</Station>
+	<Station>
+		<Name>High Street (Glasgow)</Name>
+		<Code>HST</Code>
+	</Station>
+	<Station>
+		<Name>High Street Kensington Underground</Name>
+		<Code>ZHS</Code>
+	</Station>
+	<Station>
+		<Name>High Wycombe</Name>
+		<Code>HWY</Code>
+	</Station>
+	<Station>
+		<Name>Higham (Kent)</Name>
+		<Code>HGM</Code>
+	</Station>
+	<Station>
+		<Name>Highams Park</Name>
+		<Code>HIP</Code>
+	</Station>
+	<Station>
+		<Name>Highbridge &amp; Burnham</Name>
+		<Code>HIG</Code>
+	</Station>
+	<Station>
+		<Name>Highbury &amp; Islington</Name>
+		<Code>HHY</Code>
+	</Station>
+	<Station>
+		<Name>Hightown</Name>
+		<Code>HTO</Code>
+	</Station>
+	<Station>
+		<Name>Hildenborough</Name>
+		<Code>HLB</Code>
+	</Station>
+	<Station>
+		<Name>Hillfoot</Name>
+		<Code>HLF</Code>
+	</Station>
+	<Station>
+		<Name>Hillington East</Name>
+		<Code>HLE</Code>
+	</Station>
+	<Station>
+		<Name>Hillington West</Name>
+		<Code>HLW</Code>
+	</Station>
+	<Station>
+		<Name>Hillside</Name>
+		<Code>HIL</Code>
+	</Station>
+	<Station>
+		<Name>Hilsea</Name>
+		<Code>HLS</Code>
+	</Station>
+	<Station>
+		<Name>Hinchley Wood</Name>
+		<Code>HYW</Code>
+	</Station>
+	<Station>
+		<Name>Hinckley (Leics)</Name>
+		<Code>HNK</Code>
+	</Station>
+	<Station>
+		<Name>Hindley</Name>
+		<Code>HIN</Code>
+	</Station>
+	<Station>
+		<Name>Hinton Admiral</Name>
+		<Code>HNA</Code>
+	</Station>
+	<Station>
+		<Name>Hitchin</Name>
+		<Code>HIT</Code>
+	</Station>
+	<Station>
+		<Name>Hither Green</Name>
+		<Code>HGR</Code>
+	</Station>
+	<Station>
+		<Name>Hockley</Name>
+		<Code>HOC</Code>
+	</Station>
+	<Station>
+		<Name>Hollingbourne</Name>
+		<Code>HBN</Code>
+	</Station>
+	<Station>
+		<Name>Holmes Chapel</Name>
+		<Code>HCH</Code>
+	</Station>
+	<Station>
+		<Name>Holmwood</Name>
+		<Code>HLM</Code>
+	</Station>
+	<Station>
+		<Name>Holton Heath</Name>
+		<Code>HOL</Code>
+	</Station>
+	<Station>
+		<Name>Holyhead</Name>
+		<Code>HHD</Code>
+	</Station>
+	<Station>
+		<Name>Holytown</Name>
+		<Code>HLY</Code>
+	</Station>
+	<Station>
+		<Name>Homerton</Name>
+		<Code>HMN</Code>
+	</Station>
+	<Station>
+		<Name>Honeybourne</Name>
+		<Code>HYB</Code>
+	</Station>
+	<Station>
+		<Name>Honiton</Name>
+		<Code>HON</Code>
+	</Station>
+	<Station>
+		<Name>Honley</Name>
+		<Code>HOY</Code>
+	</Station>
+	<Station>
+		<Name>Honor Oak Park</Name>
+		<Code>HPA</Code>
+	</Station>
+	<Station>
+		<Name>Hook</Name>
+		<Code>HOK</Code>
+	</Station>
+	<Station>
+		<Name>Hooton</Name>
+		<Code>HOO</Code>
+	</Station>
+	<Station>
+		<Name>Hope (Derbyshire)</Name>
+		<Code>HOP</Code>
+	</Station>
+	<Station>
+		<Name>Hope (Flintshire)</Name>
+		<Code>HPE</Code>
+	</Station>
+	<Station>
+		<Name>Hopton Heath</Name>
+		<Code>HPT</Code>
+	</Station>
+	<Station>
+		<Name>Horley</Name>
+		<Code>HOR</Code>
+	</Station>
+	<Station>
+		<Name>Hornbeam Park</Name>
+		<Code>HBP</Code>
+	</Station>
+	<Station>
+		<Name>Hornsey</Name>
+		<Code>HRN</Code>
+	</Station>
+	<Station>
+		<Name>Horsforth</Name>
+		<Code>HRS</Code>
+	</Station>
+	<Station>
+		<Name>Horsham</Name>
+		<Code>HRH</Code>
+	</Station>
+	<Station>
+		<Name>Horsley</Name>
+		<Code>HSY</Code>
+	</Station>
+	<Station>
+		<Name>Horton-in-Ribblesdale</Name>
+		<Code>HIR</Code>
+	</Station>
+	<Station>
+		<Name>Horwich Parkway</Name>
+		<Code>HWI</Code>
+	</Station>
+	<Station>
+		<Name>Hoscar</Name>
+		<Code>HSC</Code>
+	</Station>
+	<Station>
+		<Name>Hough Green</Name>
+		<Code>HGN</Code>
+	</Station>
+	<Station>
+		<Name>Hounslow</Name>
+		<Code>HOU</Code>
+	</Station>
+	<Station>
+		<Name>Hove</Name>
+		<Code>HOV</Code>
+	</Station>
+	<Station>
+		<Name>Hoveton &amp; Wroxham</Name>
+		<Code>HXM</Code>
+	</Station>
+	<Station>
+		<Name>How Wood (Herts)</Name>
+		<Code>HWW</Code>
+	</Station>
+	<Station>
+		<Name>Howden</Name>
+		<Code>HOW</Code>
+	</Station>
+	<Station>
+		<Name>Howwood (Renfrewshire)</Name>
+		<Code>HOZ</Code>
+	</Station>
+	<Station>
+		<Name>Hoxton</Name>
+		<Code>HOX</Code>
+	</Station>
+	<Station>
+		<Name>Hoylake</Name>
+		<Code>HYK</Code>
+	</Station>
+	<Station>
+		<Name>Hubberts Bridge</Name>
+		<Code>HBB</Code>
+	</Station>
+	<Station>
+		<Name>Hucknall</Name>
+		<Code>HKN</Code>
+	</Station>
+	<Station>
+		<Name>Huddersfield</Name>
+		<Code>HUD</Code>
+	</Station>
+	<Station>
+		<Name>Hull</Name>
+		<Code>HUL</Code>
+	</Station>
+	<Station>
+		<Name>Humphrey Park</Name>
+		<Code>HUP</Code>
+	</Station>
+	<Station>
+		<Name>Huncoat</Name>
+		<Code>HCT</Code>
+	</Station>
+	<Station>
+		<Name>Hungerford</Name>
+		<Code>HGD</Code>
+	</Station>
+	<Station>
+		<Name>Hunmanby</Name>
+		<Code>HUB</Code>
+	</Station>
+	<Station>
+		<Name>Huntingdon</Name>
+		<Code>HUN</Code>
+	</Station>
+	<Station>
+		<Name>Huntly</Name>
+		<Code>HNT</Code>
+	</Station>
+	<Station>
+		<Name>Hunts Cross</Name>
+		<Code>HNX</Code>
+	</Station>
+	<Station>
+		<Name>Hurst Green</Name>
+		<Code>HUR</Code>
+	</Station>
+	<Station>
+		<Name>Hutton Cranswick</Name>
+		<Code>HUT</Code>
+	</Station>
+	<Station>
+		<Name>Huyton</Name>
+		<Code>HUY</Code>
+	</Station>
+	<Station>
+		<Name>Hyde Central</Name>
+		<Code>HYC</Code>
+	</Station>
+	<Station>
+		<Name>Hyde North</Name>
+		<Code>HYT</Code>
+	</Station>
+	<Station>
+		<Name>Hykeham</Name>
+		<Code>HKM</Code>
+	</Station>
+	<Station>
+		<Name>Hyndland</Name>
+		<Code>HYN</Code>
+	</Station>
+	<Station>
+		<Name>Hythe (Essex)</Name>
+		<Code>HYH</Code>
+	</Station>
+	<Station>
+		<Name>IBM Halt</Name>
+		<Code>IBM</Code>
+	</Station>
+	<Station>
+		<Name>Ifield</Name>
+		<Code>IFI</Code>
+	</Station>
+	<Station>
+		<Name>Ilford</Name>
+		<Code>IFD</Code>
+	</Station>
+	<Station>
+		<Name>Ilkley</Name>
+		<Code>ILK</Code>
+	</Station>
+	<Station>
+		<Name>Imperial Wharf</Name>
+		<Code>IMW</Code>
+	</Station>
+	<Station>
+		<Name>Ince &amp; Elton</Name>
+		<Code>INE</Code>
+	</Station>
+	<Station>
+		<Name>Ince (Manchester)</Name>
+		<Code>INC</Code>
+	</Station>
+	<Station>
+		<Name>Ingatestone</Name>
+		<Code>INT</Code>
+	</Station>
+	<Station>
+		<Name>Insch</Name>
+		<Code>INS</Code>
+	</Station>
+	<Station>
+		<Name>Invergordon</Name>
+		<Code>IGD</Code>
+	</Station>
+	<Station>
+		<Name>Invergowrie</Name>
+		<Code>ING</Code>
+	</Station>
+	<Station>
+		<Name>Inverkeithing</Name>
+		<Code>INK</Code>
+	</Station>
+	<Station>
+		<Name>Inverkip</Name>
+		<Code>INP</Code>
+	</Station>
+	<Station>
+		<Name>Inverness</Name>
+		<Code>INV</Code>
+	</Station>
+	<Station>
+		<Name>Invershin</Name>
+		<Code>INH</Code>
+	</Station>
+	<Station>
+		<Name>Inverurie</Name>
+		<Code>INR</Code>
+	</Station>
+	<Station>
+		<Name>Ipswich</Name>
+		<Code>IPS</Code>
+	</Station>
+	<Station>
+		<Name>Irlam</Name>
+		<Code>IRL</Code>
+	</Station>
+	<Station>
+		<Name>Irvine</Name>
+		<Code>IRV</Code>
+	</Station>
+	<Station>
+		<Name>Isleworth</Name>
+		<Code>ISL</Code>
+	</Station>
+	<Station>
+		<Name>Islip</Name>
+		<Code>ISP</Code>
+	</Station>
+	<Station>
+		<Name>Iver</Name>
+		<Code>IVR</Code>
+	</Station>
+	<Station>
+		<Name>Ivybridge</Name>
+		<Code>IVY</Code>
+	</Station>
+	<Station>
+		<Name>James Cook</Name>
+		<Code>JCH</Code>
+	</Station>
+	<Station>
+		<Name>Jewellery Quarter</Name>
+		<Code>JEQ</Code>
+	</Station>
+	<Station>
+		<Name>Johnston (Pembs)</Name>
+		<Code>JOH</Code>
+	</Station>
+	<Station>
+		<Name>Johnstone (Strathclyde)</Name>
+		<Code>JHN</Code>
+	</Station>
+	<Station>
+		<Name>Jordanhill</Name>
+		<Code>JOR</Code>
+	</Station>
+	<Station>
+		<Name>Kearsley (Manchester)</Name>
+		<Code>KSL</Code>
+	</Station>
+	<Station>
+		<Name>Kearsney (Kent)</Name>
+		<Code>KSN</Code>
+	</Station>
+	<Station>
+		<Name>Keighley</Name>
+		<Code>KEI</Code>
+	</Station>
+	<Station>
+		<Name>Keith</Name>
+		<Code>KEH</Code>
+	</Station>
+	<Station>
+		<Name>Kelvedon</Name>
+		<Code>KEL</Code>
+	</Station>
+	<Station>
+		<Name>Kelvindale</Name>
+		<Code>KVD</Code>
+	</Station>
+	<Station>
+		<Name>Kemble</Name>
+		<Code>KEM</Code>
+	</Station>
+	<Station>
+		<Name>Kempston Hardwick</Name>
+		<Code>KMH</Code>
+	</Station>
+	<Station>
+		<Name>Kempton Park Racecourse</Name>
+		<Code>KMP</Code>
+	</Station>
+	<Station>
+		<Name>Kemsing</Name>
+		<Code>KMS</Code>
+	</Station>
+	<Station>
+		<Name>Kemsley</Name>
+		<Code>KML</Code>
+	</Station>
+	<Station>
+		<Name>Kendal</Name>
+		<Code>KEN</Code>
+	</Station>
+	<Station>
+		<Name>Kenley</Name>
+		<Code>KLY</Code>
+	</Station>
+	<Station>
+		<Name>Kennett</Name>
+		<Code>KNE</Code>
+	</Station>
+	<Station>
+		<Name>Kennishead</Name>
+		<Code>KNS</Code>
+	</Station>
+	<Station>
+		<Name>Kensal Green</Name>
+		<Code>KNL</Code>
+	</Station>
+	<Station>
+		<Name>Kensal Rise</Name>
+		<Code>KNR</Code>
+	</Station>
+	<Station>
+		<Name>Kensington Olympia</Name>
+		<Code>KPA</Code>
+	</Station>
+	<Station>
+		<Name>Kent House</Name>
+		<Code>KTH</Code>
+	</Station>
+	<Station>
+		<Name>Kentish Town</Name>
+		<Code>KTN</Code>
+	</Station>
+	<Station>
+		<Name>Kentish Town West</Name>
+		<Code>KTW</Code>
+	</Station>
+	<Station>
+		<Name>Kenton</Name>
+		<Code>KNT</Code>
+	</Station>
+	<Station>
+		<Name>Kents Bank</Name>
+		<Code>KBK</Code>
+	</Station>
+	<Station>
+		<Name>Kettering</Name>
+		<Code>KET</Code>
+	</Station>
+	<Station>
+		<Name>Kew Bridge</Name>
+		<Code>KWB</Code>
+	</Station>
+	<Station>
+		<Name>Kew Gardens</Name>
+		<Code>KWG</Code>
+	</Station>
+	<Station>
+		<Name>Keyham</Name>
+		<Code>KEY</Code>
+	</Station>
+	<Station>
+		<Name>Keynsham</Name>
+		<Code>KYN</Code>
+	</Station>
+	<Station>
+		<Name>Kidbrooke</Name>
+		<Code>KDB</Code>
+	</Station>
+	<Station>
+		<Name>Kidderminster</Name>
+		<Code>KID</Code>
+	</Station>
+	<Station>
+		<Name>Kidsgrove</Name>
+		<Code>KDG</Code>
+	</Station>
+	<Station>
+		<Name>Kidwelly</Name>
+		<Code>KWL</Code>
+	</Station>
+	<Station>
+		<Name>Kilburn High Road</Name>
+		<Code>KBN</Code>
+	</Station>
+	<Station>
+		<Name>Kildale</Name>
+		<Code>KLD</Code>
+	</Station>
+	<Station>
+		<Name>Kildonan</Name>
+		<Code>KIL</Code>
+	</Station>
+	<Station>
+		<Name>Kilgetty</Name>
+		<Code>KGT</Code>
+	</Station>
+	<Station>
+		<Name>Kilmarnock</Name>
+		<Code>KMK</Code>
+	</Station>
+	<Station>
+		<Name>Kilmaurs</Name>
+		<Code>KLM</Code>
+	</Station>
+	<Station>
+		<Name>Kilpatrick</Name>
+		<Code>KPT</Code>
+	</Station>
+	<Station>
+		<Name>Kilwinning</Name>
+		<Code>KWN</Code>
+	</Station>
+	<Station>
+		<Name>Kinbrace</Name>
+		<Code>KBC</Code>
+	</Station>
+	<Station>
+		<Name>Kingham</Name>
+		<Code>KGM</Code>
+	</Station>
+	<Station>
+		<Name>Kinghorn</Name>
+		<Code>KGH</Code>
+	</Station>
+	<Station>
+		<Name>Kings Langley</Name>
+		<Code>KGL</Code>
+	</Station>
+	<Station>
+		<Name>Kings Lynn</Name>
+		<Code>KLN</Code>
+	</Station>
+	<Station>
+		<Name>Kings Norton</Name>
+		<Code>KNN</Code>
+	</Station>
+	<Station>
+		<Name>Kings Nympton</Name>
+		<Code>KGN</Code>
+	</Station>
+	<Station>
+		<Name>Kings Park</Name>
+		<Code>KGP</Code>
+	</Station>
+	<Station>
+		<Name>Kings Sutton</Name>
+		<Code>KGS</Code>
+	</Station>
+	<Station>
+		<Name>Kingsknowe</Name>
+		<Code>KGE</Code>
+	</Station>
+	<Station>
+		<Name>Kingston</Name>
+		<Code>KNG</Code>
+	</Station>
+	<Station>
+		<Name>Kingswood</Name>
+		<Code>KND</Code>
+	</Station>
+	<Station>
+		<Name>Kingussie</Name>
+		<Code>KIN</Code>
+	</Station>
+	<Station>
+		<Name>Kintbury</Name>
+		<Code>KIT</Code>
+	</Station>
+	<Station>
+		<Name>Kirby Cross</Name>
+		<Code>KBX</Code>
+	</Station>
+	<Station>
+		<Name>Kirk Sandall</Name>
+		<Code>KKS</Code>
+	</Station>
+	<Station>
+		<Name>Kirkby (Merseyside)</Name>
+		<Code>KIR</Code>
+	</Station>
+	<Station>
+		<Name>Kirkby Stephen</Name>
+		<Code>KSW</Code>
+	</Station>
+	<Station>
+		<Name>Kirkby-in-Ashfield</Name>
+		<Code>KKB</Code>
+	</Station>
+	<Station>
+		<Name>Kirkby-in-Furness</Name>
+		<Code>KBF</Code>
+	</Station>
+	<Station>
+		<Name>Kirkcaldy</Name>
+		<Code>KDY</Code>
+	</Station>
+	<Station>
+		<Name>Kirkconnel</Name>
+		<Code>KRK</Code>
+	</Station>
+	<Station>
+		<Name>Kirkdale</Name>
+		<Code>KKD</Code>
+	</Station>
+	<Station>
+		<Name>Kirkham &amp; Wesham</Name>
+		<Code>KKM</Code>
+	</Station>
+	<Station>
+		<Name>Kirkhill</Name>
+		<Code>KKH</Code>
+	</Station>
+	<Station>
+		<Name>Kirknewton</Name>
+		<Code>KKN</Code>
+	</Station>
+	<Station>
+		<Name>Kirkstall Forge</Name>
+		<Code>KLF</Code>
+	</Station>
+	<Station>
+		<Name>Kirkwood</Name>
+		<Code>KWD</Code>
+	</Station>
+	<Station>
+		<Name>Kirton Lindsey</Name>
+		<Code>KTL</Code>
+	</Station>
+	<Station>
+		<Name>Kiveton Bridge</Name>
+		<Code>KIV</Code>
+	</Station>
+	<Station>
+		<Name>Kiveton Park</Name>
+		<Code>KVP</Code>
+	</Station>
+	<Station>
+		<Name>Knaresborough</Name>
+		<Code>KNA</Code>
+	</Station>
+	<Station>
+		<Name>Knebworth</Name>
+		<Code>KBW</Code>
+	</Station>
+	<Station>
+		<Name>Knighton</Name>
+		<Code>KNI</Code>
+	</Station>
+	<Station>
+		<Name>Knockholt</Name>
+		<Code>KCK</Code>
+	</Station>
+	<Station>
+		<Name>Knottingley</Name>
+		<Code>KNO</Code>
+	</Station>
+	<Station>
+		<Name>Knucklas</Name>
+		<Code>KNU</Code>
+	</Station>
+	<Station>
+		<Name>Knutsford</Name>
+		<Code>KNF</Code>
+	</Station>
+	<Station>
+		<Name>Kyle of Lochalsh</Name>
+		<Code>KYL</Code>
+	</Station>
+	<Station>
+		<Name>Ladybank</Name>
+		<Code>LDY</Code>
+	</Station>
+	<Station>
+		<Name>Ladywell</Name>
+		<Code>LAD</Code>
+	</Station>
+	<Station>
+		<Name>Laindon</Name>
+		<Code>LAI</Code>
+	</Station>
+	<Station>
+		<Name>Lairg</Name>
+		<Code>LRG</Code>
+	</Station>
+	<Station>
+		<Name>Lake</Name>
+		<Code>LKE</Code>
+	</Station>
+	<Station>
+		<Name>Lakenheath</Name>
+		<Code>LAK</Code>
+	</Station>
+	<Station>
+		<Name>Lamphey</Name>
+		<Code>LAM</Code>
+	</Station>
+	<Station>
+		<Name>Lanark</Name>
+		<Code>LNK</Code>
+	</Station>
+	<Station>
+		<Name>Lancaster</Name>
+		<Code>LAN</Code>
+	</Station>
+	<Station>
+		<Name>Lancing</Name>
+		<Code>LAC</Code>
+	</Station>
+	<Station>
+		<Name>Landywood</Name>
+		<Code>LAW</Code>
+	</Station>
+	<Station>
+		<Name>Langbank</Name>
+		<Code>LGB</Code>
+	</Station>
+	<Station>
+		<Name>Langho</Name>
+		<Code>LHO</Code>
+	</Station>
+	<Station>
+		<Name>Langley (Berks)</Name>
+		<Code>LNY</Code>
+	</Station>
+	<Station>
+		<Name>Langley Green</Name>
+		<Code>LGG</Code>
+	</Station>
+	<Station>
+		<Name>Langley Mill</Name>
+		<Code>LGM</Code>
+	</Station>
+	<Station>
+		<Name>Langside</Name>
+		<Code>LGS</Code>
+	</Station>
+	<Station>
+		<Name>Langwathby</Name>
+		<Code>LGW</Code>
+	</Station>
+	<Station>
+		<Name>Langwith-Whaley Thorns</Name>
+		<Code>LAG</Code>
+	</Station>
+	<Station>
+		<Name>Lapford</Name>
+		<Code>LAP</Code>
+	</Station>
+	<Station>
+		<Name>Lapworth</Name>
+		<Code>LPW</Code>
+	</Station>
+	<Station>
+		<Name>Larbert</Name>
+		<Code>LBT</Code>
+	</Station>
+	<Station>
+		<Name>Largs</Name>
+		<Code>LAR</Code>
+	</Station>
+	<Station>
+		<Name>Larkhall</Name>
+		<Code>LRH</Code>
+	</Station>
+	<Station>
+		<Name>Laurencekirk</Name>
+		<Code>LAU</Code>
+	</Station>
+	<Station>
+		<Name>Lawrence Hill</Name>
+		<Code>LWH</Code>
+	</Station>
+	<Station>
+		<Name>Layton (Lancs)</Name>
+		<Code>LAY</Code>
+	</Station>
+	<Station>
+		<Name>Lazonby &amp; Kirkoswald</Name>
+		<Code>LZB</Code>
+	</Station>
+	<Station>
+		<Name>Lea Bridge</Name>
+		<Code>LEB</Code>
+	</Station>
+	<Station>
+		<Name>Lea Green</Name>
+		<Code>LEG</Code>
+	</Station>
+	<Station>
+		<Name>Lea Hall</Name>
+		<Code>LEH</Code>
+	</Station>
+	<Station>
+		<Name>Leagrave</Name>
+		<Code>LEA</Code>
+	</Station>
+	<Station>
+		<Name>Lealholm</Name>
+		<Code>LHM</Code>
+	</Station>
+	<Station>
+		<Name>Leamington Spa</Name>
+		<Code>LMS</Code>
+	</Station>
+	<Station>
+		<Name>Leasowe</Name>
+		<Code>LSW</Code>
+	</Station>
+	<Station>
+		<Name>Leatherhead</Name>
+		<Code>LHD</Code>
+	</Station>
+	<Station>
+		<Name>Ledbury</Name>
+		<Code>LED</Code>
+	</Station>
+	<Station>
+		<Name>Lee (London)</Name>
+		<Code>LEE</Code>
+	</Station>
+	<Station>
+		<Name>Leeds</Name>
+		<Code>LDS</Code>
+	</Station>
+	<Station>
+		<Name>Leicester</Name>
+		<Code>LEI</Code>
+	</Station>
+	<Station>
+		<Name>Leigh (Kent)</Name>
+		<Code>LIH</Code>
+	</Station>
+	<Station>
+		<Name>Leigh-on-Sea</Name>
+		<Code>LES</Code>
+	</Station>
+	<Station>
+		<Name>Leighton Buzzard</Name>
+		<Code>LBZ</Code>
+	</Station>
+	<Station>
+		<Name>Lelant</Name>
+		<Code>LEL</Code>
+	</Station>
+	<Station>
+		<Name>Lelant Saltings</Name>
+		<Code>LTS</Code>
+	</Station>
+	<Station>
+		<Name>Lenham</Name>
+		<Code>LEN</Code>
+	</Station>
+	<Station>
+		<Name>Lenzie</Name>
+		<Code>LNZ</Code>
+	</Station>
+	<Station>
+		<Name>Leominster</Name>
+		<Code>LEO</Code>
+	</Station>
+	<Station>
+		<Name>Letchworth Garden City</Name>
+		<Code>LET</Code>
+	</Station>
+	<Station>
+		<Name>Leuchars (for St. Andrews)</Name>
+		<Code>LEU</Code>
+	</Station>
+	<Station>
+		<Name>Levenshulme</Name>
+		<Code>LVM</Code>
+	</Station>
+	<Station>
+		<Name>Lewes</Name>
+		<Code>LWS</Code>
+	</Station>
+	<Station>
+		<Name>Lewisham</Name>
+		<Code>LEW</Code>
+	</Station>
+	<Station>
+		<Name>Leyland</Name>
+		<Code>LEY</Code>
+	</Station>
+	<Station>
+		<Name>Leyton Midland Road</Name>
+		<Code>LEM</Code>
+	</Station>
+	<Station>
+		<Name>Leytonstone High Road</Name>
+		<Code>LER</Code>
+	</Station>
+	<Station>
+		<Name>Lichfield City</Name>
+		<Code>LIC</Code>
+	</Station>
+	<Station>
+		<Name>Lichfield Trent Valley</Name>
+		<Code>LTV</Code>
+	</Station>
+	<Station>
+		<Name>Lidlington</Name>
+		<Code>LID</Code>
+	</Station>
+	<Station>
+		<Name>Limehouse</Name>
+		<Code>LHS</Code>
+	</Station>
+	<Station>
+		<Name>Lincoln Central</Name>
+		<Code>LCN</Code>
+	</Station>
+	<Station>
+		<Name>Lingfield</Name>
+		<Code>LFD</Code>
+	</Station>
+	<Station>
+		<Name>Lingwood</Name>
+		<Code>LGD</Code>
+	</Station>
+	<Station>
+		<Name>Linlithgow</Name>
+		<Code>LIN</Code>
+	</Station>
+	<Station>
+		<Name>Liphook</Name>
+		<Code>LIP</Code>
+	</Station>
+	<Station>
+		<Name>Liskeard</Name>
+		<Code>LSK</Code>
+	</Station>
+	<Station>
+		<Name>Liss</Name>
+		<Code>LIS</Code>
+	</Station>
+	<Station>
+		<Name>Lisvane &amp; Thornhill</Name>
+		<Code>LVT</Code>
+	</Station>
+	<Station>
+		<Name>Little Kimble</Name>
+		<Code>LTK</Code>
+	</Station>
+	<Station>
+		<Name>Little Sutton</Name>
+		<Code>LTT</Code>
+	</Station>
+	<Station>
+		<Name>Littleborough</Name>
+		<Code>LTL</Code>
+	</Station>
+	<Station>
+		<Name>Littlehampton</Name>
+		<Code>LIT</Code>
+	</Station>
+	<Station>
+		<Name>Littlehaven</Name>
+		<Code>LVN</Code>
+	</Station>
+	<Station>
+		<Name>Littleport</Name>
+		<Code>LTP</Code>
+	</Station>
+	<Station>
+		<Name>Liverpool Central</Name>
+		<Code>LVC</Code>
+	</Station>
+	<Station>
+		<Name>Liverpool James Street</Name>
+		<Code>LVJ</Code>
+	</Station>
+	<Station>
+		<Name>Liverpool Lime Street</Name>
+		<Code>LIV</Code>
+	</Station>
+	<Station>
+		<Name>Liverpool South Parkway</Name>
+		<Code>LPY</Code>
+	</Station>
+	<Station>
+		<Name>Livingston North</Name>
+		<Code>LSN</Code>
+	</Station>
+	<Station>
+		<Name>Livingston South</Name>
+		<Code>LVG</Code>
+	</Station>
+	<Station>
+		<Name>Llanaber</Name>
+		<Code>LLA</Code>
+	</Station>
+	<Station>
+		<Name>Llanbedr</Name>
+		<Code>LBR</Code>
+	</Station>
+	<Station>
+		<Name>Llanbister Road</Name>
+		<Code>LLT</Code>
+	</Station>
+	<Station>
+		<Name>Llanbradach</Name>
+		<Code>LNB</Code>
+	</Station>
+	<Station>
+		<Name>Llandaf</Name>
+		<Code>LLN</Code>
+	</Station>
+	<Station>
+		<Name>Llandanwg</Name>
+		<Code>LDN</Code>
+	</Station>
+	<Station>
+		<Name>Llandecwyn</Name>
+		<Code>LLC</Code>
+	</Station>
+	<Station>
+		<Name>Llandeilo</Name>
+		<Code>LLL</Code>
+	</Station>
+	<Station>
+		<Name>Llandovery</Name>
+		<Code>LLV</Code>
+	</Station>
+	<Station>
+		<Name>Llandrindod</Name>
+		<Code>LLO</Code>
+	</Station>
+	<Station>
+		<Name>Llandudno</Name>
+		<Code>LLD</Code>
+	</Station>
+	<Station>
+		<Name>Llandudno Junction</Name>
+		<Code>LLJ</Code>
+	</Station>
+	<Station>
+		<Name>Llandybie</Name>
+		<Code>LLI</Code>
+	</Station>
+	<Station>
+		<Name>Llanelli</Name>
+		<Code>LLE</Code>
+	</Station>
+	<Station>
+		<Name>Llanfairfechan</Name>
+		<Code>LLF</Code>
+	</Station>
+	<Station>
+		<Name>Llanfairpwll</Name>
+		<Code>LPG</Code>
+	</Station>
+	<Station>
+		<Name>Llangadog</Name>
+		<Code>LLG</Code>
+	</Station>
+	<Station>
+		<Name>Llangammarch</Name>
+		<Code>LLM</Code>
+	</Station>
+	<Station>
+		<Name>Llangennech</Name>
+		<Code>LLH</Code>
+	</Station>
+	<Station>
+		<Name>Llangynllo</Name>
+		<Code>LGO</Code>
+	</Station>
+	<Station>
+		<Name>Llanharan</Name>
+		<Code>LLR</Code>
+	</Station>
+	<Station>
+		<Name>Llanhilleth</Name>
+		<Code>LTH</Code>
+	</Station>
+	<Station>
+		<Name>Llanishen</Name>
+		<Code>LLS</Code>
+	</Station>
+	<Station>
+		<Name>Llanrwst</Name>
+		<Code>LWR</Code>
+	</Station>
+	<Station>
+		<Name>Llansamlet</Name>
+		<Code>LAS</Code>
+	</Station>
+	<Station>
+		<Name>Llantwit Major</Name>
+		<Code>LWM</Code>
+	</Station>
+	<Station>
+		<Name>Llanwrda</Name>
+		<Code>LNR</Code>
+	</Station>
+	<Station>
+		<Name>Llanwrtyd</Name>
+		<Code>LNW</Code>
+	</Station>
+	<Station>
+		<Name>Llwyngwril</Name>
+		<Code>LLW</Code>
+	</Station>
+	<Station>
+		<Name>Llwynypia</Name>
+		<Code>LLY</Code>
+	</Station>
+	<Station>
+		<Name>Loch Awe</Name>
+		<Code>LHA</Code>
+	</Station>
+	<Station>
+		<Name>Loch Eil Outward Bound</Name>
+		<Code>LHE</Code>
+	</Station>
+	<Station>
+		<Name>Lochailort</Name>
+		<Code>LCL</Code>
+	</Station>
+	<Station>
+		<Name>Locheilside</Name>
+		<Code>LCS</Code>
+	</Station>
+	<Station>
+		<Name>Lochgelly</Name>
+		<Code>LCG</Code>
+	</Station>
+	<Station>
+		<Name>Lochluichart</Name>
+		<Code>LCC</Code>
+	</Station>
+	<Station>
+		<Name>Lochwinnoch</Name>
+		<Code>LHW</Code>
+	</Station>
+	<Station>
+		<Name>Lockerbie</Name>
+		<Code>LOC</Code>
+	</Station>
+	<Station>
+		<Name>Lockwood</Name>
+		<Code>LCK</Code>
+	</Station>
+	<Station>
+		<Name>London Blackfriars</Name>
+		<Code>BFR</Code>
+	</Station>
+	<Station>
+		<Name>London Bridge</Name>
+		<Code>LBG</Code>
+	</Station>
+	<Station>
+		<Name>London Cannon Street</Name>
+		<Code>CST</Code>
+	</Station>
+	<Station>
+		<Name>London Charing Cross</Name>
+		<Code>CHX</Code>
+	</Station>
+	<Station>
+		<Name>London Euston</Name>
+		<Code>EUS</Code>
+	</Station>
+	<Station>
+		<Name>London Fenchurch Street</Name>
+		<Code>FST</Code>
+	</Station>
+	<Station>
+		<Name>London Fields</Name>
+		<Code>LOF</Code>
+	</Station>
+	<Station>
+		<Name>London Kings Cross</Name>
+		<Code>KGX</Code>
+	</Station>
+	<Station>
+		<Name>London Liverpool Street</Name>
+		<Code>LST</Code>
+	</Station>
+	<Station>
+		<Name>London Marylebone</Name>
+		<Code>MYB</Code>
+	</Station>
+	<Station>
+		<Name>London Paddington</Name>
+		<Code>PAD</Code>
+	</Station>
+	<Station>
+		<Name>London Road (Brighton)</Name>
+		<Code>LRB</Code>
+	</Station>
+	<Station>
+		<Name>London Road (Guildford)</Name>
+		<Code>LRD</Code>
+	</Station>
+	<Station>
+		<Name>London St Pancras (Intl)</Name>
+		<Code>SPX</Code>
+	</Station>
+	<Station>
+		<Name>London St Pancras International</Name>
+		<Code>STP</Code>
+	</Station>
+	<Station>
+		<Name>London Victoria</Name>
+		<Code>VIC</Code>
+	</Station>
+	<Station>
+		<Name>London Waterloo</Name>
+		<Code>WAT</Code>
+	</Station>
+	<Station>
+		<Name>London Waterloo East</Name>
+		<Code>WAE</Code>
+	</Station>
+	<Station>
+		<Name>Long Buckby</Name>
+		<Code>LBK</Code>
+	</Station>
+	<Station>
+		<Name>Long Eaton</Name>
+		<Code>LGE</Code>
+	</Station>
+	<Station>
+		<Name>Long Preston</Name>
+		<Code>LPR</Code>
+	</Station>
+	<Station>
+		<Name>Longbeck</Name>
+		<Code>LGK</Code>
+	</Station>
+	<Station>
+		<Name>Longbridge</Name>
+		<Code>LOB</Code>
+	</Station>
+	<Station>
+		<Name>Longcross</Name>
+		<Code>LNG</Code>
+	</Station>
+	<Station>
+		<Name>Longfield</Name>
+		<Code>LGF</Code>
+	</Station>
+	<Station>
+		<Name>Longniddry</Name>
+		<Code>LND</Code>
+	</Station>
+	<Station>
+		<Name>Longport</Name>
+		<Code>LPT</Code>
+	</Station>
+	<Station>
+		<Name>Longton</Name>
+		<Code>LGN</Code>
+	</Station>
+	<Station>
+		<Name>Looe</Name>
+		<Code>LOO</Code>
+	</Station>
+	<Station>
+		<Name>Lostock</Name>
+		<Code>LOT</Code>
+	</Station>
+	<Station>
+		<Name>Lostock Gralam</Name>
+		<Code>LTG</Code>
+	</Station>
+	<Station>
+		<Name>Lostock Hall</Name>
+		<Code>LOH</Code>
+	</Station>
+	<Station>
+		<Name>Lostwithiel</Name>
+		<Code>LOS</Code>
+	</Station>
+	<Station>
+		<Name>Loughborough</Name>
+		<Code>LBO</Code>
+	</Station>
+	<Station>
+		<Name>Loughborough Junction</Name>
+		<Code>LGJ</Code>
+	</Station>
+	<Station>
+		<Name>Lowdham</Name>
+		<Code>LOW</Code>
+	</Station>
+	<Station>
+		<Name>Lower Sydenham</Name>
+		<Code>LSY</Code>
+	</Station>
+	<Station>
+		<Name>Lowestoft</Name>
+		<Code>LWT</Code>
+	</Station>
+	<Station>
+		<Name>Ludlow</Name>
+		<Code>LUD</Code>
+	</Station>
+	<Station>
+		<Name>Luton</Name>
+		<Code>LUT</Code>
+	</Station>
+	<Station>
+		<Name>Luton Airport Parkway</Name>
+		<Code>LTN</Code>
+	</Station>
+	<Station>
+		<Name>Luxulyan</Name>
+		<Code>LUX</Code>
+	</Station>
+	<Station>
+		<Name>Lydney</Name>
+		<Code>LYD</Code>
+	</Station>
+	<Station>
+		<Name>Lye (West Midlands)</Name>
+		<Code>LYE</Code>
+	</Station>
+	<Station>
+		<Name>Lymington Pier</Name>
+		<Code>LYP</Code>
+	</Station>
+	<Station>
+		<Name>Lymington Town</Name>
+		<Code>LYT</Code>
+	</Station>
+	<Station>
+		<Name>Lympstone Commando</Name>
+		<Code>LYC</Code>
+	</Station>
+	<Station>
+		<Name>Lympstone Village</Name>
+		<Code>LYM</Code>
+	</Station>
+	<Station>
+		<Name>Lytham</Name>
+		<Code>LTM</Code>
+	</Station>
+	<Station>
+		<Name>Macclesfield</Name>
+		<Code>MAC</Code>
+	</Station>
+	<Station>
+		<Name>Machynlleth</Name>
+		<Code>MCN</Code>
+	</Station>
+	<Station>
+		<Name>Maesteg</Name>
+		<Code>MST</Code>
+	</Station>
+	<Station>
+		<Name>Maesteg (Ewenny Road)</Name>
+		<Code>MEW</Code>
+	</Station>
+	<Station>
+		<Name>Maghull</Name>
+		<Code>MAG</Code>
+	</Station>
+	<Station>
+		<Name>Maiden Newton</Name>
+		<Code>MDN</Code>
+	</Station>
+	<Station>
+		<Name>Maidenhead</Name>
+		<Code>MAI</Code>
+	</Station>
+	<Station>
+		<Name>Maidstone Barracks</Name>
+		<Code>MDB</Code>
+	</Station>
+	<Station>
+		<Name>Maidstone East</Name>
+		<Code>MDE</Code>
+	</Station>
+	<Station>
+		<Name>Maidstone West</Name>
+		<Code>MDW</Code>
+	</Station>
+	<Station>
+		<Name>Malden Manor</Name>
+		<Code>MAL</Code>
+	</Station>
+	<Station>
+		<Name>Mallaig</Name>
+		<Code>MLG</Code>
+	</Station>
+	<Station>
+		<Name>Malton</Name>
+		<Code>MLT</Code>
+	</Station>
+	<Station>
+		<Name>Malvern Link</Name>
+		<Code>MVL</Code>
+	</Station>
+	<Station>
+		<Name>Manchester Airport</Name>
+		<Code>MIA</Code>
+	</Station>
+	<Station>
+		<Name>Manchester Oxford Road</Name>
+		<Code>MCO</Code>
+	</Station>
+	<Station>
+		<Name>Manchester Piccadilly</Name>
+		<Code>MAN</Code>
+	</Station>
+	<Station>
+		<Name>Manchester United Football Ground</Name>
+		<Code>MUF</Code>
+	</Station>
+	<Station>
+		<Name>Manchester Victoria</Name>
+		<Code>MCV</Code>
+	</Station>
+	<Station>
+		<Name>Manea</Name>
+		<Code>MNE</Code>
+	</Station>
+	<Station>
+		<Name>Manningtree</Name>
+		<Code>MNG</Code>
+	</Station>
+	<Station>
+		<Name>Manor Park</Name>
+		<Code>MNP</Code>
+	</Station>
+	<Station>
+		<Name>Manor Road</Name>
+		<Code>MNR</Code>
+	</Station>
+	<Station>
+		<Name>Manorbier</Name>
+		<Code>MRB</Code>
+	</Station>
+	<Station>
+		<Name>Manors</Name>
+		<Code>MAS</Code>
+	</Station>
+	<Station>
+		<Name>Mansfield</Name>
+		<Code>MFT</Code>
+	</Station>
+	<Station>
+		<Name>Mansfield Woodhouse</Name>
+		<Code>MSW</Code>
+	</Station>
+	<Station>
+		<Name>March</Name>
+		<Code>MCH</Code>
+	</Station>
+	<Station>
+		<Name>Marden (Kent)</Name>
+		<Code>MRN</Code>
+	</Station>
+	<Station>
+		<Name>Margate</Name>
+		<Code>MAR</Code>
+	</Station>
+	<Station>
+		<Name>Market Harborough</Name>
+		<Code>MHR</Code>
+	</Station>
+	<Station>
+		<Name>Market Rasen</Name>
+		<Code>MKR</Code>
+	</Station>
+	<Station>
+		<Name>Markinch</Name>
+		<Code>MNC</Code>
+	</Station>
+	<Station>
+		<Name>Marks Tey</Name>
+		<Code>MKT</Code>
+	</Station>
+	<Station>
+		<Name>Marlow</Name>
+		<Code>MLW</Code>
+	</Station>
+	<Station>
+		<Name>Marple</Name>
+		<Code>MPL</Code>
+	</Station>
+	<Station>
+		<Name>Marsden (Yorks)</Name>
+		<Code>MSN</Code>
+	</Station>
+	<Station>
+		<Name>Marske</Name>
+		<Code>MSK</Code>
+	</Station>
+	<Station>
+		<Name>Marston Green</Name>
+		<Code>MGN</Code>
+	</Station>
+	<Station>
+		<Name>Martin Mill</Name>
+		<Code>MTM</Code>
+	</Station>
+	<Station>
+		<Name>Martins Heron</Name>
+		<Code>MAO</Code>
+	</Station>
+	<Station>
+		<Name>Marton</Name>
+		<Code>MTO</Code>
+	</Station>
+	<Station>
+		<Name>Maryhill</Name>
+		<Code>MYH</Code>
+	</Station>
+	<Station>
+		<Name>Maryland</Name>
+		<Code>MYL</Code>
+	</Station>
+	<Station>
+		<Name>Maryport</Name>
+		<Code>MRY</Code>
+	</Station>
+	<Station>
+		<Name>Matlock</Name>
+		<Code>MAT</Code>
+	</Station>
+	<Station>
+		<Name>Matlock Bath</Name>
+		<Code>MTB</Code>
+	</Station>
+	<Station>
+		<Name>Mauldeth Road</Name>
+		<Code>MAU</Code>
+	</Station>
+	<Station>
+		<Name>Maxwell Park</Name>
+		<Code>MAX</Code>
+	</Station>
+	<Station>
+		<Name>Maybole</Name>
+		<Code>MAY</Code>
+	</Station>
+	<Station>
+		<Name>Maze Hill</Name>
+		<Code>MZH</Code>
+	</Station>
+	<Station>
+		<Name>Meadowhall</Name>
+		<Code>MHS</Code>
+	</Station>
+	<Station>
+		<Name>Meldreth</Name>
+		<Code>MEL</Code>
+	</Station>
+	<Station>
+		<Name>Melksham</Name>
+		<Code>MKM</Code>
+	</Station>
+	<Station>
+		<Name>Melton (Suffolk)</Name>
+		<Code>MES</Code>
+	</Station>
+	<Station>
+		<Name>Melton Mowbray</Name>
+		<Code>MMO</Code>
+	</Station>
+	<Station>
+		<Name>Menheniot</Name>
+		<Code>MEN</Code>
+	</Station>
+	<Station>
+		<Name>Menston</Name>
+		<Code>MNN</Code>
+	</Station>
+	<Station>
+		<Name>Meols</Name>
+		<Code>MEO</Code>
+	</Station>
+	<Station>
+		<Name>Meols Cop</Name>
+		<Code>MEC</Code>
+	</Station>
+	<Station>
+		<Name>Meopham</Name>
+		<Code>MEP</Code>
+	</Station>
+	<Station>
+		<Name>Merryton</Name>
+		<Code>MEY</Code>
+	</Station>
+	<Station>
+		<Name>Merstham</Name>
+		<Code>MHM</Code>
+	</Station>
+	<Station>
+		<Name>Merthyr Tydfil</Name>
+		<Code>MER</Code>
+	</Station>
+	<Station>
+		<Name>Merthyr Vale</Name>
+		<Code>MEV</Code>
+	</Station>
+	<Station>
+		<Name>Metheringham</Name>
+		<Code>MGM</Code>
+	</Station>
+	<Station>
+		<Name>MetroCentre</Name>
+		<Code>MCE</Code>
+	</Station>
+	<Station>
+		<Name>Mexborough</Name>
+		<Code>MEX</Code>
+	</Station>
+	<Station>
+		<Name>Micheldever</Name>
+		<Code>MIC</Code>
+	</Station>
+	<Station>
+		<Name>Micklefield</Name>
+		<Code>MIK</Code>
+	</Station>
+	<Station>
+		<Name>Middlesbrough</Name>
+		<Code>MBR</Code>
+	</Station>
+	<Station>
+		<Name>Middlewood</Name>
+		<Code>MDL</Code>
+	</Station>
+	<Station>
+		<Name>Midgham</Name>
+		<Code>MDG</Code>
+	</Station>
+	<Station>
+		<Name>Milford (Surrey)</Name>
+		<Code>MLF</Code>
+	</Station>
+	<Station>
+		<Name>Milford Haven</Name>
+		<Code>MFH</Code>
+	</Station>
+	<Station>
+		<Name>Mill Hill (Lancs)</Name>
+		<Code>MLH</Code>
+	</Station>
+	<Station>
+		<Name>Mill Hill Broadway</Name>
+		<Code>MIL</Code>
+	</Station>
+	<Station>
+		<Name>Millbrook (Beds)</Name>
+		<Code>MLB</Code>
+	</Station>
+	<Station>
+		<Name>Millbrook (Hants)</Name>
+		<Code>MBK</Code>
+	</Station>
+	<Station>
+		<Name>Milliken Park</Name>
+		<Code>MIN</Code>
+	</Station>
+	<Station>
+		<Name>Millom</Name>
+		<Code>MLM</Code>
+	</Station>
+	<Station>
+		<Name>Mills Hill (Manchester)</Name>
+		<Code>MIH</Code>
+	</Station>
+	<Station>
+		<Name>Milngavie</Name>
+		<Code>MLN</Code>
+	</Station>
+	<Station>
+		<Name>Milton Keynes Central</Name>
+		<Code>MKC</Code>
+	</Station>
+	<Station>
+		<Name>Minffordd</Name>
+		<Code>MFF</Code>
+	</Station>
+	<Station>
+		<Name>Minster</Name>
+		<Code>MSR</Code>
+	</Station>
+	<Station>
+		<Name>Mirfield</Name>
+		<Code>MIR</Code>
+	</Station>
+	<Station>
+		<Name>Mistley</Name>
+		<Code>MIS</Code>
+	</Station>
+	<Station>
+		<Name>Mitcham Eastfields</Name>
+		<Code>MTC</Code>
+	</Station>
+	<Station>
+		<Name>Mitcham Junction</Name>
+		<Code>MIJ</Code>
+	</Station>
+	<Station>
+		<Name>Mobberley</Name>
+		<Code>MOB</Code>
+	</Station>
+	<Station>
+		<Name>Monifieth</Name>
+		<Code>MON</Code>
+	</Station>
+	<Station>
+		<Name>Monks Risborough</Name>
+		<Code>MRS</Code>
+	</Station>
+	<Station>
+		<Name>Montpelier</Name>
+		<Code>MTP</Code>
+	</Station>
+	<Station>
+		<Name>Montrose</Name>
+		<Code>MTS</Code>
+	</Station>
+	<Station>
+		<Name>Moorfields</Name>
+		<Code>MRF</Code>
+	</Station>
+	<Station>
+		<Name>Moorgate</Name>
+		<Code>MOG</Code>
+	</Station>
+	<Station>
+		<Name>Moorside</Name>
+		<Code>MSD</Code>
+	</Station>
+	<Station>
+		<Name>Moorthorpe</Name>
+		<Code>MRP</Code>
+	</Station>
+	<Station>
+		<Name>Morar</Name>
+		<Code>MRR</Code>
+	</Station>
+	<Station>
+		<Name>Morchard Road</Name>
+		<Code>MRD</Code>
+	</Station>
+	<Station>
+		<Name>Morden South</Name>
+		<Code>MDS</Code>
+	</Station>
+	<Station>
+		<Name>Morecambe</Name>
+		<Code>MCM</Code>
+	</Station>
+	<Station>
+		<Name>Moreton (Dorset)</Name>
+		<Code>MTN</Code>
+	</Station>
+	<Station>
+		<Name>Moreton (Merseyside)</Name>
+		<Code>MRT</Code>
+	</Station>
+	<Station>
+		<Name>Moreton-in-Marsh</Name>
+		<Code>MIM</Code>
+	</Station>
+	<Station>
+		<Name>Morfa Mawddach</Name>
+		<Code>MFA</Code>
+	</Station>
+	<Station>
+		<Name>Morley</Name>
+		<Code>MLY</Code>
+	</Station>
+	<Station>
+		<Name>Morpeth</Name>
+		<Code>MPT</Code>
+	</Station>
+	<Station>
+		<Name>Mortimer</Name>
+		<Code>MOR</Code>
+	</Station>
+	<Station>
+		<Name>Mortlake</Name>
+		<Code>MTL</Code>
+	</Station>
+	<Station>
+		<Name>Moses Gate</Name>
+		<Code>MSS</Code>
+	</Station>
+	<Station>
+		<Name>Moss Side</Name>
+		<Code>MOS</Code>
+	</Station>
+	<Station>
+		<Name>Mossley (Manchester)</Name>
+		<Code>MSL</Code>
+	</Station>
+	<Station>
+		<Name>Mossley Hill</Name>
+		<Code>MSH</Code>
+	</Station>
+	<Station>
+		<Name>Mosspark</Name>
+		<Code>MPK</Code>
+	</Station>
+	<Station>
+		<Name>Moston</Name>
+		<Code>MSO</Code>
+	</Station>
+	<Station>
+		<Name>Motherwell</Name>
+		<Code>MTH</Code>
+	</Station>
+	<Station>
+		<Name>Motspur Park</Name>
+		<Code>MOT</Code>
+	</Station>
+	<Station>
+		<Name>Mottingham</Name>
+		<Code>MTG</Code>
+	</Station>
+	<Station>
+		<Name>Mottisfont &amp; Dunbridge</Name>
+		<Code>DBG</Code>
+	</Station>
+	<Station>
+		<Name>Mouldsworth</Name>
+		<Code>MLD</Code>
+	</Station>
+	<Station>
+		<Name>Moulsecoomb</Name>
+		<Code>MCB</Code>
+	</Station>
+	<Station>
+		<Name>Mount Florida</Name>
+		<Code>MFL</Code>
+	</Station>
+	<Station>
+		<Name>Mount Vernon</Name>
+		<Code>MTV</Code>
+	</Station>
+	<Station>
+		<Name>Mountain Ash</Name>
+		<Code>MTA</Code>
+	</Station>
+	<Station>
+		<Name>Muir of Ord</Name>
+		<Code>MOO</Code>
+	</Station>
+	<Station>
+		<Name>Muirend</Name>
+		<Code>MUI</Code>
+	</Station>
+	<Station>
+		<Name>Musselburgh</Name>
+		<Code>MUB</Code>
+	</Station>
+	<Station>
+		<Name>Mytholmroyd</Name>
+		<Code>MYT</Code>
+	</Station>
+	<Station>
+		<Name>Nafferton</Name>
+		<Code>NFN</Code>
+	</Station>
+	<Station>
+		<Name>Nailsea &amp; Backwell</Name>
+		<Code>NLS</Code>
+	</Station>
+	<Station>
+		<Name>Nairn</Name>
+		<Code>NRN</Code>
+	</Station>
+	<Station>
+		<Name>Nantwich</Name>
+		<Code>NAN</Code>
+	</Station>
+	<Station>
+		<Name>Narberth</Name>
+		<Code>NAR</Code>
+	</Station>
+	<Station>
+		<Name>Narborough</Name>
+		<Code>NBR</Code>
+	</Station>
+	<Station>
+		<Name>Navigation Road</Name>
+		<Code>NVR</Code>
+	</Station>
+	<Station>
+		<Name>Neath</Name>
+		<Code>NTH</Code>
+	</Station>
+	<Station>
+		<Name>Needham Market</Name>
+		<Code>NMT</Code>
+	</Station>
+	<Station>
+		<Name>Neilston</Name>
+		<Code>NEI</Code>
+	</Station>
+	<Station>
+		<Name>Nelson</Name>
+		<Code>NEL</Code>
+	</Station>
+	<Station>
+		<Name>Neston</Name>
+		<Code>NES</Code>
+	</Station>
+	<Station>
+		<Name>Netherfield</Name>
+		<Code>NET</Code>
+	</Station>
+	<Station>
+		<Name>Nethertown</Name>
+		<Code>NRT</Code>
+	</Station>
+	<Station>
+		<Name>Netley</Name>
+		<Code>NTL</Code>
+	</Station>
+	<Station>
+		<Name>New Barnet</Name>
+		<Code>NBA</Code>
+	</Station>
+	<Station>
+		<Name>New Beckenham</Name>
+		<Code>NBC</Code>
+	</Station>
+	<Station>
+		<Name>New Brighton</Name>
+		<Code>NBN</Code>
+	</Station>
+	<Station>
+		<Name>New Clee</Name>
+		<Code>NCE</Code>
+	</Station>
+	<Station>
+		<Name>New Cross</Name>
+		<Code>NWX</Code>
+	</Station>
+	<Station>
+		<Name>New Cross Gate</Name>
+		<Code>NXG</Code>
+	</Station>
+	<Station>
+		<Name>New Cumnock</Name>
+		<Code>NCK</Code>
+	</Station>
+	<Station>
+		<Name>New Eltham</Name>
+		<Code>NEH</Code>
+	</Station>
+	<Station>
+		<Name>New Holland</Name>
+		<Code>NHL</Code>
+	</Station>
+	<Station>
+		<Name>New Hythe</Name>
+		<Code>NHE</Code>
+	</Station>
+	<Station>
+		<Name>New Lane</Name>
+		<Code>NLN</Code>
+	</Station>
+	<Station>
+		<Name>New Malden</Name>
+		<Code>NEM</Code>
+	</Station>
+	<Station>
+		<Name>New Mills Central</Name>
+		<Code>NMC</Code>
+	</Station>
+	<Station>
+		<Name>New Mills Newtown</Name>
+		<Code>NMN</Code>
+	</Station>
+	<Station>
+		<Name>New Milton</Name>
+		<Code>NWM</Code>
+	</Station>
+	<Station>
+		<Name>New Pudsey</Name>
+		<Code>NPD</Code>
+	</Station>
+	<Station>
+		<Name>New Southgate</Name>
+		<Code>NSG</Code>
+	</Station>
+	<Station>
+		<Name>Newark Castle</Name>
+		<Code>NCT</Code>
+	</Station>
+	<Station>
+		<Name>Newark North Gate</Name>
+		<Code>NNG</Code>
+	</Station>
+	<Station>
+		<Name>Newbridge</Name>
+		<Code>NBE</Code>
+	</Station>
+	<Station>
+		<Name>Newbury</Name>
+		<Code>NBY</Code>
+	</Station>
+	<Station>
+		<Name>Newbury Racecourse</Name>
+		<Code>NRC</Code>
+	</Station>
+	<Station>
+		<Name>Newcastle</Name>
+		<Code>NCL</Code>
+	</Station>
+	<Station>
+		<Name>Newcourt</Name>
+		<Code>NCO</Code>
+	</Station>
+	<Station>
+		<Name>Newcraighall</Name>
+		<Code>NEW</Code>
+	</Station>
+	<Station>
+		<Name>Newhaven Harbour</Name>
+		<Code>NVH</Code>
+	</Station>
+	<Station>
+		<Name>Newhaven Town</Name>
+		<Code>NVN</Code>
+	</Station>
+	<Station>
+		<Name>Newington</Name>
+		<Code>NGT</Code>
+	</Station>
+	<Station>
+		<Name>Newmarket</Name>
+		<Code>NMK</Code>
+	</Station>
+	<Station>
+		<Name>Newport (Essex)</Name>
+		<Code>NWE</Code>
+	</Station>
+	<Station>
+		<Name>Newport (South Wales)</Name>
+		<Code>NWP</Code>
+	</Station>
+	<Station>
+		<Name>Newquay</Name>
+		<Code>NQY</Code>
+	</Station>
+	<Station>
+		<Name>Newstead</Name>
+		<Code>NSD</Code>
+	</Station>
+	<Station>
+		<Name>Newton (Lanark)</Name>
+		<Code>NTN</Code>
+	</Station>
+	<Station>
+		<Name>Newton Abbot</Name>
+		<Code>NTA</Code>
+	</Station>
+	<Station>
+		<Name>Newton Aycliffe</Name>
+		<Code>NAY</Code>
+	</Station>
+	<Station>
+		<Name>Newton for Hyde</Name>
+		<Code>NWN</Code>
+	</Station>
+	<Station>
+		<Name>Newton St Cyres</Name>
+		<Code>NTC</Code>
+	</Station>
+	<Station>
+		<Name>Newtongrange</Name>
+		<Code>NEG</Code>
+	</Station>
+	<Station>
+		<Name>Newton-le-Willows</Name>
+		<Code>NLW</Code>
+	</Station>
+	<Station>
+		<Name>Newtonmore</Name>
+		<Code>NWR</Code>
+	</Station>
+	<Station>
+		<Name>Newton-on-Ayr</Name>
+		<Code>NOA</Code>
+	</Station>
+	<Station>
+		<Name>Newtown (Powys)</Name>
+		<Code>NWT</Code>
+	</Station>
+	<Station>
+		<Name>Ninian Park</Name>
+		<Code>NNP</Code>
+	</Station>
+	<Station>
+		<Name>Nitshill</Name>
+		<Code>NIT</Code>
+	</Station>
+	<Station>
+		<Name>Norbiton</Name>
+		<Code>NBT</Code>
+	</Station>
+	<Station>
+		<Name>Norbury</Name>
+		<Code>NRB</Code>
+	</Station>
+	<Station>
+		<Name>Normans Bay</Name>
+		<Code>NSB</Code>
+	</Station>
+	<Station>
+		<Name>Normanton</Name>
+		<Code>NOR</Code>
+	</Station>
+	<Station>
+		<Name>North Berwick</Name>
+		<Code>NBW</Code>
+	</Station>
+	<Station>
+		<Name>North Camp</Name>
+		<Code>NCM</Code>
+	</Station>
+	<Station>
+		<Name>North Dulwich</Name>
+		<Code>NDL</Code>
+	</Station>
+	<Station>
+		<Name>North Fambridge</Name>
+		<Code>NFA</Code>
+	</Station>
+	<Station>
+		<Name>North Llanrwst</Name>
+		<Code>NLR</Code>
+	</Station>
+	<Station>
+		<Name>North Queensferry</Name>
+		<Code>NQU</Code>
+	</Station>
+	<Station>
+		<Name>North Road (Darlington)</Name>
+		<Code>NRD</Code>
+	</Station>
+	<Station>
+		<Name>North Sheen</Name>
+		<Code>NSH</Code>
+	</Station>
+	<Station>
+		<Name>North Walsham</Name>
+		<Code>NWA</Code>
+	</Station>
+	<Station>
+		<Name>North Wembley</Name>
+		<Code>NWB</Code>
+	</Station>
+	<Station>
+		<Name>Northallerton</Name>
+		<Code>NTR</Code>
+	</Station>
+	<Station>
+		<Name>Northampton</Name>
+		<Code>NMP</Code>
+	</Station>
+	<Station>
+		<Name>Northfield</Name>
+		<Code>NFD</Code>
+	</Station>
+	<Station>
+		<Name>Northfleet</Name>
+		<Code>NFL</Code>
+	</Station>
+	<Station>
+		<Name>Northolt Park</Name>
+		<Code>NLT</Code>
+	</Station>
+	<Station>
+		<Name>Northumberland Park</Name>
+		<Code>NUM</Code>
+	</Station>
+	<Station>
+		<Name>Northwich</Name>
+		<Code>NWI</Code>
+	</Station>
+	<Station>
+		<Name>Norton Bridge</Name>
+		<Code>NTB</Code>
+	</Station>
+	<Station>
+		<Name>Norwich</Name>
+		<Code>NRW</Code>
+	</Station>
+	<Station>
+		<Name>Norwood Junction</Name>
+		<Code>NWD</Code>
+	</Station>
+	<Station>
+		<Name>Nottingham</Name>
+		<Code>NOT</Code>
+	</Station>
+	<Station>
+		<Name>Nuneaton</Name>
+		<Code>NUN</Code>
+	</Station>
+	<Station>
+		<Name>Nunhead</Name>
+		<Code>NHD</Code>
+	</Station>
+	<Station>
+		<Name>Nunthorpe</Name>
+		<Code>NNT</Code>
+	</Station>
+	<Station>
+		<Name>Nutbourne</Name>
+		<Code>NUT</Code>
+	</Station>
+	<Station>
+		<Name>Nutfield</Name>
+		<Code>NUF</Code>
+	</Station>
+	<Station>
+		<Name>Oakengates</Name>
+		<Code>OKN</Code>
+	</Station>
+	<Station>
+		<Name>Oakham</Name>
+		<Code>OKM</Code>
+	</Station>
+	<Station>
+		<Name>Oakleigh Park</Name>
+		<Code>OKL</Code>
+	</Station>
+	<Station>
+		<Name>Oban</Name>
+		<Code>OBN</Code>
+	</Station>
+	<Station>
+		<Name>Ockendon</Name>
+		<Code>OCK</Code>
+	</Station>
+	<Station>
+		<Name>Ockley</Name>
+		<Code>OLY</Code>
+	</Station>
+	<Station>
+		<Name>Okehampton</Name>
+		<Code>OKE</Code>
+	</Station>
+	<Station>
+		<Name>Old Hill</Name>
+		<Code>OHL</Code>
+	</Station>
+	<Station>
+		<Name>Old Roan</Name>
+		<Code>ORN</Code>
+	</Station>
+	<Station>
+		<Name>Old Street</Name>
+		<Code>OLD</Code>
+	</Station>
+	<Station>
+		<Name>Oldfield Park</Name>
+		<Code>OLF</Code>
+	</Station>
+	<Station>
+		<Name>Olton</Name>
+		<Code>OLT</Code>
+	</Station>
+	<Station>
+		<Name>Ore</Name>
+		<Code>ORE</Code>
+	</Station>
+	<Station>
+		<Name>Ormskirk</Name>
+		<Code>OMS</Code>
+	</Station>
+	<Station>
+		<Name>Orpington</Name>
+		<Code>ORP</Code>
+	</Station>
+	<Station>
+		<Name>Orrell</Name>
+		<Code>ORR</Code>
+	</Station>
+	<Station>
+		<Name>Orrell Park</Name>
+		<Code>OPK</Code>
+	</Station>
+	<Station>
+		<Name>Otford</Name>
+		<Code>OTF</Code>
+	</Station>
+	<Station>
+		<Name>Oulton Broad North</Name>
+		<Code>OUN</Code>
+	</Station>
+	<Station>
+		<Name>Oulton Broad South</Name>
+		<Code>OUS</Code>
+	</Station>
+	<Station>
+		<Name>Outwood</Name>
+		<Code>OUT</Code>
+	</Station>
+	<Station>
+		<Name>Overpool</Name>
+		<Code>OVE</Code>
+	</Station>
+	<Station>
+		<Name>Overton</Name>
+		<Code>OVR</Code>
+	</Station>
+	<Station>
+		<Name>Oxenholme Lake District</Name>
+		<Code>OXN</Code>
+	</Station>
+	<Station>
+		<Name>Oxford</Name>
+		<Code>OXF</Code>
+	</Station>
+	<Station>
+		<Name>Oxford Parkway</Name>
+		<Code>OXP</Code>
+	</Station>
+	<Station>
+		<Name>Oxshott</Name>
+		<Code>OXS</Code>
+	</Station>
+	<Station>
+		<Name>Oxted</Name>
+		<Code>OXT</Code>
+	</Station>
+	<Station>
+		<Name>Paddock Wood</Name>
+		<Code>PDW</Code>
+	</Station>
+	<Station>
+		<Name>Padgate</Name>
+		<Code>PDG</Code>
+	</Station>
+	<Station>
+		<Name>Paignton</Name>
+		<Code>PGN</Code>
+	</Station>
+	<Station>
+		<Name>Paisley Canal</Name>
+		<Code>PCN</Code>
+	</Station>
+	<Station>
+		<Name>Paisley Gilmour Street</Name>
+		<Code>PYG</Code>
+	</Station>
+	<Station>
+		<Name>Paisley St James</Name>
+		<Code>PYJ</Code>
+	</Station>
+	<Station>
+		<Name>Palmers Green</Name>
+		<Code>PAL</Code>
+	</Station>
+	<Station>
+		<Name>Pangbourne</Name>
+		<Code>PAN</Code>
+	</Station>
+	<Station>
+		<Name>Pannal</Name>
+		<Code>PNL</Code>
+	</Station>
+	<Station>
+		<Name>Pantyffynnon</Name>
+		<Code>PTF</Code>
+	</Station>
+	<Station>
+		<Name>Par</Name>
+		<Code>PAR</Code>
+	</Station>
+	<Station>
+		<Name>Parbold</Name>
+		<Code>PBL</Code>
+	</Station>
+	<Station>
+		<Name>Park Street</Name>
+		<Code>PKT</Code>
+	</Station>
+	<Station>
+		<Name>Parkstone (Dorset)</Name>
+		<Code>PKS</Code>
+	</Station>
+	<Station>
+		<Name>Parson Street</Name>
+		<Code>PSN</Code>
+	</Station>
+	<Station>
+		<Name>Partick</Name>
+		<Code>PTK</Code>
+	</Station>
+	<Station>
+		<Name>Parton</Name>
+		<Code>PRN</Code>
+	</Station>
+	<Station>
+		<Name>Patchway</Name>
+		<Code>PWY</Code>
+	</Station>
+	<Station>
+		<Name>Patricroft</Name>
+		<Code>PAT</Code>
+	</Station>
+	<Station>
+		<Name>Patterton</Name>
+		<Code>PTT</Code>
+	</Station>
+	<Station>
+		<Name>Peartree</Name>
+		<Code>PEA</Code>
+	</Station>
+	<Station>
+		<Name>Peckham Rye</Name>
+		<Code>PMR</Code>
+	</Station>
+	<Station>
+		<Name>Pegswood</Name>
+		<Code>PEG</Code>
+	</Station>
+	<Station>
+		<Name>Pemberton</Name>
+		<Code>PEM</Code>
+	</Station>
+	<Station>
+		<Name>Pembrey &amp; Burry Port</Name>
+		<Code>PBY</Code>
+	</Station>
+	<Station>
+		<Name>Pembroke</Name>
+		<Code>PMB</Code>
+	</Station>
+	<Station>
+		<Name>Pembroke Dock</Name>
+		<Code>PMD</Code>
+	</Station>
+	<Station>
+		<Name>Penally</Name>
+		<Code>PNA</Code>
+	</Station>
+	<Station>
+		<Name>Penarth</Name>
+		<Code>PEN</Code>
+	</Station>
+	<Station>
+		<Name>Pencoed</Name>
+		<Code>PCD</Code>
+	</Station>
+	<Station>
+		<Name>Pengam</Name>
+		<Code>PGM</Code>
+	</Station>
+	<Station>
+		<Name>Penge East</Name>
+		<Code>PNE</Code>
+	</Station>
+	<Station>
+		<Name>Penge West</Name>
+		<Code>PNW</Code>
+	</Station>
+	<Station>
+		<Name>Penhelig</Name>
+		<Code>PHG</Code>
+	</Station>
+	<Station>
+		<Name>Penistone</Name>
+		<Code>PNS</Code>
+	</Station>
+	<Station>
+		<Name>Penkridge</Name>
+		<Code>PKG</Code>
+	</Station>
+	<Station>
+		<Name>Penmaenmawr</Name>
+		<Code>PMW</Code>
+	</Station>
+	<Station>
+		<Name>Penmere</Name>
+		<Code>PNM</Code>
+	</Station>
+	<Station>
+		<Name>Penrhiwceiber</Name>
+		<Code>PER</Code>
+	</Station>
+	<Station>
+		<Name>Penrhyndeudraeth</Name>
+		<Code>PRH</Code>
+	</Station>
+	<Station>
+		<Name>Penrith (North Lakes)</Name>
+		<Code>PNR</Code>
+	</Station>
+	<Station>
+		<Name>Penryn (Cornwall)</Name>
+		<Code>PYN</Code>
+	</Station>
+	<Station>
+		<Name>Pensarn (Gwynedd)</Name>
+		<Code>PES</Code>
+	</Station>
+	<Station>
+		<Name>Penshurst</Name>
+		<Code>PHR</Code>
+	</Station>
+	<Station>
+		<Name>Pentre-Bach</Name>
+		<Code>PTB</Code>
+	</Station>
+	<Station>
+		<Name>Pen-y-Bont</Name>
+		<Code>PNY</Code>
+	</Station>
+	<Station>
+		<Name>Penychain</Name>
+		<Code>PNC</Code>
+	</Station>
+	<Station>
+		<Name>Penyffordd</Name>
+		<Code>PNF</Code>
+	</Station>
+	<Station>
+		<Name>Penzance</Name>
+		<Code>PNZ</Code>
+	</Station>
+	<Station>
+		<Name>Perranwell</Name>
+		<Code>PRW</Code>
+	</Station>
+	<Station>
+		<Name>Perry Barr</Name>
+		<Code>PRY</Code>
+	</Station>
+	<Station>
+		<Name>Pershore</Name>
+		<Code>PSH</Code>
+	</Station>
+	<Station>
+		<Name>Perth</Name>
+		<Code>PTH</Code>
+	</Station>
+	<Station>
+		<Name>Peterborough</Name>
+		<Code>PBO</Code>
+	</Station>
+	<Station>
+		<Name>Petersfield</Name>
+		<Code>PTR</Code>
+	</Station>
+	<Station>
+		<Name>Petts Wood</Name>
+		<Code>PET</Code>
+	</Station>
+	<Station>
+		<Name>Pevensey &amp; Westham</Name>
+		<Code>PEV</Code>
+	</Station>
+	<Station>
+		<Name>Pevensey Bay</Name>
+		<Code>PEB</Code>
+	</Station>
+	<Station>
+		<Name>Pewsey</Name>
+		<Code>PEW</Code>
+	</Station>
+	<Station>
+		<Name>Pilning</Name>
+		<Code>PIL</Code>
+	</Station>
+	<Station>
+		<Name>Pinhoe</Name>
+		<Code>PIN</Code>
+	</Station>
+	<Station>
+		<Name>Pitlochry</Name>
+		<Code>PIT</Code>
+	</Station>
+	<Station>
+		<Name>Pitsea</Name>
+		<Code>PSE</Code>
+	</Station>
+	<Station>
+		<Name>Pleasington</Name>
+		<Code>PLS</Code>
+	</Station>
+	<Station>
+		<Name>Plockton</Name>
+		<Code>PLK</Code>
+	</Station>
+	<Station>
+		<Name>Pluckley</Name>
+		<Code>PLC</Code>
+	</Station>
+	<Station>
+		<Name>Plumley</Name>
+		<Code>PLM</Code>
+	</Station>
+	<Station>
+		<Name>Plumpton</Name>
+		<Code>PMP</Code>
+	</Station>
+	<Station>
+		<Name>Plumstead</Name>
+		<Code>PLU</Code>
+	</Station>
+	<Station>
+		<Name>Plymouth</Name>
+		<Code>PLY</Code>
+	</Station>
+	<Station>
+		<Name>Pokesdown</Name>
+		<Code>POK</Code>
+	</Station>
+	<Station>
+		<Name>Polegate</Name>
+		<Code>PLG</Code>
+	</Station>
+	<Station>
+		<Name>Polesworth</Name>
+		<Code>PSW</Code>
+	</Station>
+	<Station>
+		<Name>Pollokshaws East</Name>
+		<Code>PWE</Code>
+	</Station>
+	<Station>
+		<Name>Pollokshaws West</Name>
+		<Code>PWW</Code>
+	</Station>
+	<Station>
+		<Name>Pollokshields East</Name>
+		<Code>PLE</Code>
+	</Station>
+	<Station>
+		<Name>Pollokshields West</Name>
+		<Code>PLW</Code>
+	</Station>
+	<Station>
+		<Name>Polmont</Name>
+		<Code>PMT</Code>
+	</Station>
+	<Station>
+		<Name>Polsloe Bridge</Name>
+		<Code>POL</Code>
+	</Station>
+	<Station>
+		<Name>Ponders End</Name>
+		<Code>PON</Code>
+	</Station>
+	<Station>
+		<Name>Pontarddulais</Name>
+		<Code>PTD</Code>
+	</Station>
+	<Station>
+		<Name>Pontefract Baghill</Name>
+		<Code>PFR</Code>
+	</Station>
+	<Station>
+		<Name>Pontefract Monkhill</Name>
+		<Code>PFM</Code>
+	</Station>
+	<Station>
+		<Name>Pontefract Tanshelf</Name>
+		<Code>POT</Code>
+	</Station>
+	<Station>
+		<Name>Pontlottyn</Name>
+		<Code>PLT</Code>
+	</Station>
+	<Station>
+		<Name>Pontyclun</Name>
+		<Code>PYC</Code>
+	</Station>
+	<Station>
+		<Name>Pont-y-Pant</Name>
+		<Code>PYP</Code>
+	</Station>
+	<Station>
+		<Name>Pontypool &amp; New Inn</Name>
+		<Code>PPL</Code>
+	</Station>
+	<Station>
+		<Name>Pontypridd</Name>
+		<Code>PPD</Code>
+	</Station>
+	<Station>
+		<Name>Poole</Name>
+		<Code>POO</Code>
+	</Station>
+	<Station>
+		<Name>Poppleton</Name>
+		<Code>POP</Code>
+	</Station>
+	<Station>
+		<Name>Port Glasgow</Name>
+		<Code>PTG</Code>
+	</Station>
+	<Station>
+		<Name>Port Sunlight</Name>
+		<Code>PSL</Code>
+	</Station>
+	<Station>
+		<Name>Port Talbot Parkway</Name>
+		<Code>PTA</Code>
+	</Station>
+	<Station>
+		<Name>Portchester</Name>
+		<Code>PTC</Code>
+	</Station>
+	<Station>
+		<Name>Porth</Name>
+		<Code>POR</Code>
+	</Station>
+	<Station>
+		<Name>Porthmadog</Name>
+		<Code>PTM</Code>
+	</Station>
+	<Station>
+		<Name>Portlethen</Name>
+		<Code>PLN</Code>
+	</Station>
+	<Station>
+		<Name>Portslade</Name>
+		<Code>PLD</Code>
+	</Station>
+	<Station>
+		<Name>Portsmouth &amp; Southsea</Name>
+		<Code>PMS</Code>
+	</Station>
+	<Station>
+		<Name>Portsmouth Arms</Name>
+		<Code>PMA</Code>
+	</Station>
+	<Station>
+		<Name>Portsmouth Harbour</Name>
+		<Code>PMH</Code>
+	</Station>
+	<Station>
+		<Name>Possilpark &amp; Parkhouse</Name>
+		<Code>PPK</Code>
+	</Station>
+	<Station>
+		<Name>Potters Bar</Name>
+		<Code>PBR</Code>
+	</Station>
+	<Station>
+		<Name>Poulton-le-Fylde</Name>
+		<Code>PFY</Code>
+	</Station>
+	<Station>
+		<Name>Poynton</Name>
+		<Code>PYT</Code>
+	</Station>
+	<Station>
+		<Name>Prees</Name>
+		<Code>PRS</Code>
+	</Station>
+	<Station>
+		<Name>Prescot</Name>
+		<Code>PSC</Code>
+	</Station>
+	<Station>
+		<Name>Prestatyn</Name>
+		<Code>PRT</Code>
+	</Station>
+	<Station>
+		<Name>Prestbury</Name>
+		<Code>PRB</Code>
+	</Station>
+	<Station>
+		<Name>Preston (Lancs)</Name>
+		<Code>PRE</Code>
+	</Station>
+	<Station>
+		<Name>Preston Park</Name>
+		<Code>PRP</Code>
+	</Station>
+	<Station>
+		<Name>Prestonpans</Name>
+		<Code>PST</Code>
+	</Station>
+	<Station>
+		<Name>Prestwick International Airport</Name>
+		<Code>PRA</Code>
+	</Station>
+	<Station>
+		<Name>Prestwick Town</Name>
+		<Code>PTW</Code>
+	</Station>
+	<Station>
+		<Name>Priesthill &amp; Darnley</Name>
+		<Code>PTL</Code>
+	</Station>
+	<Station>
+		<Name>Princes Risborough</Name>
+		<Code>PRR</Code>
+	</Station>
+	<Station>
+		<Name>Prittlewell</Name>
+		<Code>PRL</Code>
+	</Station>
+	<Station>
+		<Name>Prudhoe</Name>
+		<Code>PRU</Code>
+	</Station>
+	<Station>
+		<Name>Pulborough</Name>
+		<Code>PUL</Code>
+	</Station>
+	<Station>
+		<Name>Purfleet</Name>
+		<Code>PFL</Code>
+	</Station>
+	<Station>
+		<Name>Purley</Name>
+		<Code>PUR</Code>
+	</Station>
+	<Station>
+		<Name>Purley Oaks</Name>
+		<Code>PUO</Code>
+	</Station>
+	<Station>
+		<Name>Putney</Name>
+		<Code>PUT</Code>
+	</Station>
+	<Station>
+		<Name>Pwllheli</Name>
+		<Code>PWL</Code>
+	</Station>
+	<Station>
+		<Name>Pye Corner</Name>
+		<Code>PYE</Code>
+	</Station>
+	<Station>
+		<Name>Pyle</Name>
+		<Code>PYL</Code>
+	</Station>
+	<Station>
+		<Name>Quakers Yard</Name>
+		<Code>QYD</Code>
+	</Station>
+	<Station>
+		<Name>Queenborough</Name>
+		<Code>QBR</Code>
+	</Station>
+	<Station>
+		<Name>Queens Park (Glasgow)</Name>
+		<Code>QPK</Code>
+	</Station>
+	<Station>
+		<Name>Queens Park (London)</Name>
+		<Code>QPW</Code>
+	</Station>
+	<Station>
+		<Name>Queens Road (Peckham)</Name>
+		<Code>QRP</Code>
+	</Station>
+	<Station>
+		<Name>Queenstown Road (Battersea)</Name>
+		<Code>QRB</Code>
+	</Station>
+	<Station>
+		<Name>Quintrell Downs</Name>
+		<Code>QUI</Code>
+	</Station>
+	<Station>
+		<Name>Radcliffe-on-Trent</Name>
+		<Code>RDF</Code>
+	</Station>
+	<Station>
+		<Name>Radlett</Name>
+		<Code>RDT</Code>
+	</Station>
+	<Station>
+		<Name>Radley</Name>
+		<Code>RAD</Code>
+	</Station>
+	<Station>
+		<Name>Radyr</Name>
+		<Code>RDR</Code>
+	</Station>
+	<Station>
+		<Name>Rainford</Name>
+		<Code>RNF</Code>
+	</Station>
+	<Station>
+		<Name>Rainham (Essex)</Name>
+		<Code>RNM</Code>
+	</Station>
+	<Station>
+		<Name>Rainham (Kent)</Name>
+		<Code>RAI</Code>
+	</Station>
+	<Station>
+		<Name>Rainhill</Name>
+		<Code>RNH</Code>
+	</Station>
+	<Station>
+		<Name>Ramsgate</Name>
+		<Code>RAM</Code>
+	</Station>
+	<Station>
+		<Name>Ramsgreave &amp; Wilpshire</Name>
+		<Code>RGW</Code>
+	</Station>
+	<Station>
+		<Name>Rannoch</Name>
+		<Code>RAN</Code>
+	</Station>
+	<Station>
+		<Name>Rauceby</Name>
+		<Code>RAU</Code>
+	</Station>
+	<Station>
+		<Name>Ravenglass for Eskdale</Name>
+		<Code>RAV</Code>
+	</Station>
+	<Station>
+		<Name>Ravensbourne</Name>
+		<Code>RVB</Code>
+	</Station>
+	<Station>
+		<Name>Ravensthorpe</Name>
+		<Code>RVN</Code>
+	</Station>
+	<Station>
+		<Name>Rawcliffe</Name>
+		<Code>RWC</Code>
+	</Station>
+	<Station>
+		<Name>Rayleigh</Name>
+		<Code>RLG</Code>
+	</Station>
+	<Station>
+		<Name>Raynes Park</Name>
+		<Code>RAY</Code>
+	</Station>
+	<Station>
+		<Name>Reading</Name>
+		<Code>RDG</Code>
+	</Station>
+	<Station>
+		<Name>Reading West</Name>
+		<Code>RDW</Code>
+	</Station>
+	<Station>
+		<Name>Rectory Road</Name>
+		<Code>REC</Code>
+	</Station>
+	<Station>
+		<Name>Redbridge</Name>
+		<Code>RDB</Code>
+	</Station>
+	<Station>
+		<Name>Redcar British Steel</Name>
+		<Code>RBS</Code>
+	</Station>
+	<Station>
+		<Name>Redcar Central</Name>
+		<Code>RCC</Code>
+	</Station>
+	<Station>
+		<Name>Redcar East</Name>
+		<Code>RCE</Code>
+	</Station>
+	<Station>
+		<Name>Reddish North</Name>
+		<Code>RDN</Code>
+	</Station>
+	<Station>
+		<Name>Reddish South</Name>
+		<Code>RDS</Code>
+	</Station>
+	<Station>
+		<Name>Redditch</Name>
+		<Code>RDC</Code>
+	</Station>
+	<Station>
+		<Name>Redhill</Name>
+		<Code>RDH</Code>
+	</Station>
+	<Station>
+		<Name>Redland</Name>
+		<Code>RDA</Code>
+	</Station>
+	<Station>
+		<Name>Redruth</Name>
+		<Code>RED</Code>
+	</Station>
+	<Station>
+		<Name>Reedham (Norfolk)</Name>
+		<Code>REE</Code>
+	</Station>
+	<Station>
+		<Name>Reedham (Surrey)</Name>
+		<Code>RHM</Code>
+	</Station>
+	<Station>
+		<Name>Reigate</Name>
+		<Code>REI</Code>
+	</Station>
+	<Station>
+		<Name>Renton</Name>
+		<Code>RTN</Code>
+	</Station>
+	<Station>
+		<Name>Retford</Name>
+		<Code>RET</Code>
+	</Station>
+	<Station>
+		<Name>Rhiwbina</Name>
+		<Code>RHI</Code>
+	</Station>
+	<Station>
+		<Name>Rhoose Cardiff International Airport</Name>
+		<Code>RIA</Code>
+	</Station>
+	<Station>
+		<Name>Rhosneigr</Name>
+		<Code>RHO</Code>
+	</Station>
+	<Station>
+		<Name>Rhyl</Name>
+		<Code>RHL</Code>
+	</Station>
+	<Station>
+		<Name>Rhymney</Name>
+		<Code>RHY</Code>
+	</Station>
+	<Station>
+		<Name>Ribblehead</Name>
+		<Code>RHD</Code>
+	</Station>
+	<Station>
+		<Name>Rice Lane</Name>
+		<Code>RIL</Code>
+	</Station>
+	<Station>
+		<Name>Richmond (London)</Name>
+		<Code>RMD</Code>
+	</Station>
+	<Station>
+		<Name>Rickmansworth</Name>
+		<Code>RIC</Code>
+	</Station>
+	<Station>
+		<Name>Riddlesdown</Name>
+		<Code>RDD</Code>
+	</Station>
+	<Station>
+		<Name>Ridgmont</Name>
+		<Code>RID</Code>
+	</Station>
+	<Station>
+		<Name>Riding Mill</Name>
+		<Code>RDM</Code>
+	</Station>
+	<Station>
+		<Name>Risca &amp; Pontymister</Name>
+		<Code>RCA</Code>
+	</Station>
+	<Station>
+		<Name>Rishton</Name>
+		<Code>RIS</Code>
+	</Station>
+	<Station>
+		<Name>Robertsbridge</Name>
+		<Code>RBR</Code>
+	</Station>
+	<Station>
+		<Name>Roby</Name>
+		<Code>ROB</Code>
+	</Station>
+	<Station>
+		<Name>Rochdale</Name>
+		<Code>RCD</Code>
+	</Station>
+	<Station>
+		<Name>Roche</Name>
+		<Code>ROC</Code>
+	</Station>
+	<Station>
+		<Name>Rochester</Name>
+		<Code>RTR</Code>
+	</Station>
+	<Station>
+		<Name>Rochford</Name>
+		<Code>RFD</Code>
+	</Station>
+	<Station>
+		<Name>Rock Ferry</Name>
+		<Code>RFY</Code>
+	</Station>
+	<Station>
+		<Name>Rogart</Name>
+		<Code>ROG</Code>
+	</Station>
+	<Station>
+		<Name>Rogerstone</Name>
+		<Code>ROR</Code>
+	</Station>
+	<Station>
+		<Name>Rolleston</Name>
+		<Code>ROL</Code>
+	</Station>
+	<Station>
+		<Name>Roman Bridge</Name>
+		<Code>RMB</Code>
+	</Station>
+	<Station>
+		<Name>Romford</Name>
+		<Code>RMF</Code>
+	</Station>
+	<Station>
+		<Name>Romiley</Name>
+		<Code>RML</Code>
+	</Station>
+	<Station>
+		<Name>Romsey</Name>
+		<Code>ROM</Code>
+	</Station>
+	<Station>
+		<Name>Roose</Name>
+		<Code>ROO</Code>
+	</Station>
+	<Station>
+		<Name>Rose Grove</Name>
+		<Code>RSG</Code>
+	</Station>
+	<Station>
+		<Name>Rose Hill Marple</Name>
+		<Code>RSH</Code>
+	</Station>
+	<Station>
+		<Name>Rosyth</Name>
+		<Code>ROS</Code>
+	</Station>
+	<Station>
+		<Name>Rotherham Central</Name>
+		<Code>RMC</Code>
+	</Station>
+	<Station>
+		<Name>Rotherhithe</Name>
+		<Code>ROE</Code>
+	</Station>
+	<Station>
+		<Name>Roughton Road</Name>
+		<Code>RNR</Code>
+	</Station>
+	<Station>
+		<Name>Rowlands Castle</Name>
+		<Code>RLN</Code>
+	</Station>
+	<Station>
+		<Name>Rowley Regis</Name>
+		<Code>ROW</Code>
+	</Station>
+	<Station>
+		<Name>Roy Bridge</Name>
+		<Code>RYB</Code>
+	</Station>
+	<Station>
+		<Name>Roydon</Name>
+		<Code>RYN</Code>
+	</Station>
+	<Station>
+		<Name>Royston</Name>
+		<Code>RYS</Code>
+	</Station>
+	<Station>
+		<Name>Ruabon</Name>
+		<Code>RUA</Code>
+	</Station>
+	<Station>
+		<Name>Rufford</Name>
+		<Code>RUF</Code>
+	</Station>
+	<Station>
+		<Name>Rugby</Name>
+		<Code>RUG</Code>
+	</Station>
+	<Station>
+		<Name>Rugeley Town</Name>
+		<Code>RGT</Code>
+	</Station>
+	<Station>
+		<Name>Rugeley Trent Valley</Name>
+		<Code>RGL</Code>
+	</Station>
+	<Station>
+		<Name>Runcorn</Name>
+		<Code>RUN</Code>
+	</Station>
+	<Station>
+		<Name>Runcorn East</Name>
+		<Code>RUE</Code>
+	</Station>
+	<Station>
+		<Name>Ruskington</Name>
+		<Code>RKT</Code>
+	</Station>
+	<Station>
+		<Name>Ruswarp</Name>
+		<Code>RUS</Code>
+	</Station>
+	<Station>
+		<Name>Rutherglen</Name>
+		<Code>RUT</Code>
+	</Station>
+	<Station>
+		<Name>Ryde Esplanade</Name>
+		<Code>RYD</Code>
+	</Station>
+	<Station>
+		<Name>Ryde Pier Head</Name>
+		<Code>RYP</Code>
+	</Station>
+	<Station>
+		<Name>Ryde St Johns Road</Name>
+		<Code>RYR</Code>
+	</Station>
+	<Station>
+		<Name>Ryder Brow</Name>
+		<Code>RRB</Code>
+	</Station>
+	<Station>
+		<Name>Rye (Sussex)</Name>
+		<Code>RYE</Code>
+	</Station>
+	<Station>
+		<Name>Rye House</Name>
+		<Code>RYH</Code>
+	</Station>
+	<Station>
+		<Name>Salford Central</Name>
+		<Code>SFD</Code>
+	</Station>
+	<Station>
+		<Name>Salford Crescent</Name>
+		<Code>SLD</Code>
+	</Station>
+	<Station>
+		<Name>Salfords (Surrey)</Name>
+		<Code>SAF</Code>
+	</Station>
+	<Station>
+		<Name>Salhouse</Name>
+		<Code>SAH</Code>
+	</Station>
+	<Station>
+		<Name>Salisbury</Name>
+		<Code>SAL</Code>
+	</Station>
+	<Station>
+		<Name>Saltaire</Name>
+		<Code>SAE</Code>
+	</Station>
+	<Station>
+		<Name>Saltash</Name>
+		<Code>STS</Code>
+	</Station>
+	<Station>
+		<Name>Saltburn</Name>
+		<Code>SLB</Code>
+	</Station>
+	<Station>
+		<Name>Saltcoats</Name>
+		<Code>SLT</Code>
+	</Station>
+	<Station>
+		<Name>Saltmarshe</Name>
+		<Code>SAM</Code>
+	</Station>
+	<Station>
+		<Name>Salwick</Name>
+		<Code>SLW</Code>
+	</Station>
+	<Station>
+		<Name>Sampford Courtenay</Name>
+		<Code>SMC</Code>
+	</Station>
+	<Station>
+		<Name>Sandal &amp; Agbrigg</Name>
+		<Code>SNA</Code>
+	</Station>
+	<Station>
+		<Name>Sandbach</Name>
+		<Code>SDB</Code>
+	</Station>
+	<Station>
+		<Name>Sanderstead</Name>
+		<Code>SNR</Code>
+	</Station>
+	<Station>
+		<Name>Sandhills</Name>
+		<Code>SDL</Code>
+	</Station>
+	<Station>
+		<Name>Sandhurst (Berks)</Name>
+		<Code>SND</Code>
+	</Station>
+	<Station>
+		<Name>Sandling</Name>
+		<Code>SDG</Code>
+	</Station>
+	<Station>
+		<Name>Sandown</Name>
+		<Code>SAN</Code>
+	</Station>
+	<Station>
+		<Name>Sandplace</Name>
+		<Code>SDP</Code>
+	</Station>
+	<Station>
+		<Name>Sandwell &amp; Dudley</Name>
+		<Code>SAD</Code>
+	</Station>
+	<Station>
+		<Name>Sandwich</Name>
+		<Code>SDW</Code>
+	</Station>
+	<Station>
+		<Name>Sandy</Name>
+		<Code>SDY</Code>
+	</Station>
+	<Station>
+		<Name>Sankey for Penketh</Name>
+		<Code>SNK</Code>
+	</Station>
+	<Station>
+		<Name>Sanquhar</Name>
+		<Code>SQH</Code>
+	</Station>
+	<Station>
+		<Name>Sarn</Name>
+		<Code>SRR</Code>
+	</Station>
+	<Station>
+		<Name>Saundersfoot</Name>
+		<Code>SDF</Code>
+	</Station>
+	<Station>
+		<Name>Saunderton</Name>
+		<Code>SDR</Code>
+	</Station>
+	<Station>
+		<Name>Sawbridgeworth</Name>
+		<Code>SAW</Code>
+	</Station>
+	<Station>
+		<Name>Saxilby</Name>
+		<Code>SXY</Code>
+	</Station>
+	<Station>
+		<Name>Saxmundham</Name>
+		<Code>SAX</Code>
+	</Station>
+	<Station>
+		<Name>Scarborough</Name>
+		<Code>SCA</Code>
+	</Station>
+	<Station>
+		<Name>Scotscalder</Name>
+		<Code>SCT</Code>
+	</Station>
+	<Station>
+		<Name>Scotstounhill</Name>
+		<Code>SCH</Code>
+	</Station>
+	<Station>
+		<Name>Scunthorpe</Name>
+		<Code>SCU</Code>
+	</Station>
+	<Station>
+		<Name>Sea Mills</Name>
+		<Code>SML</Code>
+	</Station>
+	<Station>
+		<Name>Seaford (Sussex)</Name>
+		<Code>SEF</Code>
+	</Station>
+	<Station>
+		<Name>Seaforth &amp; Litherland</Name>
+		<Code>SFL</Code>
+	</Station>
+	<Station>
+		<Name>Seaham</Name>
+		<Code>SEA</Code>
+	</Station>
+	<Station>
+		<Name>Seamer</Name>
+		<Code>SEM</Code>
+	</Station>
+	<Station>
+		<Name>Seascale</Name>
+		<Code>SSC</Code>
+	</Station>
+	<Station>
+		<Name>Seaton Carew</Name>
+		<Code>SEC</Code>
+	</Station>
+	<Station>
+		<Name>Seer Green &amp; Jordans</Name>
+		<Code>SRG</Code>
+	</Station>
+	<Station>
+		<Name>Selby</Name>
+		<Code>SBY</Code>
+	</Station>
+	<Station>
+		<Name>Selhurst</Name>
+		<Code>SRS</Code>
+	</Station>
+	<Station>
+		<Name>Sellafield</Name>
+		<Code>SEL</Code>
+	</Station>
+	<Station>
+		<Name>Selling</Name>
+		<Code>SEG</Code>
+	</Station>
+	<Station>
+		<Name>Selly Oak</Name>
+		<Code>SLY</Code>
+	</Station>
+	<Station>
+		<Name>Settle</Name>
+		<Code>SET</Code>
+	</Station>
+	<Station>
+		<Name>Seven Kings</Name>
+		<Code>SVK</Code>
+	</Station>
+	<Station>
+		<Name>Seven Sisters</Name>
+		<Code>SVS</Code>
+	</Station>
+	<Station>
+		<Name>Sevenoaks</Name>
+		<Code>SEV</Code>
+	</Station>
+	<Station>
+		<Name>Severn Beach</Name>
+		<Code>SVB</Code>
+	</Station>
+	<Station>
+		<Name>Severn Tunnel Junction</Name>
+		<Code>STJ</Code>
+	</Station>
+	<Station>
+		<Name>Shadwell</Name>
+		<Code>SDE</Code>
+	</Station>
+	<Station>
+		<Name>Shalford (Surrey)</Name>
+		<Code>SFR</Code>
+	</Station>
+	<Station>
+		<Name>Shanklin</Name>
+		<Code>SHN</Code>
+	</Station>
+	<Station>
+		<Name>Shawfair</Name>
+		<Code>SFI</Code>
+	</Station>
+	<Station>
+		<Name>Shawford</Name>
+		<Code>SHW</Code>
+	</Station>
+	<Station>
+		<Name>Shawlands</Name>
+		<Code>SHL</Code>
+	</Station>
+	<Station>
+		<Name>Sheerness-on-Sea</Name>
+		<Code>SSS</Code>
+	</Station>
+	<Station>
+		<Name>Sheffield</Name>
+		<Code>SHF</Code>
+	</Station>
+	<Station>
+		<Name>Shelford (Cambs)</Name>
+		<Code>SED</Code>
+	</Station>
+	<Station>
+		<Name>Shenfield</Name>
+		<Code>SNF</Code>
+	</Station>
+	<Station>
+		<Name>Shenstone</Name>
+		<Code>SEN</Code>
+	</Station>
+	<Station>
+		<Name>Shepherd's Bush</Name>
+		<Code>SPB</Code>
+	</Station>
+	<Station>
+		<Name>Shepherds Well</Name>
+		<Code>SPH</Code>
+	</Station>
+	<Station>
+		<Name>Shepley</Name>
+		<Code>SPY</Code>
+	</Station>
+	<Station>
+		<Name>Shepperton</Name>
+		<Code>SHP</Code>
+	</Station>
+	<Station>
+		<Name>Shepreth</Name>
+		<Code>STH</Code>
+	</Station>
+	<Station>
+		<Name>Sherborne</Name>
+		<Code>SHE</Code>
+	</Station>
+	<Station>
+		<Name>Sherburn-in-Elmet</Name>
+		<Code>SIE</Code>
+	</Station>
+	<Station>
+		<Name>Sheringham</Name>
+		<Code>SHM</Code>
+	</Station>
+	<Station>
+		<Name>Shettleston</Name>
+		<Code>SLS</Code>
+	</Station>
+	<Station>
+		<Name>Shieldmuir</Name>
+		<Code>SDM</Code>
+	</Station>
+	<Station>
+		<Name>Shifnal</Name>
+		<Code>SFN</Code>
+	</Station>
+	<Station>
+		<Name>Shildon</Name>
+		<Code>SHD</Code>
+	</Station>
+	<Station>
+		<Name>Shiplake</Name>
+		<Code>SHI</Code>
+	</Station>
+	<Station>
+		<Name>Shipley (Yorks)</Name>
+		<Code>SHY</Code>
+	</Station>
+	<Station>
+		<Name>Shippea Hill</Name>
+		<Code>SPP</Code>
+	</Station>
+	<Station>
+		<Name>Shipton</Name>
+		<Code>SIP</Code>
+	</Station>
+	<Station>
+		<Name>Shirebrook</Name>
+		<Code>SHB</Code>
+	</Station>
+	<Station>
+		<Name>Shirehampton</Name>
+		<Code>SHH</Code>
+	</Station>
+	<Station>
+		<Name>Shireoaks</Name>
+		<Code>SRO</Code>
+	</Station>
+	<Station>
+		<Name>Shirley</Name>
+		<Code>SRL</Code>
+	</Station>
+	<Station>
+		<Name>Shoeburyness</Name>
+		<Code>SRY</Code>
+	</Station>
+	<Station>
+		<Name>Sholing</Name>
+		<Code>SHO</Code>
+	</Station>
+	<Station>
+		<Name>Shoreditch High Street</Name>
+		<Code>SDC</Code>
+	</Station>
+	<Station>
+		<Name>Shoreham (Kent)</Name>
+		<Code>SEH</Code>
+	</Station>
+	<Station>
+		<Name>Shoreham-by-Sea</Name>
+		<Code>SSE</Code>
+	</Station>
+	<Station>
+		<Name>Shortlands</Name>
+		<Code>SRT</Code>
+	</Station>
+	<Station>
+		<Name>Shotton</Name>
+		<Code>SHT</Code>
+	</Station>
+	<Station>
+		<Name>Shotts</Name>
+		<Code>SHS</Code>
+	</Station>
+	<Station>
+		<Name>Shrewsbury</Name>
+		<Code>SHR</Code>
+	</Station>
+	<Station>
+		<Name>Sidcup</Name>
+		<Code>SID</Code>
+	</Station>
+	<Station>
+		<Name>Sileby</Name>
+		<Code>SIL</Code>
+	</Station>
+	<Station>
+		<Name>Silecroft</Name>
+		<Code>SIC</Code>
+	</Station>
+	<Station>
+		<Name>Silkstone Common</Name>
+		<Code>SLK</Code>
+	</Station>
+	<Station>
+		<Name>Silver Street</Name>
+		<Code>SLV</Code>
+	</Station>
+	<Station>
+		<Name>Silverdale</Name>
+		<Code>SVR</Code>
+	</Station>
+	<Station>
+		<Name>Singer</Name>
+		<Code>SIN</Code>
+	</Station>
+	<Station>
+		<Name>Sittingbourne</Name>
+		<Code>SIT</Code>
+	</Station>
+	<Station>
+		<Name>Skegness</Name>
+		<Code>SKG</Code>
+	</Station>
+	<Station>
+		<Name>Skewen</Name>
+		<Code>SKE</Code>
+	</Station>
+	<Station>
+		<Name>Skipton</Name>
+		<Code>SKI</Code>
+	</Station>
+	<Station>
+		<Name>Slade Green</Name>
+		<Code>SGR</Code>
+	</Station>
+	<Station>
+		<Name>Slaithwaite</Name>
+		<Code>SWT</Code>
+	</Station>
+	<Station>
+		<Name>Slateford</Name>
+		<Code>SLA</Code>
+	</Station>
+	<Station>
+		<Name>Sleaford</Name>
+		<Code>SLR</Code>
+	</Station>
+	<Station>
+		<Name>Sleights</Name>
+		<Code>SLH</Code>
+	</Station>
+	<Station>
+		<Name>Slough</Name>
+		<Code>SLO</Code>
+	</Station>
+	<Station>
+		<Name>Small Heath</Name>
+		<Code>SMA</Code>
+	</Station>
+	<Station>
+		<Name>Smallbrook Junction</Name>
+		<Code>SAB</Code>
+	</Station>
+	<Station>
+		<Name>Smethwick Galton Bridge</Name>
+		<Code>SGB</Code>
+	</Station>
+	<Station>
+		<Name>Smethwick Rolfe Street</Name>
+		<Code>SMR</Code>
+	</Station>
+	<Station>
+		<Name>Smithy Bridge</Name>
+		<Code>SMB</Code>
+	</Station>
+	<Station>
+		<Name>Snaith</Name>
+		<Code>SNI</Code>
+	</Station>
+	<Station>
+		<Name>Snodland</Name>
+		<Code>SDA</Code>
+	</Station>
+	<Station>
+		<Name>Snowdown</Name>
+		<Code>SWO</Code>
+	</Station>
+	<Station>
+		<Name>Sole Street</Name>
+		<Code>SOR</Code>
+	</Station>
+	<Station>
+		<Name>Solihull</Name>
+		<Code>SOL</Code>
+	</Station>
+	<Station>
+		<Name>Somerleyton</Name>
+		<Code>SYT</Code>
+	</Station>
+	<Station>
+		<Name>South Acton</Name>
+		<Code>SAT</Code>
+	</Station>
+	<Station>
+		<Name>South Bank</Name>
+		<Code>SBK</Code>
+	</Station>
+	<Station>
+		<Name>South Bermondsey</Name>
+		<Code>SBM</Code>
+	</Station>
+	<Station>
+		<Name>South Croydon</Name>
+		<Code>SCY</Code>
+	</Station>
+	<Station>
+		<Name>South Elmsall</Name>
+		<Code>SES</Code>
+	</Station>
+	<Station>
+		<Name>South Greenford</Name>
+		<Code>SGN</Code>
+	</Station>
+	<Station>
+		<Name>South Gyle</Name>
+		<Code>SGL</Code>
+	</Station>
+	<Station>
+		<Name>South Hampstead</Name>
+		<Code>SOH</Code>
+	</Station>
+	<Station>
+		<Name>South Kenton</Name>
+		<Code>SOK</Code>
+	</Station>
+	<Station>
+		<Name>South Merton</Name>
+		<Code>SMO</Code>
+	</Station>
+	<Station>
+		<Name>South Milford</Name>
+		<Code>SOM</Code>
+	</Station>
+	<Station>
+		<Name>South Ruislip</Name>
+		<Code>SRU</Code>
+	</Station>
+	<Station>
+		<Name>South Tottenham</Name>
+		<Code>STO</Code>
+	</Station>
+	<Station>
+		<Name>South Wigston</Name>
+		<Code>SWS</Code>
+	</Station>
+	<Station>
+		<Name>South Woodham Ferrers</Name>
+		<Code>SOF</Code>
+	</Station>
+	<Station>
+		<Name>Southall</Name>
+		<Code>STL</Code>
+	</Station>
+	<Station>
+		<Name>Southampton Airport Parkway</Name>
+		<Code>SOA</Code>
+	</Station>
+	<Station>
+		<Name>Southampton Central</Name>
+		<Code>SOU</Code>
+	</Station>
+	<Station>
+		<Name>Southbourne</Name>
+		<Code>SOB</Code>
+	</Station>
+	<Station>
+		<Name>Southbury</Name>
+		<Code>SBU</Code>
+	</Station>
+	<Station>
+		<Name>Southease</Name>
+		<Code>SEE</Code>
+	</Station>
+	<Station>
+		<Name>Southend Airport</Name>
+		<Code>SIA</Code>
+	</Station>
+	<Station>
+		<Name>Southend Central</Name>
+		<Code>SOC</Code>
+	</Station>
+	<Station>
+		<Name>Southend East</Name>
+		<Code>SOE</Code>
+	</Station>
+	<Station>
+		<Name>Southend Victoria</Name>
+		<Code>SOV</Code>
+	</Station>
+	<Station>
+		<Name>Southminster</Name>
+		<Code>SMN</Code>
+	</Station>
+	<Station>
+		<Name>Southport</Name>
+		<Code>SOP</Code>
+	</Station>
+	<Station>
+		<Name>Southwick</Name>
+		<Code>SWK</Code>
+	</Station>
+	<Station>
+		<Name>Sowerby Bridge</Name>
+		<Code>SOW</Code>
+	</Station>
+	<Station>
+		<Name>Spalding</Name>
+		<Code>SPA</Code>
+	</Station>
+	<Station>
+		<Name>Spean Bridge</Name>
+		<Code>SBR</Code>
+	</Station>
+	<Station>
+		<Name>Spital</Name>
+		<Code>SPI</Code>
+	</Station>
+	<Station>
+		<Name>Spondon</Name>
+		<Code>SPO</Code>
+	</Station>
+	<Station>
+		<Name>Spooner Row</Name>
+		<Code>SPN</Code>
+	</Station>
+	<Station>
+		<Name>Spring Road</Name>
+		<Code>SRI</Code>
+	</Station>
+	<Station>
+		<Name>Springburn</Name>
+		<Code>SPR</Code>
+	</Station>
+	<Station>
+		<Name>Springfield</Name>
+		<Code>SPF</Code>
+	</Station>
+	<Station>
+		<Name>Squires Gate</Name>
+		<Code>SQU</Code>
+	</Station>
+	<Station>
+		<Name>St Albans Abbey</Name>
+		<Code>SAA</Code>
+	</Station>
+	<Station>
+		<Name>St Albans City</Name>
+		<Code>SAC</Code>
+	</Station>
+	<Station>
+		<Name>St Andrews Road</Name>
+		<Code>SAR</Code>
+	</Station>
+	<Station>
+		<Name>St Annes-on-Sea</Name>
+		<Code>SAS</Code>
+	</Station>
+	<Station>
+		<Name>St Austell</Name>
+		<Code>SAU</Code>
+	</Station>
+	<Station>
+		<Name>St Bees</Name>
+		<Code>SBS</Code>
+	</Station>
+	<Station>
+		<Name>St Budeaux Ferry Road</Name>
+		<Code>SBF</Code>
+	</Station>
+	<Station>
+		<Name>St Budeaux Victoria Road</Name>
+		<Code>SBV</Code>
+	</Station>
+	<Station>
+		<Name>St Columb Road</Name>
+		<Code>SCR</Code>
+	</Station>
+	<Station>
+		<Name>St Denys</Name>
+		<Code>SDN</Code>
+	</Station>
+	<Station>
+		<Name>St Erth</Name>
+		<Code>SER</Code>
+	</Station>
+	<Station>
+		<Name>St Germans</Name>
+		<Code>SGM</Code>
+	</Station>
+	<Station>
+		<Name>St Helens Central</Name>
+		<Code>SNH</Code>
+	</Station>
+	<Station>
+		<Name>St Helens Junction</Name>
+		<Code>SHJ</Code>
+	</Station>
+	<Station>
+		<Name>St Helier (Surrey)</Name>
+		<Code>SIH</Code>
+	</Station>
+	<Station>
+		<Name>St Ives (Cornwall)</Name>
+		<Code>SIV</Code>
+	</Station>
+	<Station>
+		<Name>St James Park (Exeter)</Name>
+		<Code>SJP</Code>
+	</Station>
+	<Station>
+		<Name>St James Street (Walthamstow)</Name>
+		<Code>SJS</Code>
+	</Station>
+	<Station>
+		<Name>St Johns (London)</Name>
+		<Code>SAJ</Code>
+	</Station>
+	<Station>
+		<Name>St Keyne Wishing Well Halt</Name>
+		<Code>SKN</Code>
+	</Station>
+	<Station>
+		<Name>St Leonards Warrior Square</Name>
+		<Code>SLQ</Code>
+	</Station>
+	<Station>
+		<Name>St Margarets (Herts)</Name>
+		<Code>SMT</Code>
+	</Station>
+	<Station>
+		<Name>St Margarets (London)</Name>
+		<Code>SMG</Code>
+	</Station>
+	<Station>
+		<Name>St Mary Cray</Name>
+		<Code>SMY</Code>
+	</Station>
+	<Station>
+		<Name>St Michaels</Name>
+		<Code>STM</Code>
+	</Station>
+	<Station>
+		<Name>St Neots</Name>
+		<Code>SNO</Code>
+	</Station>
+	<Station>
+		<Name>Stafford</Name>
+		<Code>STA</Code>
+	</Station>
+	<Station>
+		<Name>Staines</Name>
+		<Code>SNS</Code>
+	</Station>
+	<Station>
+		<Name>Stallingborough</Name>
+		<Code>SLL</Code>
+	</Station>
+	<Station>
+		<Name>Stalybridge</Name>
+		<Code>SYB</Code>
+	</Station>
+	<Station>
+		<Name>Stamford (Lincs)</Name>
+		<Code>SMD</Code>
+	</Station>
+	<Station>
+		<Name>Stamford Hill</Name>
+		<Code>SMH</Code>
+	</Station>
+	<Station>
+		<Name>Stanford-le-Hope</Name>
+		<Code>SFO</Code>
+	</Station>
+	<Station>
+		<Name>Stanlow &amp; Thornton</Name>
+		<Code>SNT</Code>
+	</Station>
+	<Station>
+		<Name>Stansted Airport</Name>
+		<Code>SSD</Code>
+	</Station>
+	<Station>
+		<Name>Stansted Mountfitchet</Name>
+		<Code>SST</Code>
+	</Station>
+	<Station>
+		<Name>Staplehurst</Name>
+		<Code>SPU</Code>
+	</Station>
+	<Station>
+		<Name>Stapleton Road</Name>
+		<Code>SRD</Code>
+	</Station>
+	<Station>
+		<Name>Starbeck</Name>
+		<Code>SBE</Code>
+	</Station>
+	<Station>
+		<Name>Starcross</Name>
+		<Code>SCS</Code>
+	</Station>
+	<Station>
+		<Name>Staveley (Cumbria)</Name>
+		<Code>SVL</Code>
+	</Station>
+	<Station>
+		<Name>Stechford</Name>
+		<Code>SCF</Code>
+	</Station>
+	<Station>
+		<Name>Steeton &amp; Silsden</Name>
+		<Code>SON</Code>
+	</Station>
+	<Station>
+		<Name>Stepps</Name>
+		<Code>SPS</Code>
+	</Station>
+	<Station>
+		<Name>Stevenage</Name>
+		<Code>SVG</Code>
+	</Station>
+	<Station>
+		<Name>Stevenston</Name>
+		<Code>STV</Code>
+	</Station>
+	<Station>
+		<Name>Stewartby</Name>
+		<Code>SWR</Code>
+	</Station>
+	<Station>
+		<Name>Stewarton</Name>
+		<Code>STT</Code>
+	</Station>
+	<Station>
+		<Name>Stirling</Name>
+		<Code>STG</Code>
+	</Station>
+	<Station>
+		<Name>Stockport</Name>
+		<Code>SPT</Code>
+	</Station>
+	<Station>
+		<Name>Stocksfield</Name>
+		<Code>SKS</Code>
+	</Station>
+	<Station>
+		<Name>Stocksmoor</Name>
+		<Code>SSM</Code>
+	</Station>
+	<Station>
+		<Name>Stockton</Name>
+		<Code>STK</Code>
+	</Station>
+	<Station>
+		<Name>Stoke Mandeville</Name>
+		<Code>SKM</Code>
+	</Station>
+	<Station>
+		<Name>Stoke Newington</Name>
+		<Code>SKW</Code>
+	</Station>
+	<Station>
+		<Name>Stoke-on-Trent</Name>
+		<Code>SOT</Code>
+	</Station>
+	<Station>
+		<Name>Stone (Staffs)</Name>
+		<Code>SNE</Code>
+	</Station>
+	<Station>
+		<Name>Stone Crossing</Name>
+		<Code>SCG</Code>
+	</Station>
+	<Station>
+		<Name>Stonebridge Park</Name>
+		<Code>SBP</Code>
+	</Station>
+	<Station>
+		<Name>Stonegate</Name>
+		<Code>SOG</Code>
+	</Station>
+	<Station>
+		<Name>Stonehaven</Name>
+		<Code>STN</Code>
+	</Station>
+	<Station>
+		<Name>Stonehouse</Name>
+		<Code>SHU</Code>
+	</Station>
+	<Station>
+		<Name>Stoneleigh</Name>
+		<Code>SNL</Code>
+	</Station>
+	<Station>
+		<Name>Stourbridge Junction</Name>
+		<Code>SBJ</Code>
+	</Station>
+	<Station>
+		<Name>Stourbridge Town</Name>
+		<Code>SBT</Code>
+	</Station>
+	<Station>
+		<Name>Stow</Name>
+		<Code>SOI</Code>
+	</Station>
+	<Station>
+		<Name>Stowmarket</Name>
+		<Code>SMK</Code>
+	</Station>
+	<Station>
+		<Name>Stranraer</Name>
+		<Code>STR</Code>
+	</Station>
+	<Station>
+		<Name>Stratford (London)</Name>
+		<Code>SRA</Code>
+	</Station>
+	<Station>
+		<Name>Stratford International</Name>
+		<Code>SFA</Code>
+	</Station>
+	<Station>
+		<Name>Stratford-upon-Avon</Name>
+		<Code>SAV</Code>
+	</Station>
+	<Station>
+		<Name>Stratford-upon-Avon Parkway</Name>
+		<Code>STY</Code>
+	</Station>
+	<Station>
+		<Name>Strathcarron</Name>
+		<Code>STC</Code>
+	</Station>
+	<Station>
+		<Name>Strawberry Hill</Name>
+		<Code>STW</Code>
+	</Station>
+	<Station>
+		<Name>Streatham (Greater London)</Name>
+		<Code>STE</Code>
+	</Station>
+	<Station>
+		<Name>Streatham Common</Name>
+		<Code>SRC</Code>
+	</Station>
+	<Station>
+		<Name>Streatham Hill</Name>
+		<Code>SRH</Code>
+	</Station>
+	<Station>
+		<Name>Streethouse</Name>
+		<Code>SHC</Code>
+	</Station>
+	<Station>
+		<Name>Strines</Name>
+		<Code>SRN</Code>
+	</Station>
+	<Station>
+		<Name>Stromeferry</Name>
+		<Code>STF</Code>
+	</Station>
+	<Station>
+		<Name>Strood (Kent)</Name>
+		<Code>SOO</Code>
+	</Station>
+	<Station>
+		<Name>Stroud (Gloucs)</Name>
+		<Code>STD</Code>
+	</Station>
+	<Station>
+		<Name>Sturry</Name>
+		<Code>STU</Code>
+	</Station>
+	<Station>
+		<Name>Styal</Name>
+		<Code>SYA</Code>
+	</Station>
+	<Station>
+		<Name>Sudbury &amp; Harrow Road</Name>
+		<Code>SUD</Code>
+	</Station>
+	<Station>
+		<Name>Sudbury (Suffolk)</Name>
+		<Code>SUY</Code>
+	</Station>
+	<Station>
+		<Name>Sudbury Hill Harrow</Name>
+		<Code>SDH</Code>
+	</Station>
+	<Station>
+		<Name>Sugar Loaf</Name>
+		<Code>SUG</Code>
+	</Station>
+	<Station>
+		<Name>Summerston</Name>
+		<Code>SUM</Code>
+	</Station>
+	<Station>
+		<Name>Sunbury</Name>
+		<Code>SUU</Code>
+	</Station>
+	<Station>
+		<Name>Sunderland</Name>
+		<Code>SUN</Code>
+	</Station>
+	<Station>
+		<Name>Sundridge Park</Name>
+		<Code>SUP</Code>
+	</Station>
+	<Station>
+		<Name>Sunningdale</Name>
+		<Code>SNG</Code>
+	</Station>
+	<Station>
+		<Name>Sunnymeads</Name>
+		<Code>SNY</Code>
+	</Station>
+	<Station>
+		<Name>Surbiton</Name>
+		<Code>SUR</Code>
+	</Station>
+	<Station>
+		<Name>Surrey Quays</Name>
+		<Code>SQE</Code>
+	</Station>
+	<Station>
+		<Name>Sutton (Surrey)</Name>
+		<Code>SUO</Code>
+	</Station>
+	<Station>
+		<Name>Sutton Coldfield</Name>
+		<Code>SUT</Code>
+	</Station>
+	<Station>
+		<Name>Sutton Common</Name>
+		<Code>SUC</Code>
+	</Station>
+	<Station>
+		<Name>Sutton Parkway</Name>
+		<Code>SPK</Code>
+	</Station>
+	<Station>
+		<Name>Swale</Name>
+		<Code>SWL</Code>
+	</Station>
+	<Station>
+		<Name>Swanley</Name>
+		<Code>SAY</Code>
+	</Station>
+	<Station>
+		<Name>Swanscombe</Name>
+		<Code>SWM</Code>
+	</Station>
+	<Station>
+		<Name>Swansea</Name>
+		<Code>SWA</Code>
+	</Station>
+	<Station>
+		<Name>Swanwick</Name>
+		<Code>SNW</Code>
+	</Station>
+	<Station>
+		<Name>Sway</Name>
+		<Code>SWY</Code>
+	</Station>
+	<Station>
+		<Name>Swaythling</Name>
+		<Code>SWG</Code>
+	</Station>
+	<Station>
+		<Name>Swinderby</Name>
+		<Code>SWD</Code>
+	</Station>
+	<Station>
+		<Name>Swindon (Wilts)</Name>
+		<Code>SWI</Code>
+	</Station>
+	<Station>
+		<Name>Swineshead</Name>
+		<Code>SWE</Code>
+	</Station>
+	<Station>
+		<Name>Swinton (Manchester)</Name>
+		<Code>SNN</Code>
+	</Station>
+	<Station>
+		<Name>Swinton (South Yorks)</Name>
+		<Code>SWN</Code>
+	</Station>
+	<Station>
+		<Name>Sydenham (London)</Name>
+		<Code>SYD</Code>
+	</Station>
+	<Station>
+		<Name>Sydenham Hill</Name>
+		<Code>SYH</Code>
+	</Station>
+	<Station>
+		<Name>Syon Lane</Name>
+		<Code>SYL</Code>
+	</Station>
+	<Station>
+		<Name>Syston</Name>
+		<Code>SYS</Code>
+	</Station>
+	<Station>
+		<Name>Tackley</Name>
+		<Code>TAC</Code>
+	</Station>
+	<Station>
+		<Name>Tadworth</Name>
+		<Code>TAD</Code>
+	</Station>
+	<Station>
+		<Name>Taffs Well</Name>
+		<Code>TAF</Code>
+	</Station>
+	<Station>
+		<Name>Tain</Name>
+		<Code>TAI</Code>
+	</Station>
+	<Station>
+		<Name>Talsarnau</Name>
+		<Code>TAL</Code>
+	</Station>
+	<Station>
+		<Name>Talybont</Name>
+		<Code>TLB</Code>
+	</Station>
+	<Station>
+		<Name>Tal-y-Cafn</Name>
+		<Code>TLC</Code>
+	</Station>
+	<Station>
+		<Name>Tame Bridge Parkway</Name>
+		<Code>TAB</Code>
+	</Station>
+	<Station>
+		<Name>Tamworth</Name>
+		<Code>TAM</Code>
+	</Station>
+	<Station>
+		<Name>Taplow</Name>
+		<Code>TAP</Code>
+	</Station>
+	<Station>
+		<Name>Tattenham Corner</Name>
+		<Code>TAT</Code>
+	</Station>
+	<Station>
+		<Name>Taunton</Name>
+		<Code>TAU</Code>
+	</Station>
+	<Station>
+		<Name>Taynuilt</Name>
+		<Code>TAY</Code>
+	</Station>
+	<Station>
+		<Name>Teddington</Name>
+		<Code>TED</Code>
+	</Station>
+	<Station>
+		<Name>Tees-side Airport</Name>
+		<Code>TEA</Code>
+	</Station>
+	<Station>
+		<Name>Teignmouth</Name>
+		<Code>TGM</Code>
+	</Station>
+	<Station>
+		<Name>Telford Central</Name>
+		<Code>TFC</Code>
+	</Station>
+	<Station>
+		<Name>Templecombe</Name>
+		<Code>TMC</Code>
+	</Station>
+	<Station>
+		<Name>Tenby</Name>
+		<Code>TEN</Code>
+	</Station>
+	<Station>
+		<Name>Teynham</Name>
+		<Code>TEY</Code>
+	</Station>
+	<Station>
+		<Name>Thames Ditton</Name>
+		<Code>THD</Code>
+	</Station>
+	<Station>
+		<Name>Thatcham</Name>
+		<Code>THA</Code>
+	</Station>
+	<Station>
+		<Name>Thatto Heath</Name>
+		<Code>THH</Code>
+	</Station>
+	<Station>
+		<Name>The Hawthorns</Name>
+		<Code>THW</Code>
+	</Station>
+	<Station>
+		<Name>The Lakes (Warks)</Name>
+		<Code>TLK</Code>
+	</Station>
+	<Station>
+		<Name>Theale</Name>
+		<Code>THE</Code>
+	</Station>
+	<Station>
+		<Name>Theobalds Grove</Name>
+		<Code>TEO</Code>
+	</Station>
+	<Station>
+		<Name>Thetford</Name>
+		<Code>TTF</Code>
+	</Station>
+	<Station>
+		<Name>Thirsk</Name>
+		<Code>THI</Code>
+	</Station>
+	<Station>
+		<Name>Thornaby</Name>
+		<Code>TBY</Code>
+	</Station>
+	<Station>
+		<Name>Thorne North</Name>
+		<Code>TNN</Code>
+	</Station>
+	<Station>
+		<Name>Thorne South</Name>
+		<Code>TNS</Code>
+	</Station>
+	<Station>
+		<Name>Thornford</Name>
+		<Code>THO</Code>
+	</Station>
+	<Station>
+		<Name>Thornliebank</Name>
+		<Code>THB</Code>
+	</Station>
+	<Station>
+		<Name>Thornton Abbey</Name>
+		<Code>TNA</Code>
+	</Station>
+	<Station>
+		<Name>Thornton Heath</Name>
+		<Code>TTH</Code>
+	</Station>
+	<Station>
+		<Name>Thorntonhall</Name>
+		<Code>THT</Code>
+	</Station>
+	<Station>
+		<Name>Thorpe Bay</Name>
+		<Code>TPB</Code>
+	</Station>
+	<Station>
+		<Name>Thorpe Culvert</Name>
+		<Code>TPC</Code>
+	</Station>
+	<Station>
+		<Name>Thorpe-le-Soken</Name>
+		<Code>TLS</Code>
+	</Station>
+	<Station>
+		<Name>Three Bridges</Name>
+		<Code>TBD</Code>
+	</Station>
+	<Station>
+		<Name>Three Oaks</Name>
+		<Code>TOK</Code>
+	</Station>
+	<Station>
+		<Name>Thurgarton</Name>
+		<Code>THU</Code>
+	</Station>
+	<Station>
+		<Name>Thurnscoe</Name>
+		<Code>THC</Code>
+	</Station>
+	<Station>
+		<Name>Thurso</Name>
+		<Code>THS</Code>
+	</Station>
+	<Station>
+		<Name>Thurston</Name>
+		<Code>TRS</Code>
+	</Station>
+	<Station>
+		<Name>Tilbury Town</Name>
+		<Code>TIL</Code>
+	</Station>
+	<Station>
+		<Name>Tile Hill</Name>
+		<Code>THL</Code>
+	</Station>
+	<Station>
+		<Name>Tilehurst</Name>
+		<Code>TLH</Code>
+	</Station>
+	<Station>
+		<Name>Tipton</Name>
+		<Code>TIP</Code>
+	</Station>
+	<Station>
+		<Name>Tir-Phil</Name>
+		<Code>TIR</Code>
+	</Station>
+	<Station>
+		<Name>Tisbury</Name>
+		<Code>TIS</Code>
+	</Station>
+	<Station>
+		<Name>Tiverton Parkway</Name>
+		<Code>TVP</Code>
+	</Station>
+	<Station>
+		<Name>Todmorden</Name>
+		<Code>TOD</Code>
+	</Station>
+	<Station>
+		<Name>Tolworth</Name>
+		<Code>TOL</Code>
+	</Station>
+	<Station>
+		<Name>Ton Pentre</Name>
+		<Code>TPN</Code>
+	</Station>
+	<Station>
+		<Name>Tonbridge</Name>
+		<Code>TON</Code>
+	</Station>
+	<Station>
+		<Name>Tondu</Name>
+		<Code>TDU</Code>
+	</Station>
+	<Station>
+		<Name>Tonfanau</Name>
+		<Code>TNF</Code>
+	</Station>
+	<Station>
+		<Name>Tonypandy</Name>
+		<Code>TNP</Code>
+	</Station>
+	<Station>
+		<Name>Tooting</Name>
+		<Code>TOO</Code>
+	</Station>
+	<Station>
+		<Name>Topsham</Name>
+		<Code>TOP</Code>
+	</Station>
+	<Station>
+		<Name>Torquay</Name>
+		<Code>TQY</Code>
+	</Station>
+	<Station>
+		<Name>Torre</Name>
+		<Code>TRR</Code>
+	</Station>
+	<Station>
+		<Name>Totnes</Name>
+		<Code>TOT</Code>
+	</Station>
+	<Station>
+		<Name>Tottenham Hale</Name>
+		<Code>TOM</Code>
+	</Station>
+	<Station>
+		<Name>Totton</Name>
+		<Code>TTN</Code>
+	</Station>
+	<Station>
+		<Name>Town Green</Name>
+		<Code>TWN</Code>
+	</Station>
+	<Station>
+		<Name>Trafford Park</Name>
+		<Code>TRA</Code>
+	</Station>
+	<Station>
+		<Name>Trefforest</Name>
+		<Code>TRF</Code>
+	</Station>
+	<Station>
+		<Name>Trefforest Estate</Name>
+		<Code>TRE</Code>
+	</Station>
+	<Station>
+		<Name>Trehafod</Name>
+		<Code>TRH</Code>
+	</Station>
+	<Station>
+		<Name>Treherbert</Name>
+		<Code>TRB</Code>
+	</Station>
+	<Station>
+		<Name>Treorchy</Name>
+		<Code>TRY</Code>
+	</Station>
+	<Station>
+		<Name>Trimley</Name>
+		<Code>TRM</Code>
+	</Station>
+	<Station>
+		<Name>Tring</Name>
+		<Code>TRI</Code>
+	</Station>
+	<Station>
+		<Name>Troed-y-rhiw</Name>
+		<Code>TRD</Code>
+	</Station>
+	<Station>
+		<Name>Troon</Name>
+		<Code>TRN</Code>
+	</Station>
+	<Station>
+		<Name>Trowbridge</Name>
+		<Code>TRO</Code>
+	</Station>
+	<Station>
+		<Name>Truro</Name>
+		<Code>TRU</Code>
+	</Station>
+	<Station>
+		<Name>Tulloch</Name>
+		<Code>TUL</Code>
+	</Station>
+	<Station>
+		<Name>Tulse Hill</Name>
+		<Code>TUH</Code>
+	</Station>
+	<Station>
+		<Name>Tunbridge Wells</Name>
+		<Code>TBW</Code>
+	</Station>
+	<Station>
+		<Name>Turkey Street</Name>
+		<Code>TUR</Code>
+	</Station>
+	<Station>
+		<Name>Tutbury &amp; Hatton</Name>
+		<Code>TUT</Code>
+	</Station>
+	<Station>
+		<Name>Tweedbank</Name>
+		<Code>TWB</Code>
+	</Station>
+	<Station>
+		<Name>Twickenham</Name>
+		<Code>TWI</Code>
+	</Station>
+	<Station>
+		<Name>Twyford</Name>
+		<Code>TWY</Code>
+	</Station>
+	<Station>
+		<Name>Ty Croes</Name>
+		<Code>TYC</Code>
+	</Station>
+	<Station>
+		<Name>Ty Glas</Name>
+		<Code>TGS</Code>
+	</Station>
+	<Station>
+		<Name>Tygwyn</Name>
+		<Code>TYG</Code>
+	</Station>
+	<Station>
+		<Name>Tyndrum Lower</Name>
+		<Code>TYL</Code>
+	</Station>
+	<Station>
+		<Name>Tyseley</Name>
+		<Code>TYS</Code>
+	</Station>
+	<Station>
+		<Name>Tywyn</Name>
+		<Code>TYW</Code>
+	</Station>
+	<Station>
+		<Name>Uckfield</Name>
+		<Code>UCK</Code>
+	</Station>
+	<Station>
+		<Name>Uddingston</Name>
+		<Code>UDD</Code>
+	</Station>
+	<Station>
+		<Name>Ulceby</Name>
+		<Code>ULC</Code>
+	</Station>
+	<Station>
+		<Name>Ulleskelf</Name>
+		<Code>ULL</Code>
+	</Station>
+	<Station>
+		<Name>Ulverston</Name>
+		<Code>ULV</Code>
+	</Station>
+	<Station>
+		<Name>Umberleigh</Name>
+		<Code>UMB</Code>
+	</Station>
+	<Station>
+		<Name>University (Birmingham)</Name>
+		<Code>UNI</Code>
+	</Station>
+	<Station>
+		<Name>Uphall</Name>
+		<Code>UHA</Code>
+	</Station>
+	<Station>
+		<Name>Upholland</Name>
+		<Code>UPL</Code>
+	</Station>
+	<Station>
+		<Name>Upminster</Name>
+		<Code>UPM</Code>
+	</Station>
+	<Station>
+		<Name>Upper Halliford</Name>
+		<Code>UPH</Code>
+	</Station>
+	<Station>
+		<Name>Upper Holloway</Name>
+		<Code>UHL</Code>
+	</Station>
+	<Station>
+		<Name>Upper Tyndrum</Name>
+		<Code>UTY</Code>
+	</Station>
+	<Station>
+		<Name>Upper Warlingham</Name>
+		<Code>UWL</Code>
+	</Station>
+	<Station>
+		<Name>Upton (Merseyside)</Name>
+		<Code>UPT</Code>
+	</Station>
+	<Station>
+		<Name>Upwey</Name>
+		<Code>UPW</Code>
+	</Station>
+	<Station>
+		<Name>Urmston</Name>
+		<Code>URM</Code>
+	</Station>
+	<Station>
+		<Name>Uttoxeter</Name>
+		<Code>UTT</Code>
+	</Station>
+	<Station>
+		<Name>Valley</Name>
+		<Code>VAL</Code>
+	</Station>
+	<Station>
+		<Name>Vauxhall</Name>
+		<Code>VXH</Code>
+	</Station>
+	<Station>
+		<Name>Virginia Water</Name>
+		<Code>VIR</Code>
+	</Station>
+	<Station>
+		<Name>Waddon</Name>
+		<Code>WDO</Code>
+	</Station>
+	<Station>
+		<Name>Wadhurst</Name>
+		<Code>WAD</Code>
+	</Station>
+	<Station>
+		<Name>Wainfleet</Name>
+		<Code>WFL</Code>
+	</Station>
+	<Station>
+		<Name>Wakefield Kirkgate</Name>
+		<Code>WKK</Code>
+	</Station>
+	<Station>
+		<Name>Wakefield Westgate</Name>
+		<Code>WKF</Code>
+	</Station>
+	<Station>
+		<Name>Walkden</Name>
+		<Code>WKD</Code>
+	</Station>
+	<Station>
+		<Name>Wallasey Grove Road</Name>
+		<Code>WLG</Code>
+	</Station>
+	<Station>
+		<Name>Wallasey Village</Name>
+		<Code>WLV</Code>
+	</Station>
+	<Station>
+		<Name>Wallington</Name>
+		<Code>WLT</Code>
+	</Station>
+	<Station>
+		<Name>Wallyford</Name>
+		<Code>WAF</Code>
+	</Station>
+	<Station>
+		<Name>Walmer</Name>
+		<Code>WAM</Code>
+	</Station>
+	<Station>
+		<Name>Walsall</Name>
+		<Code>WSL</Code>
+	</Station>
+	<Station>
+		<Name>Walsden</Name>
+		<Code>WDN</Code>
+	</Station>
+	<Station>
+		<Name>Waltham Cross</Name>
+		<Code>WLC</Code>
+	</Station>
+	<Station>
+		<Name>Walthamstow Central</Name>
+		<Code>WHC</Code>
+	</Station>
+	<Station>
+		<Name>Walthamstow Queen's Road</Name>
+		<Code>WMW</Code>
+	</Station>
+	<Station>
+		<Name>Walton (Merseyside)</Name>
+		<Code>WAO</Code>
+	</Station>
+	<Station>
+		<Name>Walton-on-Thames</Name>
+		<Code>WAL</Code>
+	</Station>
+	<Station>
+		<Name>Walton-on-the-Naze</Name>
+		<Code>WON</Code>
+	</Station>
+	<Station>
+		<Name>Wanborough</Name>
+		<Code>WAN</Code>
+	</Station>
+	<Station>
+		<Name>Wandsworth Common</Name>
+		<Code>WSW</Code>
+	</Station>
+	<Station>
+		<Name>Wandsworth Road</Name>
+		<Code>WWR</Code>
+	</Station>
+	<Station>
+		<Name>Wandsworth Town</Name>
+		<Code>WNT</Code>
+	</Station>
+	<Station>
+		<Name>Wanstead Park</Name>
+		<Code>WNP</Code>
+	</Station>
+	<Station>
+		<Name>Wapping</Name>
+		<Code>WPE</Code>
+	</Station>
+	<Station>
+		<Name>Warblington</Name>
+		<Code>WBL</Code>
+	</Station>
+	<Station>
+		<Name>Ware (Herts)</Name>
+		<Code>WAR</Code>
+	</Station>
+	<Station>
+		<Name>Wareham (Dorset)</Name>
+		<Code>WRM</Code>
+	</Station>
+	<Station>
+		<Name>Wargrave</Name>
+		<Code>WGV</Code>
+	</Station>
+	<Station>
+		<Name>Warminster</Name>
+		<Code>WMN</Code>
+	</Station>
+	<Station>
+		<Name>Warnham</Name>
+		<Code>WNH</Code>
+	</Station>
+	<Station>
+		<Name>Warrington Bank Quay</Name>
+		<Code>WBQ</Code>
+	</Station>
+	<Station>
+		<Name>Warrington Central</Name>
+		<Code>WAC</Code>
+	</Station>
+	<Station>
+		<Name>Warwick</Name>
+		<Code>WRW</Code>
+	</Station>
+	<Station>
+		<Name>Warwick Parkway</Name>
+		<Code>WRP</Code>
+	</Station>
+	<Station>
+		<Name>Water Orton</Name>
+		<Code>WTO</Code>
+	</Station>
+	<Station>
+		<Name>Waterbeach</Name>
+		<Code>WBC</Code>
+	</Station>
+	<Station>
+		<Name>Wateringbury</Name>
+		<Code>WTR</Code>
+	</Station>
+	<Station>
+		<Name>Waterloo (Merseyside)</Name>
+		<Code>WLO</Code>
+	</Station>
+	<Station>
+		<Name>Watford High Street</Name>
+		<Code>WFH</Code>
+	</Station>
+	<Station>
+		<Name>Watford Junction</Name>
+		<Code>WFJ</Code>
+	</Station>
+	<Station>
+		<Name>Watford North</Name>
+		<Code>WFN</Code>
+	</Station>
+	<Station>
+		<Name>Watlington</Name>
+		<Code>WTG</Code>
+	</Station>
+	<Station>
+		<Name>Watton-at-Stone</Name>
+		<Code>WAS</Code>
+	</Station>
+	<Station>
+		<Name>Waun-Gron Park</Name>
+		<Code>WNG</Code>
+	</Station>
+	<Station>
+		<Name>Wavertree Technology Park</Name>
+		<Code>WAV</Code>
+	</Station>
+	<Station>
+		<Name>Wedgwood</Name>
+		<Code>WED</Code>
+	</Station>
+	<Station>
+		<Name>Weeley</Name>
+		<Code>WEE</Code>
+	</Station>
+	<Station>
+		<Name>Weeton</Name>
+		<Code>WET</Code>
+	</Station>
+	<Station>
+		<Name>Welham Green</Name>
+		<Code>WMG</Code>
+	</Station>
+	<Station>
+		<Name>Welling</Name>
+		<Code>WLI</Code>
+	</Station>
+	<Station>
+		<Name>Wellingborough</Name>
+		<Code>WEL</Code>
+	</Station>
+	<Station>
+		<Name>Wellington (Shropshire)</Name>
+		<Code>WLN</Code>
+	</Station>
+	<Station>
+		<Name>Welshpool</Name>
+		<Code>WLP</Code>
+	</Station>
+	<Station>
+		<Name>Welwyn Garden City</Name>
+		<Code>WGC</Code>
+	</Station>
+	<Station>
+		<Name>Welwyn North</Name>
+		<Code>WLW</Code>
+	</Station>
+	<Station>
+		<Name>Wem</Name>
+		<Code>WEM</Code>
+	</Station>
+	<Station>
+		<Name>Wembley Central</Name>
+		<Code>WMB</Code>
+	</Station>
+	<Station>
+		<Name>Wembley Stadium</Name>
+		<Code>WCX</Code>
+	</Station>
+	<Station>
+		<Name>Wemyss Bay</Name>
+		<Code>WMS</Code>
+	</Station>
+	<Station>
+		<Name>Wendover</Name>
+		<Code>WND</Code>
+	</Station>
+	<Station>
+		<Name>Wennington</Name>
+		<Code>WNN</Code>
+	</Station>
+	<Station>
+		<Name>West Allerton</Name>
+		<Code>WSA</Code>
+	</Station>
+	<Station>
+		<Name>West Brompton</Name>
+		<Code>WBP</Code>
+	</Station>
+	<Station>
+		<Name>West Byfleet</Name>
+		<Code>WBY</Code>
+	</Station>
+	<Station>
+		<Name>West Calder</Name>
+		<Code>WCL</Code>
+	</Station>
+	<Station>
+		<Name>West Croydon</Name>
+		<Code>WCY</Code>
+	</Station>
+	<Station>
+		<Name>West Drayton</Name>
+		<Code>WDT</Code>
+	</Station>
+	<Station>
+		<Name>West Dulwich</Name>
+		<Code>WDU</Code>
+	</Station>
+	<Station>
+		<Name>West Ealing</Name>
+		<Code>WEA</Code>
+	</Station>
+	<Station>
+		<Name>West Ham</Name>
+		<Code>WEH</Code>
+	</Station>
+	<Station>
+		<Name>West Hampstead</Name>
+		<Code>WHD</Code>
+	</Station>
+	<Station>
+		<Name>West Hampstead Thameslink</Name>
+		<Code>WHP</Code>
+	</Station>
+	<Station>
+		<Name>West Horndon</Name>
+		<Code>WHR</Code>
+	</Station>
+	<Station>
+		<Name>West Kilbride</Name>
+		<Code>WKB</Code>
+	</Station>
+	<Station>
+		<Name>West Kirby</Name>
+		<Code>WKI</Code>
+	</Station>
+	<Station>
+		<Name>West Malling</Name>
+		<Code>WMA</Code>
+	</Station>
+	<Station>
+		<Name>West Norwood</Name>
+		<Code>WNW</Code>
+	</Station>
+	<Station>
+		<Name>West Ruislip</Name>
+		<Code>WRU</Code>
+	</Station>
+	<Station>
+		<Name>West Runton</Name>
+		<Code>WRN</Code>
+	</Station>
+	<Station>
+		<Name>West St Leonards</Name>
+		<Code>WLD</Code>
+	</Station>
+	<Station>
+		<Name>West Sutton</Name>
+		<Code>WSU</Code>
+	</Station>
+	<Station>
+		<Name>West Wickham</Name>
+		<Code>WWI</Code>
+	</Station>
+	<Station>
+		<Name>West Worthing</Name>
+		<Code>WWO</Code>
+	</Station>
+	<Station>
+		<Name>Westbury (Wilts)</Name>
+		<Code>WSB</Code>
+	</Station>
+	<Station>
+		<Name>Westcliff</Name>
+		<Code>WCF</Code>
+	</Station>
+	<Station>
+		<Name>Westcombe Park</Name>
+		<Code>WCB</Code>
+	</Station>
+	<Station>
+		<Name>Westenhanger</Name>
+		<Code>WHA</Code>
+	</Station>
+	<Station>
+		<Name>Wester Hailes</Name>
+		<Code>WTA</Code>
+	</Station>
+	<Station>
+		<Name>Westerfield</Name>
+		<Code>WFI</Code>
+	</Station>
+	<Station>
+		<Name>Westerton</Name>
+		<Code>WES</Code>
+	</Station>
+	<Station>
+		<Name>Westgate-on-Sea</Name>
+		<Code>WGA</Code>
+	</Station>
+	<Station>
+		<Name>Westhoughton</Name>
+		<Code>WHG</Code>
+	</Station>
+	<Station>
+		<Name>Weston Milton</Name>
+		<Code>WNM</Code>
+	</Station>
+	<Station>
+		<Name>Weston-super-Mare</Name>
+		<Code>WSM</Code>
+	</Station>
+	<Station>
+		<Name>Wetheral</Name>
+		<Code>WRL</Code>
+	</Station>
+	<Station>
+		<Name>Weybridge</Name>
+		<Code>WYB</Code>
+	</Station>
+	<Station>
+		<Name>Weymouth</Name>
+		<Code>WEY</Code>
+	</Station>
+	<Station>
+		<Name>Whaley Bridge</Name>
+		<Code>WBR</Code>
+	</Station>
+	<Station>
+		<Name>Whalley (Lancs)</Name>
+		<Code>WHE</Code>
+	</Station>
+	<Station>
+		<Name>Whatstandwell</Name>
+		<Code>WTS</Code>
+	</Station>
+	<Station>
+		<Name>Whifflet</Name>
+		<Code>WFF</Code>
+	</Station>
+	<Station>
+		<Name>Whimple</Name>
+		<Code>WHM</Code>
+	</Station>
+	<Station>
+		<Name>Whinhill</Name>
+		<Code>WNL</Code>
+	</Station>
+	<Station>
+		<Name>Whiston</Name>
+		<Code>WHN</Code>
+	</Station>
+	<Station>
+		<Name>Whitby</Name>
+		<Code>WTB</Code>
+	</Station>
+	<Station>
+		<Name>Whitchurch (Cardiff)</Name>
+		<Code>WHT</Code>
+	</Station>
+	<Station>
+		<Name>Whitchurch (Hants)</Name>
+		<Code>WCH</Code>
+	</Station>
+	<Station>
+		<Name>Whitchurch (Shropshire)</Name>
+		<Code>WTC</Code>
+	</Station>
+	<Station>
+		<Name>White Hart Lane</Name>
+		<Code>WHL</Code>
+	</Station>
+	<Station>
+		<Name>White Notley</Name>
+		<Code>WNY</Code>
+	</Station>
+	<Station>
+		<Name>Whitechapel</Name>
+		<Code>ZLW</Code>
+	</Station>
+	<Station>
+		<Name>Whitecraigs</Name>
+		<Code>WCR</Code>
+	</Station>
+	<Station>
+		<Name>Whitehaven</Name>
+		<Code>WTH</Code>
+	</Station>
+	<Station>
+		<Name>Whitland</Name>
+		<Code>WTL</Code>
+	</Station>
+	<Station>
+		<Name>Whitley Bridge</Name>
+		<Code>WBD</Code>
+	</Station>
+	<Station>
+		<Name>Whitlocks End</Name>
+		<Code>WTE</Code>
+	</Station>
+	<Station>
+		<Name>Whitstable</Name>
+		<Code>WHI</Code>
+	</Station>
+	<Station>
+		<Name>Whittlesea</Name>
+		<Code>WLE</Code>
+	</Station>
+	<Station>
+		<Name>Whittlesford Parkway</Name>
+		<Code>WLF</Code>
+	</Station>
+	<Station>
+		<Name>Whitton (London)</Name>
+		<Code>WTN</Code>
+	</Station>
+	<Station>
+		<Name>Whitwell (Derbyshire)</Name>
+		<Code>WWL</Code>
+	</Station>
+	<Station>
+		<Name>Whyteleafe</Name>
+		<Code>WHY</Code>
+	</Station>
+	<Station>
+		<Name>Whyteleafe South</Name>
+		<Code>WHS</Code>
+	</Station>
+	<Station>
+		<Name>Wick</Name>
+		<Code>WCK</Code>
+	</Station>
+	<Station>
+		<Name>Wickford</Name>
+		<Code>WIC</Code>
+	</Station>
+	<Station>
+		<Name>Wickham Market</Name>
+		<Code>WCM</Code>
+	</Station>
+	<Station>
+		<Name>Widdrington</Name>
+		<Code>WDD</Code>
+	</Station>
+	<Station>
+		<Name>Widnes</Name>
+		<Code>WID</Code>
+	</Station>
+	<Station>
+		<Name>Widney Manor</Name>
+		<Code>WMR</Code>
+	</Station>
+	<Station>
+		<Name>Wigan North Western</Name>
+		<Code>WGN</Code>
+	</Station>
+	<Station>
+		<Name>Wigan Wallgate</Name>
+		<Code>WGW</Code>
+	</Station>
+	<Station>
+		<Name>Wigton</Name>
+		<Code>WGT</Code>
+	</Station>
+	<Station>
+		<Name>Wildmill</Name>
+		<Code>WMI</Code>
+	</Station>
+	<Station>
+		<Name>Willesden Junction</Name>
+		<Code>WIJ</Code>
+	</Station>
+	<Station>
+		<Name>Williamwood</Name>
+		<Code>WLM</Code>
+	</Station>
+	<Station>
+		<Name>Willington</Name>
+		<Code>WIL</Code>
+	</Station>
+	<Station>
+		<Name>Wilmcote</Name>
+		<Code>WMC</Code>
+	</Station>
+	<Station>
+		<Name>Wilmslow</Name>
+		<Code>WML</Code>
+	</Station>
+	<Station>
+		<Name>Wilnecote (Staffs)</Name>
+		<Code>WNE</Code>
+	</Station>
+	<Station>
+		<Name>Wimbledon</Name>
+		<Code>WIM</Code>
+	</Station>
+	<Station>
+		<Name>Wimbledon Chase</Name>
+		<Code>WBO</Code>
+	</Station>
+	<Station>
+		<Name>Winchelsea</Name>
+		<Code>WSE</Code>
+	</Station>
+	<Station>
+		<Name>Winchester</Name>
+		<Code>WIN</Code>
+	</Station>
+	<Station>
+		<Name>Winchfield</Name>
+		<Code>WNF</Code>
+	</Station>
+	<Station>
+		<Name>Winchmore Hill</Name>
+		<Code>WIH</Code>
+	</Station>
+	<Station>
+		<Name>Windermere</Name>
+		<Code>WDM</Code>
+	</Station>
+	<Station>
+		<Name>Windsor &amp; Eton Central</Name>
+		<Code>WNC</Code>
+	</Station>
+	<Station>
+		<Name>Windsor &amp; Eton Riverside</Name>
+		<Code>WNR</Code>
+	</Station>
+	<Station>
+		<Name>Winnersh</Name>
+		<Code>WNS</Code>
+	</Station>
+	<Station>
+		<Name>Winnersh Triangle</Name>
+		<Code>WTI</Code>
+	</Station>
+	<Station>
+		<Name>Winsford</Name>
+		<Code>WSF</Code>
+	</Station>
+	<Station>
+		<Name>Wishaw</Name>
+		<Code>WSH</Code>
+	</Station>
+	<Station>
+		<Name>Witham</Name>
+		<Code>WTM</Code>
+	</Station>
+	<Station>
+		<Name>Witley</Name>
+		<Code>WTY</Code>
+	</Station>
+	<Station>
+		<Name>Witton (West Midlands)</Name>
+		<Code>WTT</Code>
+	</Station>
+	<Station>
+		<Name>Wivelsfield</Name>
+		<Code>WVF</Code>
+	</Station>
+	<Station>
+		<Name>Wivenhoe</Name>
+		<Code>WIV</Code>
+	</Station>
+	<Station>
+		<Name>Woburn Sands</Name>
+		<Code>WOB</Code>
+	</Station>
+	<Station>
+		<Name>Woking</Name>
+		<Code>WOK</Code>
+	</Station>
+	<Station>
+		<Name>Wokingham</Name>
+		<Code>WKM</Code>
+	</Station>
+	<Station>
+		<Name>Woldingham</Name>
+		<Code>WOH</Code>
+	</Station>
+	<Station>
+		<Name>Wolverhampton</Name>
+		<Code>WVH</Code>
+	</Station>
+	<Station>
+		<Name>Wolverton</Name>
+		<Code>WOL</Code>
+	</Station>
+	<Station>
+		<Name>Wombwell</Name>
+		<Code>WOM</Code>
+	</Station>
+	<Station>
+		<Name>Wood End</Name>
+		<Code>WDE</Code>
+	</Station>
+	<Station>
+		<Name>Wood Street</Name>
+		<Code>WST</Code>
+	</Station>
+	<Station>
+		<Name>Woodbridge</Name>
+		<Code>WDB</Code>
+	</Station>
+	<Station>
+		<Name>Woodgrange Park</Name>
+		<Code>WGR</Code>
+	</Station>
+	<Station>
+		<Name>Woodhall</Name>
+		<Code>WDL</Code>
+	</Station>
+	<Station>
+		<Name>Woodhouse</Name>
+		<Code>WDH</Code>
+	</Station>
+	<Station>
+		<Name>Woodlesford</Name>
+		<Code>WDS</Code>
+	</Station>
+	<Station>
+		<Name>Woodley</Name>
+		<Code>WLY</Code>
+	</Station>
+	<Station>
+		<Name>Woodmansterne</Name>
+		<Code>WME</Code>
+	</Station>
+	<Station>
+		<Name>Woodsmoor</Name>
+		<Code>WSR</Code>
+	</Station>
+	<Station>
+		<Name>Wool</Name>
+		<Code>WOO</Code>
+	</Station>
+	<Station>
+		<Name>Woolston</Name>
+		<Code>WLS</Code>
+	</Station>
+	<Station>
+		<Name>Woolwich Arsenal</Name>
+		<Code>WWA</Code>
+	</Station>
+	<Station>
+		<Name>Woolwich Dockyard</Name>
+		<Code>WWD</Code>
+	</Station>
+	<Station>
+		<Name>Wootton Wawen</Name>
+		<Code>WWW</Code>
+	</Station>
+	<Station>
+		<Name>Worcester Foregate Street</Name>
+		<Code>WOF</Code>
+	</Station>
+	<Station>
+		<Name>Worcester Park</Name>
+		<Code>WCP</Code>
+	</Station>
+	<Station>
+		<Name>Worcester Shrub Hill</Name>
+		<Code>WOS</Code>
+	</Station>
+	<Station>
+		<Name>Workington</Name>
+		<Code>WKG</Code>
+	</Station>
+	<Station>
+		<Name>Worksop</Name>
+		<Code>WRK</Code>
+	</Station>
+	<Station>
+		<Name>Worle</Name>
+		<Code>WOR</Code>
+	</Station>
+	<Station>
+		<Name>Worplesdon</Name>
+		<Code>WPL</Code>
+	</Station>
+	<Station>
+		<Name>Worstead</Name>
+		<Code>WRT</Code>
+	</Station>
+	<Station>
+		<Name>Worthing</Name>
+		<Code>WRH</Code>
+	</Station>
+	<Station>
+		<Name>Wrabness</Name>
+		<Code>WRB</Code>
+	</Station>
+	<Station>
+		<Name>Wraysbury</Name>
+		<Code>WRY</Code>
+	</Station>
+	<Station>
+		<Name>Wrenbury</Name>
+		<Code>WRE</Code>
+	</Station>
+	<Station>
+		<Name>Wressle</Name>
+		<Code>WRS</Code>
+	</Station>
+	<Station>
+		<Name>Wrexham Central</Name>
+		<Code>WXC</Code>
+	</Station>
+	<Station>
+		<Name>Wrexham General</Name>
+		<Code>WRX</Code>
+	</Station>
+	<Station>
+		<Name>Wye</Name>
+		<Code>WYE</Code>
+	</Station>
+	<Station>
+		<Name>Wylam</Name>
+		<Code>WYM</Code>
+	</Station>
+	<Station>
+		<Name>Wylde Green</Name>
+		<Code>WYL</Code>
+	</Station>
+	<Station>
+		<Name>Wymondham</Name>
+		<Code>WMD</Code>
+	</Station>
+	<Station>
+		<Name>Wythall</Name>
+		<Code>WYT</Code>
+	</Station>
+	<Station>
+		<Name>Yalding</Name>
+		<Code>YAL</Code>
+	</Station>
+	<Station>
+		<Name>Yardley Wood</Name>
+		<Code>YRD</Code>
+	</Station>
+	<Station>
+		<Name>Yarm</Name>
+		<Code>YRM</Code>
+	</Station>
+	<Station>
+		<Name>Yate</Name>
+		<Code>YAE</Code>
+	</Station>
+	<Station>
+		<Name>Yatton</Name>
+		<Code>YAT</Code>
+	</Station>
+	<Station>
+		<Name>Yeoford</Name>
+		<Code>YEO</Code>
+	</Station>
+	<Station>
+		<Name>Yeovil Junction</Name>
+		<Code>YVJ</Code>
+	</Station>
+	<Station>
+		<Name>Yeovil Pen Mill</Name>
+		<Code>YVP</Code>
+	</Station>
+	<Station>
+		<Name>Yetminster</Name>
+		<Code>YET</Code>
+	</Station>
+	<Station>
+		<Name>Ynyswen</Name>
+		<Code>YNW</Code>
+	</Station>
+	<Station>
+		<Name>Yoker</Name>
+		<Code>YOK</Code>
+	</Station>
+	<Station>
+		<Name>York</Name>
+		<Code>YRK</Code>
+	</Station>
+	<Station>
+		<Name>Yorton</Name>
+		<Code>YRT</Code>
+	</Station>
+	<Station>
+		<Name>Ystrad Mynach</Name>
+		<Code>YSM</Code>
+	</Station>
+	<Station>
+		<Name>Ystrad Rhondda</Name>
+		<Code>YSR</Code>
+	</Station>
+</Stations>

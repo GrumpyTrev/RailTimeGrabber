@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.OS;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 using Android.Support.V7.App;
-using Android.Runtime;
 using Android.Widget;
 using System.Threading.Tasks;
 using System.Net.Http;
@@ -9,11 +9,13 @@ using System.Net;
 using System;
 using System.Collections.Generic;
 using HtmlAgilityPack;
+using Android.Views;
+using Android.Content;
 
 namespace RailTimeGrabber
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
-    public class MainActivity : AppCompatActivity
+	[Activity( Label = "@string/app_name", MainLauncher = true )]
+	public class MainActivity : AppCompatActivity
     {
         async protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -22,14 +24,11 @@ namespace RailTimeGrabber
             // Set our view from the "main" layout resource
             SetContentView( Resource.Layout.activity_main );
 
+			// Initialise the action bar 
+			SetSupportActionBar( FindViewById<Toolbar>( Resource.Id.toolbar ) );
+
 			// Create a StorageMechanism instance
 			PersistentStorage.StorageMechanism = new StorageMechanism( this );
-
-			// Initialise the trip list
-//			trainTripsCollection.AddTrip( new TrainTrip { From = "Chippenham", To = "Bath Spa" } );
-//			trainTripsCollection.AddTrip( new TrainTrip { From = "Bath Spa", To = "Chippenham" } );
-//			trainTripsCollection.AddTrip( new TrainTrip { From = "Chippenham", To = "Bristol Temple Meads" } );
-//			trainTripsCollection.AddTrip( new TrainTrip { From = "Bristol Temple Meads", To = "Chippenham" } );
 
 			// Get the set of trips from storage
 			trainTripsCollection.LoadTrips();
@@ -41,14 +40,15 @@ namespace RailTimeGrabber
 				tripStrings.Add( string.Format( "{0} to {1}", trip.From, trip.To ) );
 			}
 
-			// Create adapter to supply these strings. Use a custom layout for the selected item but the standard layout for the dropdown
-			ArrayAdapter<string> spinnerAdapter = new ArrayAdapter<string>( this, Resource.Layout.spinner_item, tripStrings );
-			spinnerAdapter.SetDropDownViewResource( Android.Resource.Layout.SimpleSpinnerDropDownItem );
-
 			// Add to the spinner and display the selected trip
 			// Fill the spinner control with all the available trips and set the selected trip
-			Spinner tripSpinner = FindViewById<Spinner>( Resource.Id.spinner );
+			TripSpinner tripSpinner = FindViewById<TripSpinner>( Resource.Id.spinner );
 
+			// Create adapter to supply these strings. Use a custom layout for the selected item but the standard layout for the dropdown
+			TripAdapter spinnerAdapter = new TripAdapter( this, Resource.Layout.spinner_item, tripStrings, tripSpinner );
+			spinnerAdapter.SetDropDownViewResource( Android.Resource.Layout.SimpleSpinnerDropDownItem );
+
+			// Link the spinner with the trip data and display the selected trip
 			tripSpinner.Adapter = spinnerAdapter;
 			tripSpinner.SetSelection( trainTripsCollection.Selected );
 
@@ -62,6 +62,32 @@ namespace RailTimeGrabber
 
 			// Trap the spinner selection after the initial request
 			tripSpinner.ItemSelected += TripItemSelected;
+		}
+
+		/// <summary>
+		/// Called during creation to allow a toolbar menu to be created
+		/// </summary>
+		/// <param name="menu"></param>
+		/// <returns></returns>
+		public override bool OnCreateOptionsMenu( IMenu menu )
+		{
+			MenuInflater.Inflate( Resource.Menu.toolbar_menu, menu );
+			return base.OnCreateOptionsMenu( menu );
+		}
+
+		/// <summary>
+		/// Called when a menu item has been selected
+		/// </summary>
+		/// <param name="item"></param>
+		/// <returns></returns>
+		public override bool OnOptionsItemSelected( IMenuItem item )
+		{
+			if ( item.ItemId == Resource.Id.menu_new )
+			{
+				StartActivity( new Intent( this, typeof( AddTripActivity ) ) );
+			}
+			//			Toast.MakeText( this, "Action selected: " + item.TitleFormatted, ToastLength.Short ).Show();
+			return base.OnOptionsItemSelected( item );
 		}
 
 		/// <summary>

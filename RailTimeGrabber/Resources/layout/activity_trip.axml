@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<include
+		layout="@layout/toolbar" />
+	<TextView
+		android:text="From"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView1"
+		android:layout_marginLeft="10dp" />
+	<RailTimeGrabber.StationAutoComplete
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/autoCompleteTextViewFrom"
+		android:layout_marginLeft="10dp" />
+	<TextView
+		android:text="To"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView2"
+		android:layout_marginLeft="10dp" />
+	<AutoCompleteTextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/autoCompleteTextViewTo"
+		android:layout_marginLeft="10dp" />
+	<LinearLayout
+		android:orientation="horizontal"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/linearLayout1" >
+		<Button
+			android:text="Cancel"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:id="@+id/buttonCancel" />
+		<Button
+			android:text="Add Trip"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:id="@+id/buttonAdd" />
+	</LinearLayout>
+
+</LinearLayout>
