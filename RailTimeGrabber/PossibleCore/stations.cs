@@ -24,11 +24,11 @@ namespace RailTimeGrabber {
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
     public partial class Stations {
         
-        private StationsStation[] itemsField;
+        private Station[] itemsField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Station", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public StationsStation[] Items {
+        public Station[] Items {
             get {
                 return this.itemsField;
             }
@@ -44,7 +44,7 @@ namespace RailTimeGrabber {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-    public partial class StationsStation {
+    public partial class Station {
         
         private string nameField;
         

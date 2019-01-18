@@ -11,13 +11,15 @@ using System.Collections.Generic;
 using HtmlAgilityPack;
 using Android.Views;
 using Android.Content;
+using Android.Runtime;
+using AlertDialog = Android.Support.V7.App.AlertDialog;
 
 namespace RailTimeGrabber
 {
 	[Activity( Label = "@string/app_name", MainLauncher = true )]
 	public class MainActivity : AppCompatActivity
     {
-        async protected override void OnCreate(Bundle savedInstanceState)
+        protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
@@ -30,38 +32,33 @@ namespace RailTimeGrabber
 			// Create a StorageMechanism instance
 			PersistentStorage.StorageMechanism = new StorageMechanism( this );
 
-			// Get the set of trips from storage
-			trainTripsCollection.LoadTrips();
-
-			// Form a list of all the trips as formatted strings for the spinner
-			List<string> tripStrings = new List<string>();
-			foreach ( TrainTrip trip in trainTripsCollection.Trips )
-			{
-				tripStrings.Add( string.Format( "{0} to {1}", trip.From, trip.To ) );
-			}
-
-			// Add to the spinner and display the selected trip
 			// Fill the spinner control with all the available trips and set the selected trip
-			TripSpinner tripSpinner = FindViewById<TripSpinner>( Resource.Id.spinner );
+			tripSpinner = FindViewById<TripSpinner>( Resource.Id.spinner );
 
 			// Create adapter to supply these strings. Use a custom layout for the selected item but the standard layout for the dropdown
-			TripAdapter spinnerAdapter = new TripAdapter( this, Resource.Layout.spinner_item, tripStrings, tripSpinner );
+			spinnerAdapter = new TripAdapter( this, Resource.Layout.spinner_item, TripStrings(), tripSpinner );
 			spinnerAdapter.SetDropDownViewResource( Android.Resource.Layout.SimpleSpinnerDropDownItem );
 
 			// Link the spinner with the trip data and display the selected trip
 			tripSpinner.Adapter = spinnerAdapter;
-			tripSpinner.SetSelection( trainTripsCollection.Selected );
+			tripSpinner.SetSelection( TrainTrips.Selected );
 
-			// Get the train journeys for the current trip
-			TrainJourneys journeys = await GetTrainJourneys( trainTripsCollection.SelectedTrip.From, trainTripsCollection.SelectedTrip.To );
-
-			// Put results into an adapter and assign the adapter to the list view. 
-			// Put the adapter in a class variable so that it can be refreshed with new data
-			journeyAdapter = new TrainJourneyWrapper( this, journeys.Journeys.ToArray() );
+			// Put an empty set of results into an adapter and assign the adapter to the list view. 
+			journeyAdapter = new TrainJourneyWrapper( this, new TrainJourneys().Journeys.ToArray() );
 			( ( ListView )FindViewById<ListView>( Resource.Id.listView1 ) ).Adapter = journeyAdapter;
+
+			// Get the train journeys for the current trip (if there is one )
+			if ( TrainTrips.Selected >= 0 )
+			{
+				// This is an synch call. It will load the results into the TrainJourneyWrapper when available
+				GetTrainJourneys( TrainTrips.SelectedTrip.From, TrainTrips.SelectedTrip.To );
+			}
 
 			// Trap the spinner selection after the initial request
 			tripSpinner.ItemSelected += TripItemSelected;
+
+			// Trap the trip list long click
+			spinnerAdapter.LongClickEvent += TripLongClick;
 		}
 
 		/// <summary>
@@ -84,10 +81,27 @@ namespace RailTimeGrabber
 		{
 			if ( item.ItemId == Resource.Id.menu_new )
 			{
-				StartActivity( new Intent( this, typeof( AddTripActivity ) ) );
+				StartActivityForResult( new Intent( this, typeof( AddTripActivity ) ), 0 );
 			}
-			//			Toast.MakeText( this, "Action selected: " + item.TitleFormatted, ToastLength.Short ).Show();
+
 			return base.OnOptionsItemSelected( item );
+		}
+
+		/// <summary>
+		/// Called when another activity stated by this activity exits
+		/// Because only the AddTripActivity is the only activity started there is no need to check the request code.
+		/// </summary>
+		/// <param name="requestCode"></param>
+		/// <param name="resultCode"></param>
+		/// <param name="data"></param>
+		protected override void OnActivityResult( int requestCode, [GeneratedEnum] Result resultCode, Intent data )
+		{
+			if ( resultCode == Result.Ok )
+			{
+				// Refresh the spinner adpater in case a trip was added
+				spinnerAdapter.Clear();
+				spinnerAdapter.AddAll( TripStrings() );
+			}
 		}
 
 		/// <summary>
@@ -96,31 +110,114 @@ namespace RailTimeGrabber
 		/// </summary>
 		/// <param name="sender"></param>
 		/// <param name="args"></param>
-		async private void TripItemSelected( object sender, AdapterView.ItemSelectedEventArgs args )
+		private void TripItemSelected( object sender, AdapterView.ItemSelectedEventArgs args )
 		{
 			// Update the selection
-			trainTripsCollection.Selected = args.Position;
+			TrainTrips.Selected = args.Position;
 
 			// Clear the currently displayed data as this may take a while
 			journeyAdapter.Items = new TrainJourney[ 0 ];
 			journeyAdapter.NotifyDataSetChanged();
 
 			// Get the journeys for the new trip
-			TrainJourneys journeys = await GetTrainJourneys( trainTripsCollection.SelectedTrip.From, trainTripsCollection.SelectedTrip.To );
-
-			// Display them
-			journeyAdapter.Items = journeys.Journeys.ToArray();
-			journeyAdapter.NotifyDataSetChanged();
+			// This is an synch call. It will load the results into the TrainJourneyWrapper when available
+			GetTrainJourneys( TrainTrips.SelectedTrip.From, TrainTrips.SelectedTrip.To );
 		}
+
+		/// <summary>
+		/// Called when a trip item has been long clicked.
+		/// Confirm deletion and then delete the item.
+		/// This may involve changing the currently selected trip
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void TripLongClick( object sender, TripAdapter.LongClickEventArgs e )
+		{
+			TrainTrip tripToDelete = TrainTrips.Trips[ e.TripPosition ];
+
+			// Display a confirmation dialogue
+			new AlertDialog.Builder( this )
+				.SetTitle( "Confirm trip deletion" )
+				.SetMessage( string.Format( "Do you realy want to delete the '{0} to {1}' trip?", tripToDelete.From, tripToDelete.To ) )
+				.SetPositiveButton( "Yes", ( senderAlert, args ) => {
+
+					// If the position of the trip to delete is greater than the currently selected trip then just delete it
+					if ( e.TripPosition > TrainTrips.Selected )
+					{
+						// Delete the trip
+						TrainTrips.DeleteTrip( e.TripPosition );
+
+						// Refresh the spinner adapter
+						spinnerAdapter.Clear();
+						spinnerAdapter.AddAll( TripStrings() );
+					}
+
+					// If the position of the trip to delete is less than the currently selected trip the delete it and reduce the
+					// index of the selected trip
+					else if ( e.TripPosition < TrainTrips.Selected )
+					{
+						// Delete the trip
+						TrainTrips.DeleteTrip( e.TripPosition );
+
+						// Refresh the spinner adapter
+						spinnerAdapter.Clear();
+						spinnerAdapter.AddAll( TripStrings() );
+
+						// Select the previous trip
+						tripSpinner.SetSelection( TrainTrips.Selected - 1 );
+					}
+
+					// If the selected trip is being deleted then either keep the selected index the same and refresh it, or if
+					// the end of the list has been reached then reduce the selected trip index. If there are no items left then set the index to -1
+					// and make sure that the results are cleared
+					else
+					{
+						// Delete the trip
+						TrainTrips.DeleteTrip( e.TripPosition );
+
+						// Refresh the spinner adapter
+						spinnerAdapter.Clear();
+						spinnerAdapter.AddAll( TripStrings() );
+
+						if ( TrainTrips.Selected >= TrainTrips.Trips.Count )
+						{
+							if ( TrainTrips.Selected > 0 )
+							{
+								// Select the previous trip
+								tripSpinner.SetSelection( TrainTrips.Selected - 1 );
+							}
+							else
+							{
+								// Clear the selection. This will not cause the selected event to be called so clear the journey details explicitly
+								tripSpinner.SetSelection( -1 );
+
+								TrainTrips.Selected = -1;
+
+								// Clear the currently displayed data
+								journeyAdapter.Items = new TrainJourney[ 0 ];
+								journeyAdapter.NotifyDataSetChanged();
+
+							}
+						}
+						else
+						{
+							// Need to simulate a selection changed event
+							TripItemSelected( null, new AdapterView.ItemSelectedEventArgs( null, null, TrainTrips.Selected, 0 ) );
+						}
+					}
+				} )
+				.SetNegativeButton( "No", ( EventHandler<DialogClickEventArgs> )null )
+				.Create()
+				.Show();
+		}
+
 
 		/// <summary>
 		/// Get the next few train journeys for the specified trip
 		/// </summary>
 		/// <returns></returns>
-		async Task<TrainJourneys> GetTrainJourneys( string from, string to )
+		private async void GetTrainJourneys( string from, string to )
 		{
-			TrainJourneys returnedJourneys = new TrainJourneys();
-
 			// Need to use a non-default HttpClientHandler to hold the cookies
 			using ( HttpClientHandler handler = new HttpClientHandler() )
 			{
@@ -134,7 +231,6 @@ namespace RailTimeGrabber
 					{
 						// Must load the search page in order to set the session id cookie
 						HttpResponseMessage response = await client.GetAsync( "http://ojp.nationalrail.co.uk/service/planjourney/search" );
-						await response.Content.ReadAsStringAsync();
 
 						// Set up the request for one minute from now
 						DateTime requestTime = DateTime.Now + TimeSpan.FromMinutes( 1 );
@@ -147,6 +243,8 @@ namespace RailTimeGrabber
 						HtmlNodeCollection dormNodes = doc.DocumentNode.SelectNodes( "//td[@class='dep']/.." );
 						if ( dormNodes != null )
 						{
+							TrainJourneys journeys = new TrainJourneys();
+
 							// Fill the journeys list with the results
 							foreach ( HtmlNode journeyNode in dormNodes )
 							{
@@ -155,11 +253,15 @@ namespace RailTimeGrabber
 								string duration = journeyNode.SelectSingleNode( "./td[@class='dur']" ).InnerText.Replace( "\n", "" ).Replace( "\t", "" );
 								string status = journeyNode.SelectSingleNode( "./td[@class='status']" ).InnerText.Replace( "\n", "" ).Replace( "\t", "" );
 
-								returnedJourneys.Journeys.Add( new TrainJourney {
+								journeys.Journeys.Add( new TrainJourney {
 									ArrivalTime = arrivalTime, DepartureTime = departureTime, Duration = duration,
 									Status = status
 								} );
 							}
+
+							// Display them
+							journeyAdapter.Items = journeys.Journeys.ToArray();
+							journeyAdapter.NotifyDataSetChanged();
 						}
 					}
 					catch ( HttpRequestException requestException )
@@ -168,8 +270,6 @@ namespace RailTimeGrabber
 					}
 				}
 			}
-
-			return returnedJourneys;
 		}
 
 		/// <summary>
@@ -181,7 +281,7 @@ namespace RailTimeGrabber
 		/// <param name="hours"></param>
 		/// <param name="minutes"></param>
 		/// <returns></returns>
-		static async Task<string> MakeRequest( HttpClient client, string from, string to, int hours, int minutes )
+		private async Task<string> MakeRequest( HttpClient client, string from, string to, int hours, int minutes )
 		{
 			HttpResponseMessage response = await client.PostAsync( "http://ojp.nationalrail.co.uk/service/planjourney/plan",
 				new FormUrlEncodedContent( new Dictionary<string, string> { { "commandName", "journeyPlannerCommand" }, { "from.searchTerm", from },
@@ -192,13 +292,33 @@ namespace RailTimeGrabber
 		}
 
 		/// <summary>
+		/// Return a formatted list of the trips to be displayed in the dropdown spinner
+		/// </summary>
+		/// <returns></returns>
+		private List<string> TripStrings()
+		{
+			List<string> tripStrings = new List<string>();
+			foreach ( TrainTrip trip in TrainTrips.Trips )
+			{
+				tripStrings.Add( string.Format( "{0} to {1}", trip.From, trip.To ) );
+			}
+
+			return tripStrings;
+		}
+
+		/// <summary>
 		/// Adapter used to provide data to the list view showing the journeys
 		/// </summary>
 		private TrainJourneyWrapper journeyAdapter = null;
 
 		/// <summary>
-		/// The set of train trips configured into the system
+		/// Adapter used to hold the trips for the spinner
 		/// </summary>
-		private TrainTrips trainTripsCollection = new TrainTrips();
+		private TripAdapter spinnerAdapter = null;
+
+		/// <summary>
+		/// Spinner control used to hold the trip list
+		/// </summary>
+		private TripSpinner tripSpinner = null;
 	}
 }

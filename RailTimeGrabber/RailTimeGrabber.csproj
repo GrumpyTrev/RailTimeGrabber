@@ -59,6 +59,9 @@
     <Compile Include="AddTripActivity.cs" />
     <Compile Include="PossibleCore\stations.cs" />
     <Compile Include="PossibleCore\StationStorage.cs" />
+    <Compile Include="StationAdapter.cs" />
+    <Compile Include="StationAutoComplete.cs" />
+    <Compile Include="StationFilter.cs" />
     <Compile Include="TripAdapter.cs" />
     <Compile Include="PossibleCore\IStorageMechanism.cs" />
     <Compile Include="PossibleCore\PersistentStorage.cs" />
