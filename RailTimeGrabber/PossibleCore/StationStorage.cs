@@ -12,7 +12,6 @@ namespace RailTimeGrabber
 	{
 		/// <summary>
 		/// Read the station information from the assets
-		/// Make this return a Task so that it can be called asynchronously
 		/// </summary>
 		/// <param name="manager"></param>
 		/// <returns></returns>
@@ -39,6 +38,9 @@ namespace RailTimeGrabber
 			}
 		}
 
+		/// <summary>
+		/// The station names
+		/// </summary>
 		public static string[] StationNames { get; private set; }
 	}
 }

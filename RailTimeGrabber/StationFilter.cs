@@ -33,9 +33,9 @@ namespace RailTimeGrabber
 			// If no input then display the most recently used stations
 			if ( searchString.Length == 0 )
 			{
-				// TODO - get this from perisitent storage
-				results.Values = new string[] { "Chippenham", "Bath Spa", "Bristol" };
-				results.Count = 3;
+				// Get this from perisitent storage
+				results.Values = RecentStations.Stations.ToArray();
+				results.Count = RecentStations.Stations.Count;
 			}
 			else
 			{

@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddTripActivity.cs" />
+    <Compile Include="PossibleCore\RecentStations.cs" />
     <Compile Include="PossibleCore\stations.cs" />
     <Compile Include="PossibleCore\StationStorage.cs" />
     <Compile Include="StationAdapter.cs" />

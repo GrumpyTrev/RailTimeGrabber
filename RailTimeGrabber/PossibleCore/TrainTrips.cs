@@ -122,13 +122,22 @@ namespace RailTimeGrabber
 			}
 		}
 
+		/// <summary>
+		/// Persistent storage names
+		/// </summary>
 		private const string TrainTripsSizeName = "TrainTripsSize";
 		private const string TrainTripFromName = "TrainTripFrom";
 		private const string TrainTripToName = "TrainTripTo";
 		private const string TrainTripSelectedName = "TrainTripSelected";
 
+		/// <summary>
+		/// The currently selected trip
+		/// </summary>
 		private static int selectedTrip = -1;
 
+		/// <summary>
+		/// The list of trips
+		/// </summary>
 		private static List<TrainTrip> trips = null;
 	}
 }

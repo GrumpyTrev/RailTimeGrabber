@@ -12,9 +12,14 @@ using Android.Widget;
 
 namespace RailTimeGrabber
 {
+	/// <summary>
+	/// Adapter used to show a list of journeys
+	/// </summary>
 	class TrainJourneyWrapper : BaseAdapter<TrainJourney>
 	{
-		Activity context = null;
+		/// <summary>
+		/// The list of journeys
+		/// </summary>
 		public TrainJourney[] Items { get; set; }
 
 		public TrainJourneyWrapper( Activity context, TrainJourney[] items )
@@ -22,8 +27,7 @@ namespace RailTimeGrabber
 			this.context = context;
 			Items = items;
 		}
-
-
+		
 		public override long GetItemId( int position )
 		{
 			return position;
@@ -45,6 +49,13 @@ namespace RailTimeGrabber
 			}
 		}
 
+		/// <summary>
+		/// Display the journey details
+		/// </summary>
+		/// <param name="position"></param>
+		/// <param name="convertView"></param>
+		/// <param name="parent"></param>
+		/// <returns></returns>
 		public override View GetView( int position, View convertView, ViewGroup parent )
 		{
 			View view = convertView;
@@ -64,6 +75,9 @@ namespace RailTimeGrabber
 			return view;
 		}
 
-
+		/// <summary>
+		/// The context used to get the layout
+		/// </summary>
+		private Activity context = null;
 	}
 }

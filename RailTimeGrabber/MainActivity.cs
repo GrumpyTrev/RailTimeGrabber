@@ -44,7 +44,7 @@ namespace RailTimeGrabber
 			tripSpinner.SetSelection( TrainTrips.Selected );
 
 			// Put an empty set of results into an adapter and assign the adapter to the list view. 
-			journeyAdapter = new TrainJourneyWrapper( this, new TrainJourneys().Journeys.ToArray() );
+			journeyAdapter = new TrainJourneyWrapper( this, new TrainJourney[ 0 ] );
 			( ( ListView )FindViewById<ListView>( Resource.Id.listView1 ) ).Adapter = journeyAdapter;
 
 			// Get the train journeys for the current trip (if there is one )
@@ -151,7 +151,6 @@ namespace RailTimeGrabber
 						spinnerAdapter.Clear();
 						spinnerAdapter.AddAll( TripStrings() );
 					}
-
 					// If the position of the trip to delete is less than the currently selected trip the delete it and reduce the
 					// index of the selected trip
 					else if ( e.TripPosition < TrainTrips.Selected )
@@ -166,7 +165,6 @@ namespace RailTimeGrabber
 						// Select the previous trip
 						tripSpinner.SetSelection( TrainTrips.Selected - 1 );
 					}
-
 					// If the selected trip is being deleted then either keep the selected index the same and refresh it, or if
 					// the end of the list has been reached then reduce the selected trip index. If there are no items left then set the index to -1
 					// and make sure that the results are cleared
@@ -196,7 +194,6 @@ namespace RailTimeGrabber
 								// Clear the currently displayed data
 								journeyAdapter.Items = new TrainJourney[ 0 ];
 								journeyAdapter.NotifyDataSetChanged();
-
 							}
 						}
 						else
@@ -264,7 +261,7 @@ namespace RailTimeGrabber
 							journeyAdapter.NotifyDataSetChanged();
 						}
 					}
-					catch ( HttpRequestException requestException )
+					catch ( HttpRequestException )
 					{
 						Toast.MakeText( this, "Problem accessing network. Check network settings.", ToastLength.Long ).Show();
 					}

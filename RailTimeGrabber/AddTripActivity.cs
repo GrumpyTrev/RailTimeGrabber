@@ -13,7 +13,7 @@ namespace RailTimeGrabber
 	[Activity( Label = "Add Trip" )]
 	public class AddTripActivity: AppCompatActivity
 	{
-		protected override async void OnCreate( Bundle savedInstanceState )
+		protected override void OnCreate( Bundle savedInstanceState )
 		{
 			base.OnCreate( savedInstanceState );
 
@@ -46,6 +46,12 @@ namespace RailTimeGrabber
 
 			// Validate the station names again when the add button is pressed
 			addButton.Click += AddButtonClicked;
+
+			// Terminate the activity if the cancel button is clicked
+			FindViewById<Button>( Resource.Id.buttonCancel ).Click += ( sender, e ) => {
+				SetResult( Result.Canceled );
+				Finish();
+			};
 
 			// Read in the fixed (and static) list of stations (aynchronously)
 			StationStorage.ReadStations( Assets );
@@ -109,6 +115,9 @@ namespace RailTimeGrabber
 			{
 				// Add the trip and close this activity
 				TrainTrips.AddTrip( new TrainTrip { From = fromView.Text, To = toView.Text } );
+				RecentStations.AddStation( fromView.Text );
+				RecentStations.AddStation( toView.Text );
+
 				SetResult( Result.Ok );
 				Finish();
 			}
@@ -135,9 +144,5 @@ namespace RailTimeGrabber
 		/// The add trip button
 		/// </summary>
 		private Button addButton = null;
-
 	}
-
-
-
 }
