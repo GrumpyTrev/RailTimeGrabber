@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace RailTimeGrabber
 {
@@ -16,10 +17,16 @@ namespace RailTimeGrabber
 		{
 			get
 			{
+				// Lock access to the store
+				loadLock.WaitOne();
+
 				if ( stations == null )
 				{
 					LoadStations();
 				}
+
+				// Unlock the store
+				loadLock.ReleaseMutex();
 
 				return stations;
 			}
@@ -106,5 +113,10 @@ namespace RailTimeGrabber
 		/// The list of most recently used station names
 		/// </summary>
 		private static List< string > stations = null;
+
+		/// <summary>
+		/// Provide locking around the load operation
+		/// </summary>
+		private static Mutex loadLock = new Mutex();
 	}
 }
