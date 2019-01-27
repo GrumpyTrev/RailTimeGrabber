@@ -5,7 +5,8 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 	<include layout="@layout/toolbar" />
-	<RelativeLayout
+	<LinearLayout
+		android:orientation="vertical"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent">
 		<RailTimeGrabber.TripSpinner
@@ -14,13 +15,23 @@
 			android:layout_height="wrap_content"
 			android:textAppearance="?android:attr/textAppearanceLarge"
 		/>
-		<ListView
-			android:minWidth="25px"
-			android:minHeight="25px"
-			android:layout_width="fill_parent"
-			android:layout_height="fill_parent"
-			android:layout_below="@id/spinner"
-			android:id="@+id/listView1"
-			android:divider="#ffffc400" />
-	</RelativeLayout>
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<ListView
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_below="@id/spinner"
+				android:id="@+id/listView1"
+				android:divider="#ffffc400" />
+			<ProgressBar
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:id="@+id/loadProgress"
+			/>
+		</RelativeLayout>
+	</LinearLayout>
 </LinearLayout>
