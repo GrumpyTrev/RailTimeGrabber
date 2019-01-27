@@ -14,6 +14,9 @@ namespace RailTimeGrabber
 	{
 		public JourneyRequest()
 		{
+			// Create a client using a handler with a cookie container and a timeout
+			client = new HttpClient( new HttpClientHandler { CookieContainer = new CookieContainer() } );
+			client.Timeout = TimeSpan.FromSeconds( ClientRequestTimeout );
 		}
 
 		/// <summary>
@@ -23,79 +26,66 @@ namespace RailTimeGrabber
 		/// <param name="to"></param>
 		public async void GetJourneys( string from, string to )
 		{
-			// Need to use a non-default HttpClientHandler to hold the cookies
-			using ( HttpClientHandler clientHandler = new HttpClientHandler() )
+			try
 			{
-				// Cookies are required by the website to hold a session id
-				clientHandler.CookieContainer = new CookieContainer();
-
-				// Use a HttpClient for the requests
-				using ( HttpClient client = new HttpClient( clientHandler ) )
+				// Check if a previously obtained session id cookie is still valid
+				if ( ( DateTime.Now - sessionCookieTime ).TotalMinutes > SeesionCookieValidTimeInMinutes )
 				{
-					try
-					{
-						// Must load the search page in order to set the session id cookie
-						HttpResponseMessage response = await client.GetAsync( "http://ojp.nationalrail.co.uk/service/planjourney/search" );
+					// Must load the search page in order to set the session id cookie
+					await client.GetAsync( "http://ojp.nationalrail.co.uk/service/planjourney/search" );
 
-						// Set up the request for one minute from now
-						DateTime requestTime = DateTime.Now + TimeSpan.FromMinutes( 1 );
-
-						// Load the result of the request into an HtmlDocument
-						HtmlDocument doc = new HtmlDocument();
-						doc.LoadHtml( await MakeRequest( client, TrainTrip.ToWebFormat( from ), TrainTrip.ToWebFormat( to ), requestTime.Hour, requestTime.Minute ) );
-
-						// Any journeys
-						HtmlNodeCollection dormNodes = doc.DocumentNode.SelectNodes( "//td[@class='dep']/.." );
-						if ( dormNodes != null )
-						{
-							TrainJourneys journeys = new TrainJourneys();
-
-							// Fill the journeys list with the results
-							foreach ( HtmlNode journeyNode in dormNodes )
-							{
-								string departureTime = journeyNode.SelectSingleNode( "./td[@class='dep']" ).InnerText.Substring( 0, 5 );
-								string arrivalTime = journeyNode.SelectSingleNode( "./td[@class='arr']" ).InnerText.Substring( 0, 5 );
-								string duration = journeyNode.SelectSingleNode( "./td[@class='dur']" ).InnerText.Replace( "\n", "" ).Replace( "\t", "" );
-								string status = journeyNode.SelectSingleNode( "./td[@class='status']" ).InnerText.Replace( "\n", "" ).Replace( "\t", "" );
-
-								journeys.Journeys.Add( new TrainJourney {
-									ArrivalTime = arrivalTime, DepartureTime = departureTime, Duration = duration,
-									Status = status
-								} );
-							}
-
-							// Save the journeys so they can be accessed from outside the class
-							Journeys = journeys.Journeys.ToArray();
-
-							JourneysAvailableEvent?.Invoke( this, new JourneysAvailableArgs { JourneysAvailable = true } );
-						}
-					}
-					catch ( HttpRequestException )
-					{
-						JourneysAvailableEvent?.Invoke( this, new JourneysAvailableArgs { JourneysAvailable = false } );
-					}
+					// Save the time that this session id was obtained
+					sessionCookieTime = DateTime.Now;
 				}
 
+				// Set up the request for one minute from now
+				DateTime requestTime = DateTime.Now + TimeSpan.FromMinutes( 1 );
+
+				// Get the journeys
+				HttpResponseMessage response = await client.PostAsync( "http://ojp.nationalrail.co.uk/service/planjourney/plan",
+					new FormUrlEncodedContent( new Dictionary<string, string> { { "commandName", "journeyPlannerCommand" },
+						{ "from.searchTerm", TrainTrip.ToWebFormat( from ) }, { "timeOfOutwardJourney.arrivalOrDeparture", "DEPART" },
+						{ "timeOfOutwardJourney.hour", requestTime.Hour.ToString() }, { "timeOfOutwardJourney.minute",  requestTime.Minute.ToString() },
+						{ "timeOfOutwardJourney.monthDay", "Today" }, { "to.searchTerm", TrainTrip.ToWebFormat( to ) } } ) );
+
+				// Load the result of the request into an HtmlDocument
+				HtmlDocument doc = new HtmlDocument();
+				doc.LoadHtml( await response.Content.ReadAsStringAsync() );
+
+				// Any journeys
+				HtmlNodeCollection dormNodes = doc.DocumentNode.SelectNodes( "//td[@class='dep']/.." );
+				if ( dormNodes != null )
+				{
+					TrainJourneys journeys = new TrainJourneys();
+
+					// Fill the journeys list with the results
+					foreach ( HtmlNode journeyNode in dormNodes )
+					{
+						string departureTime = journeyNode.SelectSingleNode( "./td[@class='dep']" ).InnerText.Substring( 0, 5 );
+						string arrivalTime = journeyNode.SelectSingleNode( "./td[@class='arr']" ).InnerText.Substring( 0, 5 );
+						string duration = journeyNode.SelectSingleNode( "./td[@class='dur']" ).InnerText.Replace( "\n", "" ).Replace( "\t", "" );
+						string status = journeyNode.SelectSingleNode( "./td[@class='status']" ).InnerText.Replace( "\n", "" ).Replace( "\t", "" );
+
+						journeys.Journeys.Add( new TrainJourney {
+							ArrivalTime = arrivalTime, DepartureTime = departureTime, Duration = duration,
+							Status = status
+						} );
+					}
+
+					// Save the journeys so they can be accessed from outside the class
+					Journeys = journeys.Journeys.ToArray();
+
+					JourneysAvailableEvent?.Invoke( this, new JourneysAvailableArgs { JourneysAvailable = true } );
+				}
 			}
-		}
-
-		/// <summary>
-		/// Make a request for trains between the specified stations
-		/// </summary>
-		/// <param name="client"></param>
-		/// <param name="from"></param>
-		/// <param name="to"></param>
-		/// <param name="hours"></param>
-		/// <param name="minutes"></param>
-		/// <returns></returns>
-		private async Task<string> MakeRequest( HttpClient client, string from, string to, int hours, int minutes )
-		{
-			HttpResponseMessage response = await client.PostAsync( "http://ojp.nationalrail.co.uk/service/planjourney/plan",
-				new FormUrlEncodedContent( new Dictionary<string, string> { { "commandName", "journeyPlannerCommand" }, { "from.searchTerm", from },
-					{ "timeOfOutwardJourney.arrivalOrDeparture", "DEPART" }, { "timeOfOutwardJourney.hour", hours.ToString() },
-					{ "timeOfOutwardJourney.minute",  minutes.ToString() }, { "timeOfOutwardJourney.monthDay", "Today" }, { "to.searchTerm", to } } ) );
-
-			return await response.Content.ReadAsStringAsync();
+			catch ( HttpRequestException )
+			{
+				JourneysAvailableEvent?.Invoke( this, new JourneysAvailableArgs { JourneysAvailable = false } );
+			}
+			catch ( TaskCanceledException )
+			{
+				JourneysAvailableEvent?.Invoke( this, new JourneysAvailableArgs { JourneysAvailable = false } );
+			}
 		}
 
 		/// <summary>
@@ -116,5 +106,26 @@ namespace RailTimeGrabber
 		{
 			public bool JourneysAvailable { get; set; }
 		}
+
+		/// <summary>
+		/// The client used for all requests
+		/// </summary>
+		private HttpClient client = null;
+
+		/// <summary>
+		/// The time that the session cookie was obtained.
+		/// It is valid for 10 minutes
+		/// </summary>
+		private DateTime sessionCookieTime = DateTime.MinValue;
+
+		/// <summary>
+		/// Time difference used to check for session id cookie validity
+		/// </summary>
+		private const double SeesionCookieValidTimeInMinutes = 9.5;
+
+		/// <summary>
+		/// Timeout for client requests
+		/// </summary>
+		private const int ClientRequestTimeout = 20;
 	}
 }

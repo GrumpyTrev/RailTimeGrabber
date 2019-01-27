@@ -3,12 +3,8 @@ using Android.OS;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 using Android.Support.V7.App;
 using Android.Widget;
-using System.Threading.Tasks;
-using System.Net.Http;
-using System.Net;
 using System;
 using System.Collections.Generic;
-using HtmlAgilityPack;
 using Android.Views;
 using Android.Content;
 using Android.Runtime;
@@ -58,6 +54,10 @@ namespace RailTimeGrabber
 			// Get the train journeys for the current trip (if there is one )
 			if ( TrainTrips.Selected >= 0 )
 			{
+				// Keep track of the selected trip details so that any changes can be validated
+				selectedTrainTrip = TrainTrips.SelectedTrip;
+
+				// Display the progress bar
 				loadingProgress.Visibility = ViewStates.Visible;
 
 				// This is an synch call. It will load the results into the TrainJourneyWrapper when available
@@ -125,15 +125,23 @@ namespace RailTimeGrabber
 			// Update the selection
 			TrainTrips.Selected = args.Position;
 
-			// Clear the currently displayed data as this may take a while
-			journeyAdapter.Items = new TrainJourney[ 0 ];
-			journeyAdapter.NotifyDataSetChanged();
+			// If the selected trip has not changed, i.e. this has been called due to a trip deletion, then don't bother
+			// getting the journeys again.
+			if ( ( selectedTrainTrip == null ) || ( selectedTrainTrip.From != TrainTrips.SelectedTrip.From ) || ( selectedTrainTrip.To != TrainTrips.SelectedTrip.To ) )
+			{
+				selectedTrainTrip = TrainTrips.SelectedTrip;
 
-			loadingProgress.Visibility = ViewStates.Visible;
+				// Clear the currently displayed data as this may take a while
+				journeyAdapter.Items = new TrainJourney[ 0 ];
+				journeyAdapter.NotifyDataSetChanged();
 
-			// Get the journeys for the new trip
-			// This is an synch call. It will load the results into the TrainJourneyWrapper when available
-			trainJourneyRequest.GetJourneys( TrainTrips.SelectedTrip.From, TrainTrips.SelectedTrip.To );
+				// Show the progress bar
+				loadingProgress.Visibility = ViewStates.Visible;
+
+				// Get the journeys for the new trip
+				// This is an synch call. It will load the results into the TrainJourneyWrapper when available
+				trainJourneyRequest.GetJourneys( TrainTrips.SelectedTrip.From, TrainTrips.SelectedTrip.To );
+			}
 		}
 
 		/// <summary>
@@ -280,5 +288,10 @@ namespace RailTimeGrabber
 		/// JourneyRequest instance used to access the web for journey details
 		/// </summary>
 		private JourneyRequest trainJourneyRequest = null;
+
+		/// <summary>
+		/// The currently selected train trip
+		/// </summary>
+		private TrainTrip selectedTrainTrip = null;
 	}
 }
