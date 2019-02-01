@@ -37,7 +37,7 @@ namespace RailTimeGrabber
 				results.Values = RecentStations.Stations.ToArray();
 				results.Count = RecentStations.Stations.Count;
 			}
-			else
+			else if ( StationStorage.StationNames != null )
 			{
 				// Match the station names against the input characters
 				string[] filteredStations = Array.FindAll( StationStorage.StationNames, c => c.ToLower().StartsWith( searchString ) );

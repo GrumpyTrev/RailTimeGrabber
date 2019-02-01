@@ -91,6 +91,16 @@ namespace RailTimeGrabber
 		}
 
 		/// <summary>
+		/// Load the spinner with a new set of trips
+		/// </summary>
+		/// <param name="trips"></param>
+		public void ReloadSpinner( List< string > trips )
+		{
+			Clear();
+			AddAll( trips );
+		}
+
+		/// <summary>
 		/// Eventhandler used to link tinto the long click
 		/// </summary>
 		public event EventHandler<LongClickEventArgs> LongClickEvent;

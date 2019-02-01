@@ -9,6 +9,7 @@ using Android.Views;
 using Android.Content;
 using Android.Runtime;
 using AlertDialog = Android.Support.V7.App.AlertDialog;
+using System.Threading;
 
 namespace RailTimeGrabber
 {
@@ -69,6 +70,14 @@ namespace RailTimeGrabber
 
 			// Trap the trip list long click
 			spinnerAdapter.LongClickEvent += TripLongClick;
+
+			// Trap clicking on the manual update field
+			updateText = FindViewById<TextView>( Resource.Id.updateText );
+			updateText.Click += performManualUpdate;
+			UpdateMessage();
+
+			// Start a timer to increment the update time
+			updateTimer = new Timer( x => UpdateMessage(), null, TimeSpan.FromSeconds( 30 ), TimeSpan.FromSeconds( 30 ) );
 		}
 
 		/// <summary>
@@ -108,9 +117,12 @@ namespace RailTimeGrabber
 		{
 			if ( resultCode == Result.Ok )
 			{
-				// Refresh the spinner adpater in case a trip was added
+				// Refresh the spinner adapter
 				spinnerAdapter.Clear();
 				spinnerAdapter.AddAll( TripStrings() );
+
+				// Assume that the user wants to display results for the added trip, so select it.
+				tripSpinner.SetSelection( TrainTrips.Trips.Count - 1 );
 			}
 		}
 
@@ -131,12 +143,18 @@ namespace RailTimeGrabber
 			{
 				selectedTrainTrip = TrainTrips.SelectedTrip;
 
-				// Clear the currently displayed data as this may take a while
+				// Clear the currently displayed data as it does not relate to this trip
 				journeyAdapter.Items = new TrainJourney[ 0 ];
 				journeyAdapter.NotifyDataSetChanged();
 
 				// Show the progress bar
 				loadingProgress.Visibility = ViewStates.Visible;
+
+				// Reset the update time
+				lastUpdate = DateTime.MinValue;
+
+				// Update the recently updated message
+				UpdateMessage();
 
 				// Get the journeys for the new trip
 				// This is an synch call. It will load the results into the TrainJourneyWrapper when available
@@ -168,8 +186,7 @@ namespace RailTimeGrabber
 						TrainTrips.DeleteTrip( e.TripPosition );
 
 						// Refresh the spinner adapter
-						spinnerAdapter.Clear();
-						spinnerAdapter.AddAll( TripStrings() );
+						spinnerAdapter.ReloadSpinner( TripStrings() );
 					}
 					// If the position of the trip to delete is less than the currently selected trip the delete it and reduce the
 					// index of the selected trip
@@ -179,8 +196,7 @@ namespace RailTimeGrabber
 						TrainTrips.DeleteTrip( e.TripPosition );
 
 						// Refresh the spinner adapter
-						spinnerAdapter.Clear();
-						spinnerAdapter.AddAll( TripStrings() );
+						spinnerAdapter.ReloadSpinner( TripStrings() );
 
 						// Select the previous trip
 						tripSpinner.SetSelection( TrainTrips.Selected - 1 );
@@ -194,8 +210,7 @@ namespace RailTimeGrabber
 						TrainTrips.DeleteTrip( e.TripPosition );
 
 						// Refresh the spinner adapter
-						spinnerAdapter.Clear();
-						spinnerAdapter.AddAll( TripStrings() );
+						spinnerAdapter.ReloadSpinner( TripStrings() );
 
 						if ( TrainTrips.Selected >= TrainTrips.Trips.Count )
 						{
@@ -214,6 +229,12 @@ namespace RailTimeGrabber
 								// Clear the currently displayed data
 								journeyAdapter.Items = new TrainJourney[ 0 ];
 								journeyAdapter.NotifyDataSetChanged();
+
+				// Reset the update time
+				lastUpdate = DateTime.MinValue;
+
+				// Update the recently updated message
+				UpdateMessage();
 							}
 						}
 						else
@@ -255,6 +276,9 @@ namespace RailTimeGrabber
 				// Display them
 				journeyAdapter.Items = trainJourneyRequest.Journeys;
 				journeyAdapter.NotifyDataSetChanged();
+
+				// Update the manual update text
+				JustUpdated();
 			}
 			else
 			{
@@ -262,6 +286,87 @@ namespace RailTimeGrabber
 			}
 
 			loadingProgress.Visibility = ViewStates.Invisible;
+		}
+
+		/// <summary>
+		/// Called when the update text is clicked
+		/// Perform an update
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void performManualUpdate( object sender, EventArgs e )
+		{
+			// Show the progress bar
+			loadingProgress.Visibility = ViewStates.Visible;
+
+			// Get the journeys for the new trip
+			// This is an synch call. It will load the results into the TrainJourneyWrapper when available
+			trainJourneyRequest.GetJourneys( TrainTrips.SelectedTrip.From, TrainTrips.SelectedTrip.To );
+		}
+
+		/// <summary>
+		/// Reset the manual update text
+		/// </summary>
+		private void JustUpdated()
+		{
+			updateText.Text = "Updated a moment ago";
+			lastUpdate = DateTime.Now;
+		}
+
+		/// <summary>
+		/// Update the message displaying how long since the results were updated
+		/// </summary>
+		private void UpdateMessage()
+		{
+			RunOnUiThread( () => {
+
+				// If there has been an update then display how old it is
+				if ( lastUpdate != DateTime.MinValue )
+				{
+					TimeSpan updateSpan = DateTime.Now - lastUpdate;
+
+					if ( updateSpan.TotalMinutes < 1 )
+					{
+						updateText.Text = "Updated a moment ago";
+					}
+					else if ( updateSpan.TotalMinutes < 60 )
+					{
+						if ( updateSpan.TotalMinutes < 2 )
+						{
+							updateText.Text = "Updated a minute ago";
+						}
+						else
+						{
+							updateText.Text = string.Format( "Updated {0} minutes ago", ( int )updateSpan.TotalMinutes );
+						}
+					}
+					else if ( updateSpan.TotalHours < 24 )
+					{
+						if ( updateSpan.TotalHours < 2 )
+						{
+							updateText.Text = "Updated an hour ago";
+						}
+						else
+						{
+							updateText.Text = string.Format( "Updated {0} hourd ago", ( int )updateSpan.TotalHours );
+						}
+					}
+					else
+					{
+						updateText.Text = "Updated more than a day ago";
+					}
+				}
+				// If there is a trip selected then prompts for an update
+				else if ( TrainTrips.Selected != -1 )
+				{
+					updateText.Text = "Click to update";
+				}
+				else
+				{
+					// Prevent an update if nothing is selected
+					updateText.Text = "";
+				}
+			} );
 		}
 
 		/// <summary>
@@ -293,5 +398,20 @@ namespace RailTimeGrabber
 		/// The currently selected train trip
 		/// </summary>
 		private TrainTrip selectedTrainTrip = null;
+
+		/// <summary>
+		/// The manual update text field
+		/// </summary>
+		private TextView updateText = null;
+
+		/// <summary>
+		/// Timer used to change the update text
+		/// </summary>
+		private Timer updateTimer = null;
+
+		/// <summary>
+		/// The last time the journeys were updated
+		/// </summary>
+		private DateTime lastUpdate = DateTime.MinValue;
 	}
 }

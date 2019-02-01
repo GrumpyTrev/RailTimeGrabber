@@ -86,6 +86,10 @@ namespace RailTimeGrabber
 			{
 				JourneysAvailableEvent?.Invoke( this, new JourneysAvailableArgs { JourneysAvailable = false } );
 			}
+			catch ( OperationCanceledException )
+			{
+				JourneysAvailableEvent?.Invoke( this, new JourneysAvailableArgs { JourneysAvailable = false } );
+			}
 		}
 
 		/// <summary>
