@@ -77,18 +77,22 @@ namespace RailTimeGrabber
 
 					JourneysAvailableEvent?.Invoke( this, new JourneysAvailableArgs { JourneysAvailable = true } );
 				}
+				else
+				{
+					JourneysAvailableEvent?.Invoke( this, new JourneysAvailableArgs { JourneysAvailable = false } );
+				}
 			}
 			catch ( HttpRequestException )
 			{
-				JourneysAvailableEvent?.Invoke( this, new JourneysAvailableArgs { JourneysAvailable = false } );
+				JourneysAvailableEvent?.Invoke( this, new JourneysAvailableArgs { JourneysAvailable = false, NetworkProblem = true } );
 			}
 			catch ( TaskCanceledException )
 			{
-				JourneysAvailableEvent?.Invoke( this, new JourneysAvailableArgs { JourneysAvailable = false } );
+				JourneysAvailableEvent?.Invoke( this, new JourneysAvailableArgs { JourneysAvailable = false, NetworkProblem = true } );
 			}
 			catch ( OperationCanceledException )
 			{
-				JourneysAvailableEvent?.Invoke( this, new JourneysAvailableArgs { JourneysAvailable = false } );
+				JourneysAvailableEvent?.Invoke( this, new JourneysAvailableArgs { JourneysAvailable = false, NetworkProblem = true } );
 			}
 		}
 
@@ -109,6 +113,7 @@ namespace RailTimeGrabber
 		public class JourneysAvailableArgs: EventArgs
 		{
 			public bool JourneysAvailable { get; set; }
+			public bool NetworkProblem { get; set; } = false;
 		}
 
 		/// <summary>

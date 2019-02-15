@@ -280,9 +280,13 @@ namespace RailTimeGrabber
 				// Update the manual update text
 				JustUpdated();
 			}
-			else
+			else if ( args.NetworkProblem == true )
 			{
 				Toast.MakeText( this, "Problem accessing network. Check network settings.", ToastLength.Long ).Show();
+			}
+			else
+			{
+				Toast.MakeText( this, "No journeys found.", ToastLength.Long ).Show();
 			}
 
 			loadingProgress.Visibility = ViewStates.Invisible;
@@ -348,7 +352,7 @@ namespace RailTimeGrabber
 						}
 						else
 						{
-							updateText.Text = string.Format( "Updated {0} hourd ago", ( int )updateSpan.TotalHours );
+							updateText.Text = string.Format( "Updated {0} hours ago", ( int )updateSpan.TotalHours );
 						}
 					}
 					else
