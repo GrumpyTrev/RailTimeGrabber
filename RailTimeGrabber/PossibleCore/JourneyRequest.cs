@@ -24,7 +24,7 @@ namespace RailTimeGrabber
 		/// </summary>
 		/// <param name="from"></param>
 		/// <param name="to"></param>
-		public async void GetJourneys( string from, string to )
+		public async void GetJourneys( string from, string to, DateTime requestTime )
 		{
 			try
 			{
@@ -37,9 +37,6 @@ namespace RailTimeGrabber
 					// Save the time that this session id was obtained
 					sessionCookieTime = DateTime.Now;
 				}
-
-				// Set up the request for one minute from now
-				DateTime requestTime = DateTime.Now + TimeSpan.FromMinutes( 1 );
 
 				// Get the journeys
 				HttpResponseMessage response = await client.PostAsync( "http://ojp.nationalrail.co.uk/service/planjourney/plan",

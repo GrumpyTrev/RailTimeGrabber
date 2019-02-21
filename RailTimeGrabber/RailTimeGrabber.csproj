@@ -66,7 +66,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddTripActivity.cs" />
+    <Compile Include="PossibleCore\IJourneyResponse.cs" />
     <Compile Include="PossibleCore\JourneyRequest.cs" />
+    <Compile Include="PossibleCore\JourneyRetrieval.cs" />
     <Compile Include="PossibleCore\RecentStations.cs" />
     <Compile Include="PossibleCore\stations.cs" />
     <Compile Include="PossibleCore\StationStorage.cs" />

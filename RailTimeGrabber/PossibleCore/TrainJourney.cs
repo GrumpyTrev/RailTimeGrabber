@@ -3,7 +3,7 @@
 	/// <summary>
 	/// Class representing the train journey details obtained from the web
 	/// </summary>
-	class TrainJourney
+	public class TrainJourney
 	{
 		public string DepartureTime { get; set; }
 		public string ArrivalTime { get; set; }

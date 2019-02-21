@@ -14,7 +14,7 @@ using System.Threading;
 namespace RailTimeGrabber
 {
 	[Activity( Label = "@string/app_name", MainLauncher = true )]
-	public class MainActivity : AppCompatActivity
+	public class MainActivity : AppCompatActivity, IJourneyResponse
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -48,9 +48,8 @@ namespace RailTimeGrabber
 			journeyAdapter = new TrainJourneyWrapper( this, new TrainJourney[ 0 ] );
 			( ( ListView )FindViewById<ListView>( Resource.Id.listView1 ) ).Adapter = journeyAdapter;
 
-			// Create a journey request obect to perform the web access and link into its event
-			trainJourneyRequest = new JourneyRequest();
-			trainJourneyRequest.JourneysAvailableEvent += JourneysAvailable;
+			// Link this activity with responses from the JourneyRetrieval instance
+			trainJourneyRetrieval.JourneyResponse = this;
 
 			// Get the train journeys for the current trip (if there is one )
 			if ( TrainTrips.Selected >= 0 )
@@ -62,7 +61,7 @@ namespace RailTimeGrabber
 				loadingProgress.Visibility = ViewStates.Visible;
 
 				// This is an synch call. It will load the results into the TrainJourneyWrapper when available
-				trainJourneyRequest.GetJourneys( TrainTrips.SelectedTrip.From, TrainTrips.SelectedTrip.To );
+				trainJourneyRetrieval.GetJourneys( TrainTrips.SelectedTrip );
 			}
 
 			// Trap the spinner selection after the initial request
@@ -73,7 +72,7 @@ namespace RailTimeGrabber
 
 			// Trap clicking on the manual update field
 			updateText = FindViewById<TextView>( Resource.Id.updateText );
-			updateText.Click += performManualUpdate;
+			updateText.Click += PerformManualUpdate;
 			UpdateMessage();
 
 			// Start a timer to increment the update time
@@ -104,6 +103,48 @@ namespace RailTimeGrabber
 			}
 
 			return base.OnOptionsItemSelected( item );
+		}
+
+		/// <summary>
+		/// Called when the set of journeys have been cleared, either at the start of a request or if no journeys have been found
+		/// </summary>
+		public void JourneysCleared()
+		{
+			journeyAdapter.Items = new TrainJourney[ 0 ];
+			journeyAdapter.NotifyDataSetChanged();
+		}
+
+		/// <summary>
+		/// Called when either a new set of journeys or an extended set of journeys have been retrieved
+		/// </summary>
+		/// <param name="journeys"></param>
+		public void JourneysAvailable( TrainJourneys journeys )
+		{
+			// Display them
+			journeyAdapter.Items = journeys.Journeys.ToArray();
+			journeyAdapter.NotifyDataSetChanged();
+
+			// Update the manual update text
+			JustUpdated();
+		}
+
+		/// <summary>
+		///  Called when the request has completed
+		/// </summary>
+		/// <param name="networkProblem"></param>
+		/// <param name="noJourneysFound"></param>
+		public void JourneyRequestComplete( bool networkProblem, bool noJourneysFound )
+		{
+			if ( networkProblem == true )
+			{
+				Toast.MakeText( this, "Problem accessing network. Check network settings.", ToastLength.Long ).Show();
+			}
+			else if ( noJourneysFound == true )
+			{
+				Toast.MakeText( this, "No journeys found.", ToastLength.Long ).Show();
+			}
+
+			loadingProgress.Visibility = ViewStates.Invisible;
 		}
 
 		/// <summary>
@@ -143,10 +184,6 @@ namespace RailTimeGrabber
 			{
 				selectedTrainTrip = TrainTrips.SelectedTrip;
 
-				// Clear the currently displayed data as it does not relate to this trip
-				journeyAdapter.Items = new TrainJourney[ 0 ];
-				journeyAdapter.NotifyDataSetChanged();
-
 				// Show the progress bar
 				loadingProgress.Visibility = ViewStates.Visible;
 
@@ -158,7 +195,7 @@ namespace RailTimeGrabber
 
 				// Get the journeys for the new trip
 				// This is an synch call. It will load the results into the TrainJourneyWrapper when available
-				trainJourneyRequest.GetJourneys( TrainTrips.SelectedTrip.From, TrainTrips.SelectedTrip.To );
+				trainJourneyRetrieval.GetJourneys( TrainTrips.SelectedTrip );
 			}
 		}
 
@@ -227,14 +264,13 @@ namespace RailTimeGrabber
 								TrainTrips.Selected = -1;
 
 								// Clear the currently displayed data
-								journeyAdapter.Items = new TrainJourney[ 0 ];
-								journeyAdapter.NotifyDataSetChanged();
+								trainJourneyRetrieval.ClearJourneys();
 
-				// Reset the update time
-				lastUpdate = DateTime.MinValue;
+								// Reset the update time
+								lastUpdate = DateTime.MinValue;
 
-				// Update the recently updated message
-				UpdateMessage();
+								// Update the recently updated message
+								UpdateMessage();
 							}
 						}
 						else
@@ -265,47 +301,19 @@ namespace RailTimeGrabber
 		}
 
 		/// <summary>
-		/// Called when the JourneyRequest object has retrieved some journeys to display
-		/// </summary>
-		/// <param name="sender"></param>
-		/// <param name="args"></param>
-		private void JourneysAvailable( object sender, JourneyRequest.JourneysAvailableArgs args )
-		{
-			if ( args.JourneysAvailable == true )
-			{
-				// Display them
-				journeyAdapter.Items = trainJourneyRequest.Journeys;
-				journeyAdapter.NotifyDataSetChanged();
-
-				// Update the manual update text
-				JustUpdated();
-			}
-			else if ( args.NetworkProblem == true )
-			{
-				Toast.MakeText( this, "Problem accessing network. Check network settings.", ToastLength.Long ).Show();
-			}
-			else
-			{
-				Toast.MakeText( this, "No journeys found.", ToastLength.Long ).Show();
-			}
-
-			loadingProgress.Visibility = ViewStates.Invisible;
-		}
-
-		/// <summary>
 		/// Called when the update text is clicked
 		/// Perform an update
 		/// </summary>
 		/// <param name="sender"></param>
 		/// <param name="e"></param>
-		private void performManualUpdate( object sender, EventArgs e )
+		private void PerformManualUpdate( object sender, EventArgs e )
 		{
 			// Show the progress bar
 			loadingProgress.Visibility = ViewStates.Visible;
 
-			// Get the journeys for the new trip
+			// Get the journeys for the current
 			// This is an synch call. It will load the results into the TrainJourneyWrapper when available
-			trainJourneyRequest.GetJourneys( TrainTrips.SelectedTrip.From, TrainTrips.SelectedTrip.To );
+			trainJourneyRetrieval.UpdateJourneys();
 		}
 
 		/// <summary>
@@ -394,9 +402,9 @@ namespace RailTimeGrabber
 		private ProgressBar loadingProgress = null;
 
 		/// <summary>
-		/// JourneyRequest instance used to access the web for journey details
+		/// JourneyRetrieval instance used to get journeys for teh selected trip
 		/// </summary>
-		private JourneyRequest trainJourneyRequest = null;
+		private JourneyRetrieval trainJourneyRetrieval = new JourneyRetrieval();
 
 		/// <summary>
 		/// The currently selected train trip

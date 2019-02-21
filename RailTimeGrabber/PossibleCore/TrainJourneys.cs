@@ -5,7 +5,7 @@ namespace RailTimeGrabber
 	/// <summary>
 	/// A list of train journeys
 	/// </summary>
-	class TrainJourneys
+	public class TrainJourneys
 	{
 		public List<TrainJourney> Journeys { get; set; } = new List<TrainJourney>();
 	}
