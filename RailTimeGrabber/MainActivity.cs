@@ -48,6 +48,8 @@ namespace RailTimeGrabber
 			journeyAdapter = new TrainJourneyWrapper( this, new TrainJourney[ 0 ] );
 			( ( ListView )FindViewById<ListView>( Resource.Id.listView1 ) ).Adapter = journeyAdapter;
 
+			// Link into the adapters More Journeys button
+			journeyAdapter.MoreJourneysEvent += MoreJourneysRequest;
 			// Link this activity with responses from the JourneyRetrieval instance
 			trainJourneyRetrieval.JourneyResponse = this;
 
@@ -165,6 +167,14 @@ namespace RailTimeGrabber
 				// Assume that the user wants to display results for the added trip, so select it.
 				tripSpinner.SetSelection( TrainTrips.Trips.Count - 1 );
 			}
+		}
+
+		/// <summary>
+		/// Called when the More Journeys buttons has been clicked.
+		/// Pass on this request to the JourneyRetrieval class
+		/// </summary>
+		private void MoreJourneysRequest()
+		{
 		}
 
 		/// <summary>

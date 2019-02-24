@@ -1,16 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-
-namespace RailTimeGrabber
+﻿namespace RailTimeGrabber
 {
 	/// <summary>
 	/// IJourneyResponse specifies the JourneyRequest reponses that a user of JourneyRequest must handle
