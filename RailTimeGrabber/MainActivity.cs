@@ -9,7 +9,6 @@ using Android.Views;
 using Android.Content;
 using Android.Runtime;
 using AlertDialog = Android.Support.V7.App.AlertDialog;
-using System.Threading;
 
 namespace RailTimeGrabber
 {
@@ -37,7 +36,7 @@ namespace RailTimeGrabber
 			tripSpinner = FindViewById<TripSpinner>( Resource.Id.spinner );
 
 			// Create adapter to supply these strings. Use a custom layout for the selected item but the standard layout for the dropdown
-			spinnerAdapter = new TripAdapter( this, Resource.Layout.spinner_item, TripStrings(), tripSpinner );
+			spinnerAdapter = new TripAdapter( this, Resource.Layout.spinner_item, TrainTrips.TripStrings(), tripSpinner );
 			spinnerAdapter.SetDropDownViewResource( Android.Resource.Layout.SimpleSpinnerDropDownItem );
 
 			// Link the spinner with the trip data and display the selected trip
@@ -50,8 +49,18 @@ namespace RailTimeGrabber
 
 			// Link into the adapters More Journeys button
 			journeyAdapter.MoreJourneysEvent += MoreJourneysRequest;
+
 			// Link this activity with responses from the JourneyRetrieval instance
 			trainJourneyRetrieval.JourneyResponse = this;
+
+			// Trap clicking on the manual update field
+			updateText = FindViewById<TextView>( Resource.Id.updateText );
+			updateText.Click += PerformManualUpdate;
+
+			// Create a ResultsTimer to handle updating the results 'age' message
+			updateTimer = new ResultsTimer();
+			updateTimer.TextChangedEvent += UpdateTextChanged;
+			updateTimer.ResetTimer();
 
 			// Get the train journeys for the current trip (if there is one )
 			if ( TrainTrips.Selected >= 0 )
@@ -59,9 +68,8 @@ namespace RailTimeGrabber
 				// Keep track of the selected trip details so that any changes can be validated
 				selectedTrainTrip = TrainTrips.SelectedTrip;
 
-				// Display the progress bar
-				loadingProgress.Visibility = ViewStates.Visible;
-
+				PrepareForRequest();
+				
 				// This is an synch call. It will load the results into the TrainJourneyWrapper when available
 				trainJourneyRetrieval.GetJourneys( TrainTrips.SelectedTrip );
 			}
@@ -71,14 +79,6 @@ namespace RailTimeGrabber
 
 			// Trap the trip list long click
 			spinnerAdapter.LongClickEvent += TripLongClick;
-
-			// Trap clicking on the manual update field
-			updateText = FindViewById<TextView>( Resource.Id.updateText );
-			updateText.Click += PerformManualUpdate;
-			UpdateMessage();
-
-			// Start a timer to increment the update time
-			updateTimer = new Timer( x => UpdateMessage(), null, TimeSpan.FromSeconds( 30 ), TimeSpan.FromSeconds( 30 ) );
 		}
 
 		/// <summary>
@@ -127,7 +127,7 @@ namespace RailTimeGrabber
 			journeyAdapter.NotifyDataSetChanged();
 
 			// Update the manual update text
-			JustUpdated();
+			updateTimer.JustUpdated();
 		}
 
 		/// <summary>
@@ -162,7 +162,7 @@ namespace RailTimeGrabber
 			{
 				// Refresh the spinner adapter
 				spinnerAdapter.Clear();
-				spinnerAdapter.AddAll( TripStrings() );
+				spinnerAdapter.AddAll( TrainTrips.TripStrings() );
 
 				// Assume that the user wants to display results for the added trip, so select it.
 				tripSpinner.SetSelection( TrainTrips.Trips.Count - 1 );
@@ -175,6 +175,10 @@ namespace RailTimeGrabber
 		/// </summary>
 		private void MoreJourneysRequest()
 		{
+			PrepareForRequest();
+
+			// Get more journeys for the trip
+			trainJourneyRetrieval.MoreJourneys();
 		}
 
 		/// <summary>
@@ -194,17 +198,9 @@ namespace RailTimeGrabber
 			{
 				selectedTrainTrip = TrainTrips.SelectedTrip;
 
-				// Show the progress bar
-				loadingProgress.Visibility = ViewStates.Visible;
-
-				// Reset the update time
-				lastUpdate = DateTime.MinValue;
-
-				// Update the recently updated message
-				UpdateMessage();
+				PrepareForRequest();
 
 				// Get the journeys for the new trip
-				// This is an synch call. It will load the results into the TrainJourneyWrapper when available
 				trainJourneyRetrieval.GetJourneys( TrainTrips.SelectedTrip );
 			}
 		}
@@ -233,7 +229,7 @@ namespace RailTimeGrabber
 						TrainTrips.DeleteTrip( e.TripPosition );
 
 						// Refresh the spinner adapter
-						spinnerAdapter.ReloadSpinner( TripStrings() );
+						spinnerAdapter.ReloadSpinner( TrainTrips.TripStrings() );
 					}
 					// If the position of the trip to delete is less than the currently selected trip the delete it and reduce the
 					// index of the selected trip
@@ -243,7 +239,7 @@ namespace RailTimeGrabber
 						TrainTrips.DeleteTrip( e.TripPosition );
 
 						// Refresh the spinner adapter
-						spinnerAdapter.ReloadSpinner( TripStrings() );
+						spinnerAdapter.ReloadSpinner( TrainTrips.TripStrings() );
 
 						// Select the previous trip
 						tripSpinner.SetSelection( TrainTrips.Selected - 1 );
@@ -257,7 +253,7 @@ namespace RailTimeGrabber
 						TrainTrips.DeleteTrip( e.TripPosition );
 
 						// Refresh the spinner adapter
-						spinnerAdapter.ReloadSpinner( TripStrings() );
+						spinnerAdapter.ReloadSpinner( TrainTrips.TripStrings() );
 
 						if ( TrainTrips.Selected >= TrainTrips.Trips.Count )
 						{
@@ -277,10 +273,7 @@ namespace RailTimeGrabber
 								trainJourneyRetrieval.ClearJourneys();
 
 								// Reset the update time
-								lastUpdate = DateTime.MinValue;
-
-								// Update the recently updated message
-								UpdateMessage();
+								updateTimer.ResetTimer();
 							}
 						}
 						else
@@ -296,21 +289,6 @@ namespace RailTimeGrabber
 		}
 
 		/// <summary>
-		/// Return a formatted list of the trips to be displayed in the dropdown spinner
-		/// </summary>
-		/// <returns></returns>
-		private List<string> TripStrings()
-		{
-			List<string> tripStrings = new List<string>();
-			foreach ( TrainTrip trip in TrainTrips.Trips )
-			{
-				tripStrings.Add( string.Format( "{0} to {1}", trip.From, trip.To ) );
-			}
-
-			return tripStrings;
-		}
-
-		/// <summary>
 		/// Called when the update text is clicked
 		/// Perform an update
 		/// </summary>
@@ -321,74 +299,32 @@ namespace RailTimeGrabber
 			// Show the progress bar
 			loadingProgress.Visibility = ViewStates.Visible;
 
-			// Get the journeys for the current
 			// This is an synch call. It will load the results into the TrainJourneyWrapper when available
 			trainJourneyRetrieval.UpdateJourneys();
 		}
 
 		/// <summary>
-		/// Reset the manual update text
+		/// Update the text showing the age of the results
 		/// </summary>
-		private void JustUpdated()
+		/// <param name="sender"></param>
+		/// <param name="args"></param>
+		private void UpdateTextChanged( object sender, ResultsTimer.TextChangedEventArgs args )
 		{
-			updateText.Text = "Updated a moment ago";
-			lastUpdate = DateTime.Now;
+			RunOnUiThread( () => {
+				updateText.Text = args.Text;
+			} );
 		}
 
 		/// <summary>
-		/// Update the message displaying how long since the results were updated
+		/// Carry out common UI work prior to sending off a journeys request
 		/// </summary>
-		private void UpdateMessage()
+		private void PrepareForRequest()
 		{
-			RunOnUiThread( () => {
+			// Show the progress bar
+			loadingProgress.Visibility = ViewStates.Visible;
 
-				// If there has been an update then display how old it is
-				if ( lastUpdate != DateTime.MinValue )
-				{
-					TimeSpan updateSpan = DateTime.Now - lastUpdate;
-
-					if ( updateSpan.TotalMinutes < 1 )
-					{
-						updateText.Text = "Updated a moment ago";
-					}
-					else if ( updateSpan.TotalMinutes < 60 )
-					{
-						if ( updateSpan.TotalMinutes < 2 )
-						{
-							updateText.Text = "Updated a minute ago";
-						}
-						else
-						{
-							updateText.Text = string.Format( "Updated {0} minutes ago", ( int )updateSpan.TotalMinutes );
-						}
-					}
-					else if ( updateSpan.TotalHours < 24 )
-					{
-						if ( updateSpan.TotalHours < 2 )
-						{
-							updateText.Text = "Updated an hour ago";
-						}
-						else
-						{
-							updateText.Text = string.Format( "Updated {0} hours ago", ( int )updateSpan.TotalHours );
-						}
-					}
-					else
-					{
-						updateText.Text = "Updated more than a day ago";
-					}
-				}
-				// If there is a trip selected then prompts for an update
-				else if ( TrainTrips.Selected != -1 )
-				{
-					updateText.Text = "Click to update";
-				}
-				else
-				{
-					// Prevent an update if nothing is selected
-					updateText.Text = "";
-				}
-			} );
+			// Reset the update time
+			updateTimer.ResetTimer();
 		}
 
 		/// <summary>
@@ -427,13 +363,8 @@ namespace RailTimeGrabber
 		private TextView updateText = null;
 
 		/// <summary>
-		/// Timer used to change the update text
+		/// ResultsTimer instance used to handle updating the results 'age' text
 		/// </summary>
-		private Timer updateTimer = null;
-
-		/// <summary>
-		/// The last time the journeys were updated
-		/// </summary>
-		private DateTime lastUpdate = DateTime.MinValue;
+		private ResultsTimer updateTimer = null;
 	}
 }

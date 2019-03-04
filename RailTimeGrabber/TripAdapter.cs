@@ -63,15 +63,11 @@ namespace RailTimeGrabber
 				view.Tag = position;
 
 				// A longclick is assumed to be a request to delete the item.
-				// Hide teh spinner and send the event to its handler
+				// Hide the spinner and send the event to its handler
 				view.LongClick += ( sender, e ) => {
 					ownerSpinner.OnDetachedFromWindowPublic();
 
-					EventHandler<LongClickEventArgs> handler = LongClickEvent;
-					if ( handler != null )
-					{
-						handler( this, new LongClickEventArgs { TripPosition = ( int )view.Tag } );
-					}
+					LongClickEvent?.Invoke( this, new LongClickEventArgs { TripPosition = ( int )view.Tag } );
 				};
 
 				// When an item is clicked hide the dropdown items and select the item (via its view tag)
@@ -101,7 +97,7 @@ namespace RailTimeGrabber
 		}
 
 		/// <summary>
-		/// Eventhandler used to link tinto the long click
+		/// Eventhandler used to link into the long click
 		/// </summary>
 		public event EventHandler<LongClickEventArgs> LongClickEvent;
 

@@ -23,6 +23,21 @@ namespace RailTimeGrabber
 		}
 
 		/// <summary>
+		/// Return a formatted list of the trips to be displayed
+		/// </summary>
+		/// <returns></returns>
+		public static List<string> TripStrings()
+		{
+			List<string> tripStrings = new List<string>();
+			foreach ( TrainTrip trip in Trips )
+			{
+				tripStrings.Add( string.Format( "{0} to {1}", trip.From, trip.To ) );
+			}
+
+			return tripStrings;
+		}
+
+		/// <summary>
 		/// Load the collection of train trips
 		/// </summary>
 		private static void LoadTrips()

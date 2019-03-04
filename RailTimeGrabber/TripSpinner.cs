@@ -13,6 +13,9 @@ namespace RailTimeGrabber
 		{
 		}
 
+		/// <summary>
+		/// Call the private base method
+		/// </summary>
 		public void OnDetachedFromWindowPublic()
 		{
 			base.OnDetachedFromWindow();

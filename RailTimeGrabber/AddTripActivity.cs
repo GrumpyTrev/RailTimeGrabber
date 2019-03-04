@@ -86,7 +86,7 @@ namespace RailTimeGrabber
 				// Make sure they are not the same
 				if ( fromView.Text == toView.Text )
 				{
-					errorMessage += "Station anmes cannot be the same\n";
+					errorMessage += "Station names cannot be the same\n";
 					validTrip = false;
 				}
 			}

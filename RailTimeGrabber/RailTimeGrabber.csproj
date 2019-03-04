@@ -70,6 +70,7 @@
     <Compile Include="PossibleCore\JourneyRequest.cs" />
     <Compile Include="PossibleCore\JourneyRetrieval.cs" />
     <Compile Include="PossibleCore\RecentStations.cs" />
+    <Compile Include="PossibleCore\ResultsTimer.cs" />
     <Compile Include="PossibleCore\stations.cs" />
     <Compile Include="PossibleCore\StationStorage.cs" />
     <Compile Include="StationAdapter.cs" />

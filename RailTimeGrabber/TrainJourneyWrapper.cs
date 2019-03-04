@@ -72,13 +72,11 @@ namespace RailTimeGrabber
 		public override View GetView( int position, View convertView, ViewGroup parent )
 		{
 			View view = convertView;
-			bool newView = false;
 
 			// If no view to reuse then create a new view
 			if ( view == null )
 			{
 				view = context.LayoutInflater.Inflate( Resource.Layout.list_item, null );
-				newView = true;
 			}
 
 			// If this item is beyond the end of then show the More Journeys layout
@@ -87,10 +85,14 @@ namespace RailTimeGrabber
 				view.FindViewById<ViewGroup>( Resource.Id.MoreJourneysLayout ).Visibility = ViewStates.Visible;
 				view.FindViewById<ViewGroup>( Resource.Id.JourneyLayout ).Visibility = ViewStates.Invisible;
 
-				// If this is a new view then handle the button click
-				if ( newView == true )
+				// Access the button view and check whether or not its click event is already linked in
+				Button moreButton = view.FindViewById<Button>( Resource.Id.MoreButton );
+				if ( moreButton.Tag == null )
 				{
-					view.FindViewById<Button>( Resource.Id.MoreButton ).Click += MoreJourneysClick;
+					moreButton.Click += MoreJourneysClick;
+
+					// Set the Tag to non-null to make sure it is only linked once
+					moreButton.Tag = moreButton;
 				}
 			}
 			else
@@ -100,6 +102,18 @@ namespace RailTimeGrabber
 				view.FindViewById<ViewGroup>( Resource.Id.JourneyLayout ).Visibility = ViewStates.Visible;
 
 				TrainJourney itemToDisplay = Items[ position ];
+
+				// If this entry is the start of a new day then show the date
+				TextView dateChange = view.FindViewById<TextView>( Resource.Id.DateChange );
+				if ( itemToDisplay.DateChange == true )
+				{
+					dateChange.Visibility = ViewStates.Visible;
+					dateChange.Text = itemToDisplay.DepartureDateTime.ToString( "ddd dd MMM" );
+				}
+				else
+				{
+					dateChange.Visibility = ViewStates.Gone;
+				}
 
 				view.FindViewById<TextView>( Resource.Id.Departure ).Text = itemToDisplay.DepartureTime;
 				view.FindViewById<TextView>( Resource.Id.Arrival ).Text = itemToDisplay.ArrivalTime;
@@ -130,6 +144,5 @@ namespace RailTimeGrabber
 		/// The context used to get the layout
 		/// </summary>
 		private Activity context = null;
-
 	}
 }
