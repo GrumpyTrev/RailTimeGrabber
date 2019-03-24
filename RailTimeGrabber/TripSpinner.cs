@@ -1,6 +1,7 @@
 ﻿using Android.Content;
 using Android.Util;
 using Android.Widget;
+using System;
 
 namespace RailTimeGrabber
 {
@@ -13,6 +14,13 @@ namespace RailTimeGrabber
 		{
 		}
 
+		public override bool PerformClick()
+		{
+			ClickedEvent?.Invoke();
+
+			return base.PerformClick();
+		}
+
 		/// <summary>
 		/// Call the private base method
 		/// </summary>
@@ -20,5 +28,10 @@ namespace RailTimeGrabber
 		{
 			base.OnDetachedFromWindow();
 		}
+
+		/// <summary>
+		/// Public event to call when spinner has been clicked
+		/// </summary>
+		public event Action ClickedEvent;
 	}
 }

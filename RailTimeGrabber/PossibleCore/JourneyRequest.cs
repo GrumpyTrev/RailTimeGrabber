@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Net;
 using System.Net.Http;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace RailTimeGrabber
@@ -30,7 +31,7 @@ namespace RailTimeGrabber
 		/// </summary>
 		/// <param name="from"></param>
 		/// <param name="to"></param>
-		public async void GetJourneys( string from, string to, DateTime requestTime )
+		public async void GetJourneys( string from, string to, DateTime requestTime, CancellationToken cancelToken )
 		{
 			try
 			{
@@ -38,7 +39,7 @@ namespace RailTimeGrabber
 				if ( ( DateTime.Now - sessionCookieTime ).TotalMinutes > SeesionCookieValidTimeInMinutes )
 				{
 					// Must load the search page in order to set the session id cookie
-					await client.GetAsync( "http://ojp.nationalrail.co.uk/service/planjourney/search" );
+					await client.GetAsync( "http://ojp.nationalrail.co.uk/service/planjourney/search", cancelToken );
 
 					// Save the time that this session id was obtained
 					sessionCookieTime = DateTime.Now;
@@ -53,7 +54,7 @@ namespace RailTimeGrabber
 
 				// Make the request
 				HttpResponseMessage response = await client.PostAsync( "http://ojp.nationalrail.co.uk/service/planjourney/plan",
-					new FormUrlEncodedContent( requestParameters ) );
+					new FormUrlEncodedContent( requestParameters ), cancelToken );
 
 				// Load the result of the request into an HtmlDocument
 				HtmlDocument doc = new HtmlDocument();
@@ -122,7 +123,15 @@ namespace RailTimeGrabber
 			}
 			catch ( TaskCanceledException )
 			{
-				JourneysAvailableEvent?.Invoke( this, new JourneysAvailableArgs { JourneysAvailable = false, NetworkProblem = true } );
+				// This can be caused either from a user request or a network problem
+				if ( cancelToken.IsCancellationRequested == true )
+				{
+					JourneysAvailableEvent?.Invoke( this, new JourneysAvailableArgs { JourneysAvailable = false, RequestCancelled = true } );
+				}
+				else
+				{
+					JourneysAvailableEvent?.Invoke( this, new JourneysAvailableArgs { JourneysAvailable = false, NetworkProblem = true } );
+				}
 			}
 			catch ( OperationCanceledException )
 			{
@@ -146,8 +155,9 @@ namespace RailTimeGrabber
 		/// </summary>
 		public class JourneysAvailableArgs: EventArgs
 		{
-			public bool JourneysAvailable { get; set; }
+			public bool JourneysAvailable { get; set; } = true;
 			public bool NetworkProblem { get; set; } = false;
+			public bool RequestCancelled { get; set; } = false;
 		}
 
 		/// <summary>

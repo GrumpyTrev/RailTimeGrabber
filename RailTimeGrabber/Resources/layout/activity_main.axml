@@ -22,8 +22,8 @@
 			<ImageView
 				android:id="@+id/updateImage"
 				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:scaleType="center"
+				android:layout_height="match_parent"
+				android:scaleType="fitCenter"
 				android:src="@mipmap/ic_refresh"
 			/>
 			<TextView
@@ -42,7 +42,7 @@
 				android:layout_width="fill_parent"
 				android:layout_height="fill_parent"
 				android:layout_below="@id/spinner"
-				android:id="@+id/listView1"
+				android:id="@+id/journeysView"
 				android:divider="#ffffc400" 
 			/>
 			<ProgressBar

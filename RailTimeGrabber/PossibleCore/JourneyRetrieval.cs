@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace RailTimeGrabber
 {
@@ -92,13 +93,24 @@ namespace RailTimeGrabber
 		}
 
 		/// <summary>
-		/// The interface used to report the reults of a request
+		/// Cancel the current request if there is one
+		/// </summary>
+		public void CancelRequest()
+		{
+			if ( tokenSource != null )
+			{
+				tokenSource.Cancel();
+			}
+		}
+
+		/// <summary>
+		/// The interface used to report the results of a request
 		/// </summary>
 		public IJourneyResponse JourneyResponse { get; set; } = null;
 
 		/// <summary>
 		/// The JourneyRequest has completed its web request.
-		/// If there was a network problem then leave the current set of journeys as they are.
+		/// If there was a network problem or the request was cancelled then leave the current set of journeys as they are.
 		/// If some journeys were found and this was a new request or an update then replace the current request with the new results.
 		/// If this was a request for more journeys then add the returned journeys to the existing set.
 		/// If no journeys were found then clear the existing results.
@@ -130,12 +142,12 @@ namespace RailTimeGrabber
 				// If this is an update request check if sufficient journeys have been obtained
 				if ( currentRequest == RequestType.Update )
 				{
+					// Report the results back just to let the user know that some results have been obtained
+					JourneyResponse?.JourneysAvailable( retrievedJourneys );
+
 					updateCount = retrievedJourneys.Journeys.Count;
 					if ( updateCount >= updateTarget )
 					{
-						// Report back
-						JourneyResponse?.JourneysAvailable( retrievedJourneys );
-
 						// Request finished
 						JourneyResponse?.JourneyRequestComplete( false, false );
 						currentRequest = RequestType.Idle;
@@ -159,6 +171,11 @@ namespace RailTimeGrabber
 			else if ( args.NetworkProblem == true )
 			{
 				JourneyResponse?.JourneyRequestComplete( true, false );
+				currentRequest = RequestType.Idle;
+			}
+			else if ( args.RequestCancelled == true )
+			{
+				JourneyResponse?.JourneyRequestComplete( false, false );
 				currentRequest = RequestType.Idle;
 			}
 			else
@@ -200,7 +217,10 @@ namespace RailTimeGrabber
 			// Record the day of the request
 			requestDate = requestTime.Date;
 
-			trainJourneyRequest.GetJourneys( trip.From, trip.To, requestTime );
+			// Pass a cancellation token in case this request needs to be cancelled
+			tokenSource = new CancellationTokenSource();
+
+			trainJourneyRequest.GetJourneys( trip.From, trip.To, requestTime, tokenSource.Token );
 		}
 
 		/// <summary>
@@ -242,5 +262,10 @@ namespace RailTimeGrabber
 		/// The target number of entries required for an update
 		/// </summary>
 		private int updateTarget = 0;
+
+		/// <summary>
+		/// CancellationTokenSource used to cancel the current journey request
+		/// </summary>
+		private CancellationTokenSource tokenSource = null;
 	}
 }

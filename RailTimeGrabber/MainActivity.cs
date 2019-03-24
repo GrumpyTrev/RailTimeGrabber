@@ -44,8 +44,10 @@ namespace RailTimeGrabber
 			tripSpinner.SetSelection( TrainTrips.Selected );
 
 			// Put an empty set of results into an adapter and assign the adapter to the list view. 
+			journeyList = FindViewById<ListView>( Resource.Id.journeysView );
 			journeyAdapter = new TrainJourneyWrapper( this, new TrainJourney[ 0 ] );
-			( ( ListView )FindViewById<ListView>( Resource.Id.listView1 ) ).Adapter = journeyAdapter;
+
+			journeyList.Adapter = journeyAdapter;
 
 			// Link into the adapters More Journeys button
 			journeyAdapter.MoreJourneysEvent += MoreJourneysRequest;
@@ -68,7 +70,7 @@ namespace RailTimeGrabber
 				// Keep track of the selected trip details so that any changes can be validated
 				selectedTrainTrip = TrainTrips.SelectedTrip;
 
-				PrepareForRequest();
+				PrepareForRequest( true );
 				
 				// This is an synch call. It will load the results into the TrainJourneyWrapper when available
 				trainJourneyRetrieval.GetJourneys( TrainTrips.SelectedTrip );
@@ -76,6 +78,9 @@ namespace RailTimeGrabber
 
 			// Trap the spinner selection after the initial request
 			tripSpinner.ItemSelected += TripItemSelected;
+
+			// Trap the spinner being opened
+			tripSpinner.ClickedEvent += TripSpinnerClicked;
 
 			// Trap the trip list long click
 			spinnerAdapter.LongClickEvent += TripLongClick;
@@ -101,6 +106,9 @@ namespace RailTimeGrabber
 		{
 			if ( item.ItemId == Resource.Id.menu_new )
 			{
+				// Cancel any request currently in progress and start the Add Trip activity
+				trainJourneyRetrieval.CancelRequest();
+
 				StartActivityForResult( new Intent( this, typeof( AddTripActivity ) ), 0 );
 			}
 
@@ -146,7 +154,7 @@ namespace RailTimeGrabber
 				Toast.MakeText( this, "No journeys found.", ToastLength.Long ).Show();
 			}
 
-			loadingProgress.Visibility = ViewStates.Invisible;
+			PrepareForRequest( false );
 		}
 
 		/// <summary>
@@ -175,7 +183,7 @@ namespace RailTimeGrabber
 		/// </summary>
 		private void MoreJourneysRequest()
 		{
-			PrepareForRequest();
+			PrepareForRequest( true );
 
 			// Get more journeys for the trip
 			trainJourneyRetrieval.MoreJourneys();
@@ -198,11 +206,20 @@ namespace RailTimeGrabber
 			{
 				selectedTrainTrip = TrainTrips.SelectedTrip;
 
-				PrepareForRequest();
+				PrepareForRequest( true );
 
 				// Get the journeys for the new trip
 				trainJourneyRetrieval.GetJourneys( TrainTrips.SelectedTrip );
 			}
+		}
+
+		/// <summary>
+		/// Called when the trip spinner has been opened.
+		/// Cancel any ongoing request
+		/// </summary>
+		private void TripSpinnerClicked()
+		{
+			trainJourneyRetrieval.CancelRequest();
 		}
 
 		/// <summary>
@@ -296,8 +313,7 @@ namespace RailTimeGrabber
 		/// <param name="e"></param>
 		private void PerformManualUpdate( object sender, EventArgs e )
 		{
-			// Show the progress bar
-			loadingProgress.Visibility = ViewStates.Visible;
+			PrepareForRequest( true );
 
 			// This is an synch call. It will load the results into the TrainJourneyWrapper when available
 			trainJourneyRetrieval.UpdateJourneys();
@@ -316,15 +332,22 @@ namespace RailTimeGrabber
 		}
 
 		/// <summary>
-		/// Carry out common UI work prior to sending off a journeys request
+		/// Carry out common UI work prior to sending off or receiving a journeys request
 		/// </summary>
-		private void PrepareForRequest()
+		private void PrepareForRequest( bool requestInProgress )
 		{
-			// Show the progress bar
-			loadingProgress.Visibility = ViewStates.Visible;
+			// Show or hide the progress bar
+			loadingProgress.Visibility = ( requestInProgress == true ) ? ViewStates.Visible : ViewStates.Invisible;
 
-			// Reset the update time
-			updateTimer.ResetTimer();
+			// Disable or enable the update text and the results list view
+			updateText.Enabled = !requestInProgress;
+			journeyList.Enabled = !requestInProgress;
+
+			// Disable the button as well
+			if ( journeyAdapter.MoreButton != null )
+			{
+				journeyAdapter.MoreButton.Enabled = !requestInProgress;
+			}
 		}
 
 		/// <summary>
@@ -361,6 +384,11 @@ namespace RailTimeGrabber
 		/// The manual update text field
 		/// </summary>
 		private TextView updateText = null;
+
+		/// <summary>
+		/// The list view displaying the results of the web request
+		/// </summary>
+		private ListView journeyList = null;
 
 		/// <summary>
 		/// ResultsTimer instance used to handle updating the results 'age' text

@@ -86,13 +86,13 @@ namespace RailTimeGrabber
 				view.FindViewById<ViewGroup>( Resource.Id.JourneyLayout ).Visibility = ViewStates.Invisible;
 
 				// Access the button view and check whether or not its click event is already linked in
-				Button moreButton = view.FindViewById<Button>( Resource.Id.MoreButton );
-				if ( moreButton.Tag == null )
+				MoreButton = view.FindViewById<Button>( Resource.Id.MoreButton );
+				if ( MoreButton.Tag == null )
 				{
-					moreButton.Click += MoreJourneysClick;
+					MoreButton.Click += MoreJourneysClick;
 
 					// Set the Tag to non-null to make sure it is only linked once
-					moreButton.Tag = moreButton;
+					MoreButton.Tag = MoreButton;
 				}
 			}
 			else
@@ -128,6 +128,11 @@ namespace RailTimeGrabber
 		/// Public event to call when the More Journeys button has been clicked
 		/// </summary>
 		public event Action MoreJourneysEvent;
+
+		/// <summary>
+		/// The 'More Journeys' button made public so that it can be enabled/disabled
+		/// </summary>
+		public Button MoreButton { get; private set; }
 
 		/// <summary>
 		/// Called when the use has clicked on the More Journeys button.

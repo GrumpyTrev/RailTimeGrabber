@@ -2606,6 +2606,9 @@ namespace RailTimeGrabber
 			// aapt resource value: 0x7f080000
 			public const int item_touch_helper_previous_elevation = 2131230720;
 			
+			// aapt resource value: 0x7f08008d
+			public const int journeysView = 2131230861;
+			
 			// aapt resource value: 0x7f080097
 			public const int largeLabel = 2131230871;
 			
@@ -2623,9 +2626,6 @@ namespace RailTimeGrabber
 			
 			// aapt resource value: 0x7f08001c
 			public const int listMode = 2131230748;
-			
-			// aapt resource value: 0x7f08008d
-			public const int listView1 = 2131230861;
 			
 			// aapt resource value: 0x7f080060
 			public const int list_item = 2131230816;
