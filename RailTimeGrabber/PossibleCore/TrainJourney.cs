@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace RailTimeGrabber
 {
@@ -13,5 +14,7 @@ namespace RailTimeGrabber
 		public string Duration { get; set; }
 		public string Status { get; set; }
 		public bool DateChange { get; set; } = false;
+
+		public List<JourneyLeg> Legs { get; set; } = new List<JourneyLeg>();
 	}
 }

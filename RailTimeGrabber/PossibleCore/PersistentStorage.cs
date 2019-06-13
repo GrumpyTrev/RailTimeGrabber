@@ -7,7 +7,7 @@ namespace RailTimeGrabber
 	{
 		public static bool GetBoolItem( string itemName, bool defaultState )
 		{
-			if ( cachedItems.ContainsKey( itemName ) == false )
+			if ( ( UseCache == false ) || ( cachedItems.ContainsKey( itemName ) == false ) )
 			{
 				cachedItems[ itemName ] = StorageMechanism.GetBoolItem( itemName, defaultState );
 			}
@@ -23,7 +23,7 @@ namespace RailTimeGrabber
 
 		public static string GetStringItem( string itemName, string defaultState )
 		{
-			if ( cachedItems.ContainsKey( itemName ) == false )
+			if ( ( UseCache == false ) || ( cachedItems.ContainsKey( itemName ) == false ) )
 			{
 				cachedItems[ itemName ] = StorageMechanism.GetStringItem( itemName, defaultState );
 			}
@@ -39,7 +39,7 @@ namespace RailTimeGrabber
 
 		public static int GetIntItem( string itemName, int defaultState )
 		{
-			if ( cachedItems.ContainsKey( itemName ) == false )
+			if ( ( UseCache == false ) || ( cachedItems.ContainsKey( itemName ) == false ) )
 			{
 				cachedItems[ itemName ] = StorageMechanism.GetIntItem( itemName, defaultState );
 			}
@@ -65,6 +65,16 @@ namespace RailTimeGrabber
 			set;
 		} 
 		= null;
+
+		/// <summary>
+		/// Allow the use of the cache for reading to be controlled. It will be used by default.
+		/// </summary>
+		public static bool UseCache
+		{
+			private get;
+			set;
+		}
+		= true;
 
 		/// <summary>
 		/// Some items that have already been retrived from persistent storage

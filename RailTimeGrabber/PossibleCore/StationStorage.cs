@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.IO;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 using Android.Content.Res;
@@ -25,13 +26,15 @@ namespace RailTimeGrabber
 					{
 						Stations stations = ( Stations )new XmlSerializer( typeof( Stations ) ).Deserialize( sr );
 
-						// All we actually ever use are the station names so extract them into a simple string array
+						// Only the station names are used most of the time so extract them into a simple string array
+						// Also provide a 'code' lookup dictionary
 						// Don't use Linq yet to avoid having to include the Linq library
 						StationNames = new string[ stations.Items.Length ];
 						int index = 0;
 						foreach ( Station station in stations.Items )
 						{
 							StationNames[ index++ ] = station.Name;
+							codeLookup[ station.Name ] = station.Code;
 						}
 					}
 				} );
@@ -42,5 +45,26 @@ namespace RailTimeGrabber
 		/// The station names
 		/// </summary>
 		public static string[] StationNames { get; private set; }
+
+		/// <summary>
+		/// Get the station code for the specified station
+		/// </summary>
+		/// <param name="stationName"></param>
+		/// <returns></returns>
+		public static string GetCode( string stationName )
+		{
+			string code = "";
+			if ( codeLookup.ContainsKey( stationName ) == true )
+			{
+				code = codeLookup[ stationName ];
+			}
+
+			return code;
+		}
+
+		/// <summary>
+		/// Dictionary providing a station name to code lookup
+		/// </summary>
+		private static Dictionary< string, string > codeLookup = new Dictionary<string, string>();
 	}
 }

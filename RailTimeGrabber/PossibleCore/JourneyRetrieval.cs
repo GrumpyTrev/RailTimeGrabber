@@ -163,6 +163,9 @@ namespace RailTimeGrabber
 					// Report back
 					JourneyResponse?.JourneysAvailable( retrievedJourneys );
 
+					// Extract the next departure time from the returned list and report any changes
+					ReportNextDepartureChanges.ReportTimeChanges( retrievedJourneys.Journeys );
+
 					// Request finished
 					JourneyResponse?.JourneyRequestComplete( false, false );
 					currentRequest = RequestType.Idle;
@@ -170,6 +173,9 @@ namespace RailTimeGrabber
 			}
 			else if ( args.NetworkProblem == true )
 			{
+				// Update the next departure time status
+				ReportNextDepartureChanges.ReportSuspectStateChanges( true );
+				
 				JourneyResponse?.JourneyRequestComplete( true, false );
 				currentRequest = RequestType.Idle;
 			}
@@ -181,6 +187,10 @@ namespace RailTimeGrabber
 			else
 			{
 				ClearJourneys();
+
+				// Update the next departure time status
+				ReportNextDepartureChanges.ReportSuspectStateChanges( true );
+
 				JourneyResponse?.JourneyRequestComplete( false, true );
 				currentRequest = RequestType.Idle;
 			}

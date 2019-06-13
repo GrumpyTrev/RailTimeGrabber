@@ -114,7 +114,8 @@ namespace RailTimeGrabber
 			else
 			{
 				// Add the trip and close this activity
-				TrainTrips.AddTrip( new TrainTrip { From = fromView.Text, To = toView.Text } );
+				TrainTrips.AddTrip( new TrainTrip { From = fromView.Text, To = toView.Text, FromCode = StationStorage.GetCode( fromView.Text ),
+					ToCode = StationStorage.GetCode( toView.Text ) } );
 				RecentStations.AddStation( fromView.Text );
 				RecentStations.AddStation( toView.Text );
 

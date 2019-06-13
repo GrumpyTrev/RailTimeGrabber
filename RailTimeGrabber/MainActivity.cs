@@ -210,6 +210,9 @@ namespace RailTimeGrabber
 
 				// Get the journeys for the new trip
 				trainJourneyRetrieval.GetJourneys( TrainTrips.SelectedTrip );
+
+				// Broadcast this change
+				SendBroadcast( new Intent( AppWidget.TripUpdated ) );
 			}
 		}
 

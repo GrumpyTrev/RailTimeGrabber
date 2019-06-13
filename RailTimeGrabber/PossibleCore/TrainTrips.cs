@@ -8,6 +8,9 @@ namespace RailTimeGrabber
 	/// </summary>
 	class TrainTrips
 	{
+		/// <summary>
+		/// The train trips collection. Read from storage if not already read.
+		/// </summary>
 		public static List<TrainTrip> Trips
 		{
 			get
@@ -19,7 +22,6 @@ namespace RailTimeGrabber
 
 				return trips;
 			}
-
 		}
 
 		/// <summary>
@@ -44,12 +46,18 @@ namespace RailTimeGrabber
 		{
 			// Load the trips
 			int numberOfTrips = PersistentStorage.GetIntItem( TrainTripsSizeName, 0 );
+
 			trips = new List<TrainTrip>();
 
 			for ( int tripIndex = 0; tripIndex < numberOfTrips; ++tripIndex )
 			{
-				trips.Add( new TrainTrip { From = PersistentStorage.GetStringItem( TrainTripFromName + tripIndex, "" ),
-										   To = PersistentStorage.GetStringItem( TrainTripToName + tripIndex, "" ) } );
+				TrainTrip tripToAdd = new TrainTrip {
+					From = PersistentStorage.GetStringItem( TrainTripFromName + tripIndex, "" ),
+					To = PersistentStorage.GetStringItem( TrainTripToName + tripIndex, "" ),
+					FromCode = PersistentStorage.GetStringItem( TrainTripFromCodeName + tripIndex, "" ),
+					ToCode = PersistentStorage.GetStringItem( TrainTripToCodeName + tripIndex, "" )
+				};
+				trips.Add( tripToAdd );
 			}
 
 			// Get the current trip
@@ -72,6 +80,8 @@ namespace RailTimeGrabber
 			// Store the trip
 			PersistentStorage.SetStringItem( TrainTripFromName + Trips.Count, trip.From );
 			PersistentStorage.SetStringItem( TrainTripToName + Trips.Count, trip.To );
+			PersistentStorage.SetStringItem( TrainTripFromCodeName + Trips.Count, trip.FromCode );
+			PersistentStorage.SetStringItem( TrainTripToCodeName + Trips.Count, trip.ToCode );
 
 			// Add to the list
 			Trips.Add( trip );
@@ -94,6 +104,11 @@ namespace RailTimeGrabber
 		{
 			get
 			{
+				if ( trips == null )
+				{
+					LoadTrips();
+				}
+
 				return selectedTrip;
 			}
 
@@ -118,9 +133,23 @@ namespace RailTimeGrabber
 			}
 		}
 
+		/// <summary>
+		/// Check if the set of trips already includes the from and to pairing 
+		/// </summary>
+		/// <param name="fromStation"></param>
+		/// <param name="toStation"></param>
+		/// <returns></returns>
 		public static bool IsDuplicateTrip( string fromStation, string toStation )
 		{
 			return ( Array.FindAll( Trips.ToArray(), trip => ( trip.From == fromStation ) && ( trip.To == toStation ) ).Length > 0 );
+		}
+
+		/// <summary>
+		/// Clear the loaded trips so that the next reference will reload them
+		/// </summary>
+		public static void Reset()
+		{
+			trips = null;
 		}
 
 		/// <summary>
@@ -134,6 +163,8 @@ namespace RailTimeGrabber
 			{
 				PersistentStorage.SetStringItem( TrainTripFromName + tripIndex, trips[ tripIndex ].From );
 				PersistentStorage.SetStringItem( TrainTripToName + tripIndex, trips[ tripIndex ].To );
+				PersistentStorage.SetStringItem( TrainTripFromCodeName + Trips.Count, trips[ tripIndex ].FromCode );
+				PersistentStorage.SetStringItem( TrainTripToCodeName + Trips.Count, trips[ tripIndex ].ToCode );
 			}
 		}
 
@@ -143,6 +174,8 @@ namespace RailTimeGrabber
 		private const string TrainTripsSizeName = "TrainTripsSize";
 		private const string TrainTripFromName = "TrainTripFrom";
 		private const string TrainTripToName = "TrainTripTo";
+		private const string TrainTripFromCodeName = "TrainTripFromCode";
+		private const string TrainTripToCodeName = "TrainTripToCode";
 		private const string TrainTripSelectedName = "TrainTripSelected";
 
 		/// <summary>

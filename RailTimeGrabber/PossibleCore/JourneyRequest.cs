@@ -60,8 +60,14 @@ namespace RailTimeGrabber
 				HtmlDocument doc = new HtmlDocument();
 				doc.LoadHtml( await response.Content.ReadAsStringAsync() );
 
-				// Extract the journey and date change nodes
-				HtmlNodeCollection dormNodes = doc.DocumentNode.SelectNodes( "//td[@class='dep']/..|//h3[@class='outward top ctf-h3']/.|//tr[@class='day-heading']/." );
+				// Extract the journey, changes and date change nodes
+				// The journeys are in table rows that contain cells of class 'dep'. Grab the containing row.
+				// The changes associated with a journey are not in the same row as the journey so look for a cell with class 'origin'.
+				// Changes are stored in the containing table. The extracted changes are stored with the last journey. 
+				// Date changes between journeys are contained in table rows with class 'day-heading'.
+				// If date of the first journey are in an H3 element with class 'outward top ctf-h3'. 
+				HtmlNodeCollection dormNodes = doc.DocumentNode.SelectNodes( 
+					"//td[@class='dep']/..|//td[@class='origin']/..|//h3[@class='outward top ctf-h3']/.|//tr[@class='day-heading']/." );
 				if ( dormNodes != null )
 				{
 					// Assume that the journeys found are initially for the same day as the request
@@ -73,13 +79,13 @@ namespace RailTimeGrabber
 					foreach ( HtmlNode journeyNode in dormNodes )
 					{
 						// Check if this is a train node
-						if ( journeyNode.SelectSingleNode( "./td[@class='dep']" )  != null )
+						if ( journeyNode.SelectSingleNode( "./td[@class='dep']" ) != null )
 						{
 							TrainJourney newJourney = new TrainJourney {
 								ArrivalTime = journeyNode.SelectSingleNode( "./td[@class='arr']" ).InnerText.Substring( 0, 5 ),
 								DepartureTime = journeyNode.SelectSingleNode( "./td[@class='dep']" ).InnerText.Substring( 0, 5 ),
-								Duration = journeyNode.SelectSingleNode( "./td[@class='dur']" ).InnerText.Replace( "\n", "" ).Replace( "\t", "" ),
-								Status = journeyNode.SelectSingleNode( "./td[@class='status']" ).InnerText.Replace( "\n", "" ).Replace( "\t", "" )
+								Duration = ReplaceWhitespace( journeyNode.SelectSingleNode( "./td[@class='dur']" ).InnerText ),
+								Status = ReplaceWhitespace( journeyNode.SelectSingleNode( "./td[@class='status']" ).InnerText )
 							};
 
 							// Set the full departure timestamp from the responseDate and the departure time
@@ -87,14 +93,48 @@ namespace RailTimeGrabber
 
 							journeys.Journeys.Add( newJourney );
 						}
+						else if ( journeyNode.SelectSingleNode( "./td[@class='origin']" ) != null )
+						{
+							// Only proceed with processing changes if a journey has been found
+							if ( journeys.Journeys.Count > 0 )
+							{
+								// Get the change data ignoring any empty cells and whitespace
+								HtmlNodeCollection cells = journeyNode.SelectNodes( "./td" );
+
+								if ( cells != null )
+								{
+									// Somewhere to save the cell data
+									List<string> cellContents = new List<string>();
+
+									foreach ( HtmlNode cell in cells )
+									{
+										string innerText = ReplaceWhitespace( cell.InnerText );
+										if ( innerText.Length > 0 )
+										{
+											cellContents.Add( innerText );
+										}
+									}
+
+									// There should be 4 entries for a journey leg
+									if ( cellContents.Count == 4 )
+									{
+										JourneyLeg leg = new JourneyLeg {
+											DepartureTime = cellContents[ 0 ], From = cellContents[ 1 ],
+											ArrivalTime = cellContents[ 2 ], To = cellContents[ 3 ]
+										};
+
+										journeys.Journeys[ journeys.Journeys.Count - 1 ].Legs.Add( leg );
+									}
+								}
+							}
+						}
 						else
 						{
 							// If this is either the report header or a date change within the report.
 							// Extraxct the date
 							string headerDate = ( journeyNode.Name == "h3" ) ?
-								journeyNode.InnerText.Replace( "\n", "" ).Replace( "\t", "" ).Replace( "&nbsp;", " " ).Replace( "  ", "" )
-								.Replace( "+", " " ).Substring( 17, 10 ) :
-								journeyNode.InnerText.Replace( "\n", "" ).Replace( "\t", "" );
+								ReplaceWhitespace( journeyNode.InnerText ).Replace( "+", " " ).Substring( 17, 10 ) :
+								ReplaceWhitespace( journeyNode.InnerText );
 
 							// Date is now of the format DDD nn MMM where nn could be one or two numeric digits
 							try
@@ -137,6 +177,16 @@ namespace RailTimeGrabber
 			{
 				JourneysAvailableEvent?.Invoke( this, new JourneysAvailableArgs { JourneysAvailable = false, NetworkProblem = true } );
 			}
+		}
+
+		/// <summary>
+		/// Replace occurrences of common whitespace with empty strings
+		/// </summary>
+		/// <param name="targetString"></param>
+		/// <returns></returns>
+		private string ReplaceWhitespace( string targetString )
+		{
+			return targetString.Replace( "\n", "" ).Replace( "\t", "" ).Replace( "&nbsp;", " " ).Replace( "  ", "" );
 		}
 
 		/// <summary>
